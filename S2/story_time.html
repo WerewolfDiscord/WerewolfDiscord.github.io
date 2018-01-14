@@ -1,0 +1,730 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Werewolves - s2_story_time</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/375597071094382603/f5d3e0b23688a9edbd1269767354253e.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Werewolves</div>
+<div class="channel-name">s2_story_time</div>
+<div class="misc">95 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">16-Nov-17 01:07 </span>
+<div class="msg-content">
+<b>List of people who have signed up:</b><br />&#129300;  - <span class="mention" title="marhjo#5178">@marhjo</span><br />&#128190; - <span class="mention" title="Thrimian#7285">@Thrimian</span><br />&#128005; - <span class="mention" title="Vyryn#4618">@Vyryn</span><br />&#129416; - <span class="mention" title="Legolas#2139">@Legolas</span><br />&#128570;  - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128373; - <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span><br />&#128511; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#128128; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br />&#128060; - <span class="mention" title="LILLITANIUM#2359">@LILLITANIUM</span><br />&#128121; - <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span><br />&#128104;‍❤️‍&#128104; - <span class="mention" title="ville#2962">@ville</span><br />&#128293; - <span class="mention" title="Elcar0#1528">@Elcar0</span><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span><br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#127477;&#127472; - <span class="mention" title="ciphercobra#9766">@ciphercobra</span><br />&#127927; - <span class="mention" title="Malreath#617">@Malreath</span><br />&#127837; - <span class="mention" title="Spanish Spagetti#828">@Spanish Spagetti</span><br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span><br />&#129415; - <span class="mention" title="Regicide1218#5350">@Regicide1218</span><br />&#128372; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><br />&#129370; - <span class="mention" title="cashwarrior1#5973">@cashwarrior1</span><br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br />&#128405; - <span class="mention" title="Marsim#9859">@Marsim</span><br />&#127929; - <span class="mention" title="BenTechy66#8809">@BenTechy66</span><br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span><br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br />&#128701; - <span class="mention" title="Toiletti#2969">@Toiletti</span><br />&#128540; - <span class="mention" title="Timothy#888">@Timothy</span><br />&#128125; - <span class="mention" title="Maximus#1045">@Maximus</span><br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br />&#127345; - <span class="mention" title="Ds#474">@Ds</span><span class="msg-edited" title="19-Nov-17 09:03 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">16-Nov-17 11:06 </span>
+<div class="msg-content">
+<b>Season Player Count:</b> <i>31</i><br />------<br /><b>Players Left Alive</b>: <i>19</i><br />&#128190; - @Mr Thanii<br />&#128570;  - @Al Ketta<br />&#128373; - @Jay Jr.<br />&#128511; - @Herald Typhus<br />&#128128; - @Lord Galaxx<br />&#128293; - @Dr. Carl E.<br />&#129302; - @Matthew Ron<br />&#127477;&#127472; - @Dr. Cipher<br />&#127927; - @Mr Aethereal<br />&#127837; - @Luigi<br />&#129415; - @Sir Rex<br />&#128372; - @Lord Ilias<br />&#129370; - @Knight Moneypriority<br />&#127954; - @Rudolf the Proud<br />&#128736; - @Old Titus<br />&#128701; - @Tim the Plumberer<br />&#128540; - @Little Tim<br />&#129365; - @Ruben<br />&#127345; - @Daniel Strong<span class="msg-edited" title="26-Nov-17 06:03 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">18-Nov-17 02:22 </span>
+<div class="msg-content">
+<i>The composition of thge game currently looks like this:</i><br /><i></i>WHITE WEREWOLF<br />WEREWOLF <i>(5x)</i><br />WARLOCK<br />CURSED CIVILIAN <i>(2x)</i><br />CULT LEADER<br />CULT MEMBER <i>(4x)</i><br />FLUTE PLAYER<br />CUPID<br />HUNTRESS<br />RUNNER <i>(3x)</i><br />FORTUNE TELLER<br />CROWD SEEKER<br />BAKER <i>(4x)</i><br />INNOCENT <i>(5x)</i><i></i><span class="msg-edited" title="19-Nov-17 09:04 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">19-Nov-17 10:37 </span>
+<div class="msg-content">
+Now th&#225;t was a scary story, my friends! Did you like the story of <i>TumbleTown</i>? Well, if you like that kind of stories, <span class="mention">@here</span>&#39;s another one for you;</div>
+<div class="msg-content">
+You probably haven&#39;t heard of <i>Verdict Village</i>, have you? Well, let me explain why.</div>
+<div class="msg-content">
+<i>Verdict Village</i> once was a small but strong village in the eastern parts of the country. The climate was rough, but the village still blossomed.</div>
+<div class="msg-content">
+The town was ruled by <span class="mention" title="Regicide1218#5350">@Regicide1218</span>, a mighty noblesman who knew how to rule Verdict Village. With the help of his royal <span class="mention" title="cashwarrior1#5973">@cashwarrior1</span>, he managed to keep everything under control.</div>
+<div class="msg-content">
+Everyone in <i>Verdict Village</i> was happy, for every task had its own villager. <span class="mention" title="Toiletti#2969">@Toiletti</span> would do the cleaning, <span class="mention" title="LILLITANIUM#2359">@LILLITANIUM</span> listened to the oracles, <span class="mention" title="Elcar0#1528">@Elcar0</span> and <span class="mention" title="Elcar0#1528">@Elcar0</span> were inventing new gadgets, while <span class="mention" title="HurricanKai#4953">@HurricanKai</span>, <span class="mention" title="Maximus#1045">@Maximus</span> and <span class="mention" title="Vyryn#4618">@Vyryn</span> were always out hunting.<span class="msg-edited" title="19-Nov-17 10:42 ">(edited)</span></div>
+<div class="msg-content">
+Everything was all fine, until <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> appeared, with some unpleasant news.</div>
+<div class="msg-content">
+<i>&quot;My lord <span class="mention" title="Regicide1218#5350">@Regicide1218</span>&quot;</i>, he said, <i>&quot;I am afraid you have lost your power.&quot;</i> He handed a message over to <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span>, who couldn&#39;t resist getting a glimpse of the message before he offered it to <span class="mention" title="Regicide1218#5350">@Regicide1218</span>.<span class="msg-edited" title="20-Nov-17 11:22 ">(edited)</span></div>
+<div class="msg-content">
+A shock went through <span class="mention" title="Regicide1218#5350">@Regicide1218</span> as he read the letter. <i>&quot;Does this mean...&quot; &quot;Yes, my lord,&quot;</i> <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> answered. <i>&quot;We are doomed.&quot;</i><span class="msg-edited" title="20-Nov-17 11:22 ">(edited)</span></div>
+<div class="msg-content">
+<i>&quot;We will have to keep this inside the palace,&quot;</i> he said. <i>&quot;We can&#39;t afford that the people will know about this before we can solve this...&quot;</i> But it was too late.</div>
+<div class="msg-content">
+The rumour, after it was spread by <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span>, went through the whole town. <span class="mention" title="alekkat#349">@alekkat</span>, <span class="mention" title="BenTechy66#8809">@BenTechy66</span>, <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span>, <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span>, <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span>, <span class="mention" title="Robotron#3660">@Robotron</span>, <span class="mention" title="Spanish Spagetti#828">@Spanish Spagetti</span>, the <span class="mention" title="ville#2962">@ville</span>, <b>everyone</b> heard that weird rumour about that there could be <i><b>WEREWOLVES</b></i> amongst them.<span class="msg-edited" title="19-Nov-17 11:04 ">(edited)</span></div>
+<div class="msg-content">
+<i><b>&quot;BLASPHEMY!&quot;</b></i> <span class="mention" title="LILLITANIUM#2359">@LILLITANIUM</span> walked to the crowd that had gathered on the town&#39;s square. <i>&quot;The stars nor the tides tell me <b>anything</b> about these werewolves. There is nothing to worry about!&quot;</i></div>
+<div class="msg-content">
+<i>&quot;Except... the stars remain silent, but the tides do keep playing... a song.&quot;</i></div>
+<div class="msg-content">
+<i>&quot;And who are you to be listened to,&quot;</i> shouted <span class="mention" title="marhjo#5178">@marhjo</span>, the man who wasn&#39;t taken seriously anymore after he had drunkenly asked <span class="mention" title="Timothy#888">@Timothy</span> how his date was, while <span class="mention" title="Timothy#888">@Timothy</span> was standing next to a tree.<span class="msg-edited" title="19-Nov-17 10:59 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">19-Nov-17 11:01 </span>
+<div class="msg-content">
+<i>&quot;That&#39;s enough.&quot;</i> Three men stepped out of the shadows, as if they&#39;ve been there for ages. <i>&quot;We have been sent by the king,&quot; <span class="mention" title="Legolas#2139">@Legolas</span> said. </i>&quot;All must remain calm and go home. We cannot take the risk that the <b>curse</b> will spread through the whole country.&quot;* <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> and <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span>, the owners of the most nearby villages, stood behind <span class="mention" title="Legolas#2139">@Legolas</span>, and brought all the citizens to their homes.</div>
+<div class="msg-content">
+However, the words of <span class="mention" title="Legolas#2139">@Legolas</span> did not make anyone feel any better. What was the <b>curse</b>? Was it dangerous? What could it mean? What could it do?</div>
+<div class="msg-content">
+The last thing the town heard this night, was the group of <span class="mention" title="Thrimian#7285">@Thrimian</span>, <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span>, <span class="mention" title="Malreath#617">@Malreath</span> and <span class="mention" title="Marsim#9859">@Marsim</span> talking to each other. <i>&quot;Let us hope that this rumour is only to scare the kids...&quot;</i></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 10:08 </span>
+<div class="msg-content">
+Dawn has broken. As the word of the curse spread throughout the village, an eerie quiet set about the place. The thudding of a hammer was heard as it drove its nail through into the timbers of a hastily errected structure at the Town&#39;s Square.<br />The arching crook lingering above the morning mist as the loop of rope awaited its first victim. <br /><br />A parchment, hung from the timber, with an official seal read;<br /><i>The Curse of the wolves has fallen upon this land. None may rest while we root out the vicious beasts. the monsters hidden in plain sight will hang after democratic trial. Cast your ballots before sun down!</i></div>
+<div class="msg-content">
+Who placed that parchment? The message would not have been taken seriously, if it didn&#39;t have the king&#39;s official seal upon it. Was it the same letter that <span class="mention" title="Regicide1218#5350">@Regicide1218</span> had read?</div>
+<div class="msg-content">
+Puh, werewolves, what a mumbo jumbo! Although... the day was filled with doubt. <span class="mention">@everyone</span> knew the story about <i>TumbleTown</i>, but that was only a myth to scare the young...</div>
+<div class="msg-content">
+Nonetheless, strange things did happen. Just like in <i>TumbleTown</i>, a thick fog had appeared, locking the village up between a thick mist and a great raveyn. Those who tried to escape through the mist, always happened to return to the town. How strange!</div>
+<div class="msg-content">
+<i>TumbleTown</i> was just a scary story! A werewolf eating the whole town, puh! However, the town chose not to take any risk.</div>
+<div class="msg-content">
+The town decided to choose a <b>mayor</b>. Sure, <span class="mention" title="Regicide1218#5350">@Regicide1218</span> used to be in charge, but a new era has arrived since the fog appeared. Should <span class="mention" title="Regicide1218#5350">@Regicide1218</span> was a good lord, but will his place be taken?<br /><b>Choose your mayor. The mayor&#39;s vote counts double.</b><br /><i>Part 1:</i><br />&#129300;  - <span class="mention" title="marhjo#5178">@marhjo</span><br />&#128190; - <span class="mention" title="Thrimian#7285">@Thrimian</span><br />&#128005; - <span class="mention" title="Vyryn#4618">@Vyryn</span><br />&#129416; - <span class="mention" title="Legolas#2139">@Legolas</span><br />&#128570;  - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128373; - <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span><br />&#128511; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#128128; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br />&#128060; - <span class="mention" title="LILLITANIUM#2359">@LILLITANIUM</span><br />&#128121; - <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span><br />&#128104;‍❤️‍&#128104; - <span class="mention" title="ville#2962">@ville</span><br />&#128293; - <span class="mention" title="Elcar0#1528">@Elcar0</span><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span><br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#127477;&#127472; - <span class="mention" title="ciphercobra#9766">@ciphercobra</span><br />&#127927; - <span class="mention" title="Malreath#617">@Malreath</span></div>
+<div class="msg-content">
+<i>Part 2:</i><br />&#127837; - <span class="mention" title="Spanish Spagetti#828">@Spanish Spagetti</span><br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span><br />&#129415; - <span class="mention" title="Regicide1218#5350">@Regicide1218</span><br />&#128372; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><br />&#129370; - <span class="mention" title="cashwarrior1#5973">@cashwarrior1</span><br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br />&#128405; - <span class="mention" title="Marsim#9859">@Marsim</span><br />&#127929; - <span class="mention" title="BenTechy66#8809">@BenTechy66</span><br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span><br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br />&#128701; - <span class="mention" title="Toiletti#2969">@Toiletti</span><br />&#128540; - <span class="mention" title="Timothy#888">@Timothy</span><br />&#128125; - <span class="mention" title="Maximus#1045">@Maximus</span><br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br />&#127345; - <span class="mention" title="Ds#474">@Ds</span><span class="msg-edited" title="20-Nov-17 10:15 ">(edited)</span></div>
+<div class="msg-content">
+<b>You can only vote on one player!<br />Dead people are not allowed to vote.<br />Yes, you can vote on yourself if you wish to.</b></div>
+<div class="msg-content">
+Also, <span class="mention">@everyone</span> in <i>Verdict Village</i> felt like there should be a <b>Guardian</b>. The <b>Guardian</b> can choose a player each day. That player cannot be hung up.<br /><b>Who should become the Guardian?</b><br /><i>Part 1:</i><br />&#129300;  - <span class="mention" title="marhjo#5178">@marhjo</span><br />&#128190; - <span class="mention" title="Thrimian#7285">@Thrimian</span><br />&#128005; - <span class="mention" title="Vyryn#4618">@Vyryn</span><br />&#129416; - <span class="mention" title="Legolas#2139">@Legolas</span><br />&#128570;  - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128373; - <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span><br />&#128511; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#128128; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br />&#128060; - <span class="mention" title="LILLITANIUM#2359">@LILLITANIUM</span><br />&#128121; - <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span><br />&#128104;‍❤️‍&#128104; - <span class="mention" title="ville#2962">@ville</span><br />&#128293; - <span class="mention" title="Elcar0#1528">@Elcar0</span><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span><br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#127477;&#127472; - <span class="mention" title="ciphercobra#9766">@ciphercobra</span><br />&#127927; - <span class="mention" title="Malreath#617">@Malreath</span><span class="msg-edited" title="20-Nov-17 10:20 ">(edited)</span></div>
+<div class="msg-content">
+<i>Part 2:</i><br />&#127837; - <span class="mention" title="Spanish Spagetti#828">@Spanish Spagetti</span><br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span><br />&#129415; - <span class="mention" title="Regicide1218#5350">@Regicide1218</span><br />&#128372; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><br />&#129370; - <span class="mention" title="cashwarrior1#5973">@cashwarrior1</span><br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br />&#128405; - <span class="mention" title="Marsim#9859">@Marsim</span><br />&#127929; - <span class="mention" title="BenTechy66#8809">@BenTechy66</span><br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span><br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br />&#128701; - <span class="mention" title="Toiletti#2969">@Toiletti</span><br />&#128540; - <span class="mention" title="Timothy#888">@Timothy</span><br />&#128125; - <span class="mention" title="Maximus#1045">@Maximus</span><br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br />&#127345; - <span class="mention" title="Ds#474">@Ds</span></div>
+<div class="msg-content">
+The voting will end at <span class="pre">20:00</span> GMT.<br />For reference towards GMT; <a href="https://time.is/en/GMT">https://time.is/en/GMT</a><span class="msg-edited" title="20-Nov-17 10:24 ">(edited)</span></div>
+<div class="msg-content">
+<b>Oh, and here&#39;s a tip:</b><br />The first day doesn&#39;t have too much of a purpose, so use it to get to know each other! Talk to people find out whom you can trust, discuss strategies with people and sympathize with the werewolves. If the werewolves like you, they might feel bad if they chose to kill you the first night...<span class="msg-edited" title="20-Nov-17 10:35 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/295538956592873473/297f2e2cf323d56a44163cdb8c26a51b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ruben lol#381">Ruben lol</span>
+<span class="msg-date">20-Nov-17 10:38 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/332113358298021889/6c1a2c026d9d3e742b0f868b1693feff.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Unbihexium#5073">Unbihexium</span>
+<span class="msg-date">20-Nov-17 10:44 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 07:00 </span>
+<div class="msg-content">
+<span class="mention">@everyone</span>, you have 1 hour left to make a choice for the <span class="mention">@Mayor</span> and the <span class="mention">@Guardian</span>! Better choose wisely!<span class="msg-edited" title="20-Nov-17 07:00 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 08:00 </span>
+<div class="msg-content">
+My bad! &#128584; <b>Now</b> you have 1 hour left to make a choice over <span class="mention">@here</span>!</div>
+<div class="msg-content">
+<span class="mention">@everyone</span> 30 minutes!</div>
+<div class="msg-content">
+5 minutes!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 09:01 </span>
+<div class="msg-content">
+<b>The voting is over!</b> No longer can there be voted!</div>
+<div class="msg-content">
+<b>Who voted on <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span> to become <span class="mention">@Mayor</span>:</b><br /><span class="mention" title="Elcar0#1528">@Elcar0</span><br /><span class="mention" title="McTsts#4705">@McTsts</span><br /><span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br /><span class="mention" title="Freedmoon#1128">@Freedmoon</span><br /><span class="mention" title="JR [FFF]#6781">@JR [FFF]</span><br /><span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br /><span class="mention" title="Regicide1218#5350">@Regicide1218</span> <br /><span class="mention" title="alekkat#349">@alekkat</span><br /><br /><b>Who voted on <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span> to become <span class="mention">@Mayor</span>:</b><br /><span class="mention" title="BenTechy66#8809">@BenTechy66</span> <br /><span class="mention" title="Vyryn#4618">@Vyryn</span> <br /><span class="mention" title="Robotron#3660">@Robotron</span> <br /><span class="mention" title="BhunaBoy#4095">@BhunaBoy</span> <br /><span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> <br /><span class="mention" title="HurricanKai#4953">@HurricanKai</span> <br /><span class="mention" title="cashwarrior1#5973">@cashwarrior1</span> <br /><br /><b>Who voted on <span class="mention" title="BenTechy66#8809">@BenTechy66</span> to become <span class="mention">@Mayor</span>:</b><br /><span class="mention" title="marhjo#5178">@marhjo</span><br /><span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> <br /><span class="mention" title="Maximus#1045">@Maximus</span> <br /><br /><b>Who voted on <span class="mention" title="Thrimian#7285">@Thrimian</span> to become <span class="mention">@Mayor</span>:</b><br /><span class="mention" title="Thrimian#7285">@Thrimian</span><br /><br /><b>Who voted on <span class="mention" title="McTsts#4705">@McTsts</span> to become <span class="mention">@Mayor</span>:</b><br /><span class="mention" title="Ds#474">@Ds</span></div>
+<div class="msg-content">
+<b>Who voted on <span class="mention" title="marhjo#5178">@marhjo</span> to become <span class="mention">@Guardian</span>:</b><br /><span class="mention" title="Elcar0#1528">@Elcar0</span><br /><span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> <br /><span class="mention" title="JR [FFF]#6781">@JR [FFF]</span> <br /><span class="mention" title="Freedmoon#1128">@Freedmoon</span><br /><span class="mention" title="HurricanKai#4953">@HurricanKai</span> <br /><span class="mention" title="Vyryn#4618">@Vyryn</span> <br /><span class="mention" title="marhjo#5178">@marhjo</span><br /><span class="mention" title="Ds#474">@Ds</span> <br /><span class="mention" title="alekkat#349">@alekkat</span><br /><span class="mention" title="BenTechy66#8809">@BenTechy66</span> <br /><span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br /><span class="mention" title="Maximus#1045">@Maximus</span> <br /><span class="mention" title="Regicide1218#5350">@Regicide1218</span> <br /><span class="mention" title="Toiletti#2969">@Toiletti</span> <br /><br /><b>Who voted on <span class="mention" title="alekkat#349">@alekkat</span> to become <span class="mention">@Guardian</span>:</b><br /><span class="mention" title="Thrimian#7285">@Thrimian</span> <br /><span class="mention" title="ville#2962">@ville</span><br /><br /><b>Who voted on <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span>  to become <span class="mention">@Guardian</span>:</b><br /><span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br /><br /><b>Who voted on <span class="mention" title="Regicide1218#5350">@Regicide1218</span>  to become <span class="mention">@Guardian</span>:</b><br /><span class="mention" title="Robotron#3660">@Robotron</span> <br /><br /><b>Who voted on <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span>  to become <span class="mention">@Guardian</span>:</b><br /><span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> <br /><br /><b>Who voted on <span class="mention" title="BenTechy66#8809">@BenTechy66</span>  to become <span class="mention">@Guardian</span>:</b><br /><span class="mention" title="cashwarrior1#5973">@cashwarrior1</span> <br /><br /><b>Who voted on <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> to become <span class="mention">@Guardian</span>:</b><br /><span class="mention" title="ville#2962">@ville</span></div>
+<div class="msg-content">
+<span class="mention" title="Timothy#888">@Timothy</span>, your votes on the <span class="mention">@Guardian</span> have been disqualified, since you have voted on multiple players.<br /><span class="mention" title="Toiletti#2969">@Toiletti</span>, you can remove your votes after the deadline if you wish, but please keep them there until I have finished counting the votes.</div>
+<div class="msg-content">
+It wasn&#39;t that the town didn&#39;t trust <span class="mention" title="Regicide1218#5350">@Regicide1218</span>, it was just that <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span> seemed like a better candidate for these horrifying times. Everyone was content with their new <span class="mention">@Mayor</span> and <span class="mention">@Guardian</span>, and decided to go to sleep.</div>
+<div class="msg-content">
+<span class="mention">@everyone</span> hoped that making <span class="mention" title="marhjo#5178">@marhjo</span> the new <span class="mention">@Guardian</span> wasn&#39;t necessary, but little did they know that the werewolves had already begun changing shapes...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">21-Nov-17 10:15 </span>
+<div class="msg-content">
+<span class="mention">@everyone</span> slept nervously that night. <br />As the birds chirped in the rising dawn. Dew drops running from the leaves as verdict Village awoke. A blood curdling  scream echoes through the buildings. A body had been found. It had begun.<span class="msg-edited" title="21-Nov-17 10:26 ">(edited)</span></div>
+<div class="msg-content">
+The people hurried to the source of the sound and what they found was a morbid sight. The body of <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span> lay disfigured and contorted on the cobbles outside his home.</div>
+<div class="msg-content">
+Cries of fear and sorrow ripple through the towns population until news has reached every ear. Heart broken at the death of their one love <span class="mention" title="HurricanKai#4953">@HurricanKai</span> could no longer bear to continue and soon after, took their own life to join <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span></div>
+<div class="msg-content">
+Who had done this heinous crime?! That was it. The vicious beasts were here. The tale of Tumble town brought into the harsh light that it was no made up story. Action must be taken to bring the killer to justice.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 10:59 </span>
+<div class="msg-content">
+After the town had recovered from the double death, they tried to investigate the bodies for more information. Fur, blood, hair and gore was all over the place, it was obvious that a very haired creature killed <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span>.<br />However, what was even more gruesome that the body itself, was that on <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span>&#39;s right arm, a message was carved;<br /><span class="pre">The elders die first<br />-The Werewolves</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 11:01 </span>
+<div class="msg-content">
+Such a horrific act! We must punish those monsters! All the werewolves and <span class="mention">@everyone</span> who attempts to help them, must die!<br /><b>Who shall be hung up due to suspicion of killing <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span> and <span class="mention" title="HurricanKai#4953">@HurricanKai</span>?</b><br /><i>Part 1:</i><br /><b>Who voted to hang up <span class="mention" title="marhjo#5178">@marhjo</span>:</b><br />Vyryn<br />Elcar0<br />Legolas<br />JR<br />Matron<br />Regicide<br />Freedmoon<br /><br /><b>Who voted to hang up <span class="mention" title="Legolas#2139">@Legolas</span>:</b><br />Old Titus<br />LILITANIUM<br />Toiletti<br />MrJoker<br />Lord Ilias<br />MRKluxury<br />Maximus<span class="msg-edited" title="21-Nov-17 09:10 ">(edited)</span></div>
+<div class="msg-content">
+<b>Who voted to hang up <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span>:</b><br />Ruben<br />Al Ketta<span class="msg-edited" title="21-Nov-17 09:10 ">(edited)</span></div>
+<div class="msg-content">
+Also, someone over <span class="mention">@here</span> must investigate the bodies; a <span class="mention">@Reporter</span> needs to be chosen.<br /><b>The reporter will learn about the roles of those who have died. Choose a reporter wisely, for the reporter may lie or choose himself whom to share his information with...</b><br /><i>Part 1:</i><br /><b>Who voted on <span class="mention" title="Legolas#2139">@Legolas</span> to become the <span class="mention">@Reporter</span>:</b><br /><span class="mention" title="Vyryn#4618">@Vyryn</span><br /><span class="mention" title="Elcar0#1528">@Elcar0</span><br /><span class="mention" title="Legolas#2139">@Legolas</span><br /><span class="mention" title="Timothy#888">@Timothy</span><br /><span class="mention" title="alekkat#349">@alekkat</span><br /><span class="mention" title="JR [FFF]#6781">@JR [FFF]</span><br /><span class="mention" title="Marsim#9859">@Marsim</span><br /><span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br /><span class="mention" title="Robotron#3660">@Robotron</span><br /><span class="mention" title="Regicide1218#5350">@Regicide1218</span><br /><span class="mention" title="Freedmoon#1128">@Freedmoon</span><br /><br /><b>Who voted on <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span> to become the <span class="mention">@Reporter</span>:</b><br /><span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><span class="msg-edited" title="21-Nov-17 09:27 ">(edited)</span></div>
+<div class="msg-content">
+<i>Part 2:</i><br /><b>Who voted on <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> to become the <span class="mention">@Reporter</span>:</b><br /><span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><br /><span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> <br /><br /><b>Who voted on <span class="mention" title="Marsim#9859">@Marsim</span> to become the <span class="mention">@Reporter</span>:</b><br /> <span class="mention" title="ville#2962">@ville</span> <br /><br /><b>Who voted on <span class="mention" title="Toiletti#2969">@Toiletti</span> to become the <span class="mention">@Reporter</span>:</b><br /><span class="mention" title="LILLITANIUM#2359">@LILLITANIUM</span><br /><span class="mention" title="Toiletti#2969">@Toiletti</span><br /><span class="mention" title="marhjo#5178">@marhjo</span><br /><span class="mention" title="McTsts#4705">@McTsts</span><br /><span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br /><span class="mention" title="Thrimian#7285">@Thrimian</span><br /><span class="mention" title="Maximus#1045">@Maximus</span><span class="msg-edited" title="21-Nov-17 09:26 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 01:26 </span>
+<div class="msg-content">
+<span class="mention" title="LILLITANIUM#2359">@LILLITANIUM</span> is lucky! She will not be the first to hang! Our <span class="mention">@Guardian</span> has decided that she will get to live for the day.<br /><i>However,</i> it doesn&#39;t give any guarantees for the night...</div>
+<div class="msg-content">
+We have made a new rule, that&#39;s why today&#39;s choice may have seen a bit random. We now have the limit that the <span class="mention">@Guardian</span> has to choose someone before <span class="pre">12:00</span> GMT.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 04:24 </span>
+<div class="msg-content">
+It seems like nobody wants yo kill anyone else... only one vote has been cast so far!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 08:59 </span>
+<div class="msg-content">
+<span class="mention">@everyone</span> 30 seconds left to vote!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">21-Nov-17 09:33 </span>
+<div class="msg-content">
+Pinned a message.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 09:40 </span>
+<div class="msg-content">
+Only few seemed to be uncertain who the werewolves were, and most either followed their neighbours&#39; opinion or decided to find the werewolf. Some people had mixed opinions, but soon, two big groups erupted; the one wanted <span class="mention" title="Legolas#2139">@Legolas</span>, while the other chose to kill <span class="mention" title="marhjo#5178">@marhjo</span>.<br /><i>&quot;He&#39;s too unpredictable! He must die!&quot;</i><br /><i>&quot;He&#39;s lying! He&#39;s deceiving you all!&quot;</i><br /><i>&quot;A friend of mine told me he saw him change!&quot;</i><br /><i>&quot;That&#39;s stupid! Why would a <span class="mention">@Guardian</span> need to change shape?&quot;</i><br />The town seemed to be split between the two, until the <span class="mention">@Mayor</span> spoke. <i></i><i>&quot;Silence!&quot;</i> he said. <i>&quot;Let me make the decision.&quot;</i> After having heard arguments of both parties, he came to a decision. <i>&quot;I am sorry, my friend,&quot; <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span> told his <span class="mention">@Guardian</span> <span class="mention" title="marhjo#5178">@marhjo</span>, </i>&quot;but your job is going to end soon.&quot;<i><br />The rest of the town was silent. Only the refusal of <span class="mention" title="marhjo#5178">@marhjo</span> was heard before they brought him to the town&#39;s square.<br /><br />Nobody in </i>Verdict Village<i> didn&#39;t like the killing though - everything seemed more and more like the story in </i>TumbleTown*. Anything that reminded them of that mocking story needed to be changed. And so it happened.<br /><br />Instead of hanging him up, <span class="mention" title="marhjo#5178">@marhjo</span> was strapped to a wooden pile. A fire was made, and all they heard from <span class="mention" title="marhjo#5178">@marhjo</span> were his last screams of pain, before the fire had melted his neck to dust.<br />The fire kept the citizens warm, but they feared that the curse wouldn&#39;t be over so quickly. So they quickly disappeared to their houses, letting only the homeless enjoy the huge campfire.</div>
+<div class="msg-content">
+However, the town hadn&#39;t left the fire before they announced their new reporter. <span class="mention">@everyone</span> happily greeted <span class="mention" title="Legolas#2139">@Legolas</span>, who would now investigate all the bodies to gain more information. Everyone hoped <span class="mention" title="Legolas#2139">@Legolas</span> would tell the truth, but of course, even <span class="mention" title="Legolas#2139">@Legolas</span> knew that hiding the truth could sometimes be very useful...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">22-Nov-17 09:59 </span>
+<div class="msg-content">
+Unfortunately, the town was right. The curse had not ended. In contrary, some people lying in dumpsters claim to have heard some whispers in the alleyway; <i>&quot;Let&#39;s rip his hair and facial features.&quot; &quot;Crucify him by sticking a spear and a sword into him in the town square!&quot; &quot;Let&#39;s set him on fire! That&#39;ll teach them.&quot; &quot;Before he dies, make him dig his own grave!&quot; &quot;Carve &#39;I love furries&#39; on his arm.&quot; &quot;No, even better; write &#39;The killings won&#39;t stop&#39;!&quot; &quot;Cut out his tounge!&quot; &quot;Replace his eyes with eggs, and cover him with pig blood!&quot;</i> That&#39;s all the few survivors around the campfire could make up, before the sentences slowly sounded very distant.<span class="msg-edited" title="22-Nov-17 10:00 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">22-Nov-17 10:05 </span>
+<div class="msg-content">
+Such horrible acts! Who killed <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> and <span class="mention" title="Legolas#2139">@Legolas</span>? Everyone thought the werewolves only killed one person each night... were they wrong? Was it much worse?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">22-Nov-17 01:46 </span>
+<div class="msg-content">
+The next day, it seems like there indeed has been killed someone. <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span>  was no longer there! What&#39;s even worse, was that the one who got elected <span class="mention">@Reporter</span> last night, who was known to many as <span class="mention" title="Legolas#2139">@Legolas</span>  was found dead as well!<br />Such horrible acts! Who killed <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> and <span class="mention" title="Legolas#2139">@Legolas</span>? Everyone thought the werewolves only killed one person each night... were they wrong? Was it much worse?<br />Whichever way, it was obvious that the town was not freed of its curse, and that something had to be done!<br />Who shall burn due to suspicion of killing <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> and <span class="mention" title="Legolas#2139">@Legolas</span>?<br /><br />the Unfortunate winner who get&#39;s death by BBQ is<br /><span class="mention" title="Freedmoon#1128">@Freedmoon</span> <br /><br /><b>The Following voted for <span class="mention" title="Freedmoon#1128">@Freedmoon</span> </b><br /><span class="mention" title="Vyryn#4618">@Vyryn</span><br /><span class="mention" title="alekkat#349">@alekkat</span> <br /><span class="mention" title="Elcar0#1528">@Elcar0</span> <br /><span class="mention" title="Thrimian#7285">@Thrimian</span> <br /><span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> <br /><span class="mention" title="Regicide1218#5350">@Regicide1218</span> <br /><span class="mention" title="JR [FFF]#6781">@JR [FFF]</span>  -M<br />For a total of <span class="pre">8</span> Votes<br /><br /><b>The Following Voted for <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> </b><br /><span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> <br /><span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> <br /><span class="mention" title="Marsim#9859">@Marsim</span> <br /><span class="mention" title="cashwarrior1#5973">@cashwarrior1</span> <br /><span class="mention" title="Toiletti#2969">@Toiletti</span> <br />For a total of <span class="pre">5</span> Votes<br /><br /><b>The Following Voted for <span class="mention" title="cashwarrior1#5973">@cashwarrior1</span> </b><br /><span class="mention" title="DolphinPride138#3572">@DolphinPride138</span> <br />For a total of <span class="pre">1</span> Vote<span class="msg-edited" title="22-Nov-17 10:12 ">(edited)</span></div>
+<div class="msg-content">
+after the events of the night it was quickly realised that the <span class="mention">@Reporter</span> seat was once again vacant. Who shall take the role now?<br /><br />The Winner is <span class="mention" title="Regicide1218#5350">@Regicide1218</span> <br /><br /><b>The Following Voted for <span class="mention" title="Elcar0#1528">@Elcar0</span> </b><br /><span class="mention" title="Elcar0#1528">@Elcar0</span> <br />For a total of <span class="pre">1</span> Vote<br /><br /><b>The Following Voted for <span class="mention" title="alekkat#349">@alekkat</span> </b><br /><span class="mention" title="Freedmoon#1128">@Freedmoon</span> <br />For a total of <span class="pre">1</span> Vote<br /><br /><b>The Following Voted for <span class="mention" title="Regicide1218#5350">@Regicide1218</span> </b><br /><span class="mention" title="JR [FFF]#6781">@JR [FFF]</span> -M<br /><span class="mention" title="Vyryn#4618">@Vyryn</span><br /><span class="mention" title="Thrimian#7285">@Thrimian</span> <br /><span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> <br /><span class="mention" title="Robotron#3660">@Robotron</span> <br /><span class="mention" title="Regicide1218#5350">@Regicide1218</span> <br />For a total of <span class="pre">7</span> Votes<br /><br /><b>The Following Voted for <span class="mention" title="Marsim#9859">@Marsim</span> </b><br /><span class="mention" title="Ds#474">@Ds</span> <br /><span class="mention" title="BenTechy66#8809">@BenTechy66</span> <br /><span class="mention" title="Marsim#9859">@Marsim</span> <br /><span class="mention" title="DolphinPride138#3572">@DolphinPride138</span> <br /><span class="mention" title="Maximus#1045">@Maximus</span><br /><span class="mention" title="LILLITANIUM#2359">@LILLITANIUM</span> <br />For a total of <span class="pre">6</span> Votes<br /><br /><b>The Following Voted for <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> </b><br /><span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> <br /><span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> <br />For a total of <span class="pre">2</span> Votes<br /><br /><b>The Following Voted for <span class="mention" title="Toiletti#2969">@Toiletti</span> </b><br /><span class="mention" title="Toiletti#2969">@Toiletti</span> <br />For a total of <span class="pre">1</span> Vote<span class="msg-edited" title="22-Nov-17 10:15 ">(edited)</span></div>
+<div class="msg-content">
+The <span class="mention">@Guardian</span>  is also now Vacant! Who will pick up the gauntlet? perhaps this time they will be less.... dead<br /><br />The Winnner is <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> <br /><br /><b>The Following Voted for <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> </b><br /><span class="mention" title="JR [FFF]#6781">@JR [FFF]</span> -M<br /><span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> <br /><span class="mention" title="Robotron#3660">@Robotron</span> <br /><span class="mention" title="Regicide1218#5350">@Regicide1218</span> <br />For a total of <span class="pre">5</span> Votes<br /><br /><b> The Following Voted for <span class="mention" title="alekkat#349">@alekkat</span> </b><br /><span class="mention" title="Freedmoon#1128">@Freedmoon</span> <br />For a total of <span class="pre">1</span> Vote<br /><br /><b>The Following Voted for <span class="mention" title="Elcar0#1528">@Elcar0</span> </b><br /><span class="mention" title="Elcar0#1528">@Elcar0</span> <br />For a total of <span class="pre">1</span> Vote<br /><br /><b>The Following Voted for <span class="mention" title="ciphercobra#9766">@ciphercobra</span> </b><br /><span class="mention" title="Thrimian#7285">@Thrimian</span> <br />For a tital of <span class="pre">1</span> Vote<br /><br /><b>The Following Voted for <span class="mention" title="Maximus#1045">@Maximus</span> </b><br /><span class="mention" title="DolphinPride138#3572">@DolphinPride138</span> <br /><span class="mention" title="Maximus#1045">@Maximus</span><br /><span class="mention" title="ville#2962">@ville</span> <br /><span class="mention" title="LILLITANIUM#2359">@LILLITANIUM</span> <br />For a total of <span class="pre">4</span> Votes<br /><br /><b>The Following Voted for <span class="mention" title="BenTechy66#8809">@BenTechy66</span> </b><br /><span class="mention" title="Ds#474">@Ds</span> <br /><span class="mention" title="BenTechy66#8809">@BenTechy66</span> <br />For a total of <span class="pre">2</span> Votes<br /><br /><b>The FollowingVoted for <span class="mention" title="Timothy#888">@Timothy</span> </b><br /><span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> <br /><span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> <br />For a total of <span class="pre">2</span> Votes<br /><br /><b>The Following Voted for <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> </b><br /><span class="mention" title="Toiletti#2969">@Toiletti</span> <br />For a total of <span class="pre">1</span> Vote<span class="msg-edited" title="22-Nov-17 10:17 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">22-Nov-17 02:04 </span>
+<div class="msg-content">
+<span class="mention">@everyone</span> Due to the delay in getting these votes up we will be extending the voting time by a half hour to 20:30 GMT <a href="https://time.is/en/GMT">https://time.is/en/GMT</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">22-Nov-17 09:15 </span>
+<div class="msg-content">
+<span class="mention">@everyone</span> there is <b>15</b> minutes remaining!<br /><br />Furthermore, Non participants are reminded that voting is NOT permitted and doing so may influence the genuine vot and cause <span class="mention">@Game Master</span>s additional administrative work.<span class="msg-edited" title="22-Nov-17 09:16 ">(edited)</span></div>
+<div class="msg-content">
+A Mere <b>5</b> minutes remain for voting!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">22-Nov-17 10:38 </span>
+<div class="msg-content">
+The last day has been the worst the day that <i>Verdict Village</i> had ever encountered. So much blood was wasted, so many had died. The town hoped it would all end now.<br />But it didn&#39;t. The screams of <span class="mention" title="Freedmoon#1128">@Freedmoon</span> only seemed to suggest that... he would be avenged. He knew all day that he was to burn next, but he claimed to somehow have gotten information!<br /><i>&quot;Citizens of <b>Verdict Village</b>, do not trust your <span class="mention">@Mayor</span>! He is manipulating you! He&#39;s trying to set you all up against each other, just like he set you up against me! Why would he want to do so? <b>Because he is a werewolf!</b>&quot;</i></div>
+<div class="msg-content">
+At the end of the day, it turned out that none seemed to be impressed - they knew that all the suspects <i>suddenly</i> start talking when their time has come. Or didn&#39;t they dare to vote against the <span class="mention">@Mayor</span>, fearing that they would be the next to die?</div>
+<div class="msg-content">
+What was clear to all, was that <span class="mention" title="Freedmoon#1128">@Freedmoon</span>&#39;s doomsaying did not have a direct result - he died a painful and slow death on the campfire.<br />The hope still remained that the curse would finally be over - but no, the citizens were <i>foolish</i> to believe such a thing. For the <b>werewolves</b> were still roaming around the city, already on the hunt, looking for their next prey...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">23-Nov-17 10:18 </span>
+<div class="msg-content">
+The town went to sleep somewhat more content than before. They had a feeling they were close to freedom.<br />However as dawn rose horror struck again as the body of <span class="mention" title="Vyryn#4618">@Vyryn</span> was found.<br /><br />Who is guilty of this new murder? They must be brought to justice and cleansed in the fires!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">23-Nov-17 09:03 </span>
+<div class="msg-content">
+Unlike the previous night, only one victim had fallen. Nobody complained that they didn&#39;t die, but all were curious what could&#39;ve happened. Weren&#39;t the werewolves hungry enough? Did the cult choose to not kill anyone? Did the cult and the werewolves choose the same suspect? Did the werewolves fail to catch their prey? Or, even worse, did a victim turn into a wolf himself instead of dying...?<br />But let us not forget the gruesome death of <span class="mention" title="Vyryn#4618">@Vyryn</span>! Whoever did that, must be punished for this!<br />Who shall burn due to suspicion of killing <span class="mention" title="Vyryn#4618">@Vyryn</span>?<br /><br /><i>The Main Attraction tonight is The Unfortunate: <span class="mention" title="BenTechy66#8809">@BenTechy66</span></i><br /><br /><b>The Following Voted for <span class="mention" title="Spanish Spagetti#828">@Spanish Spagetti</span></b><br /><span class="mention" title="Timothy#888">@Timothy</span><br /><span class="mention" title="BenTechy66#8809">@BenTechy66</span><br /><span class="mention" title="Marsim#9859">@Marsim</span><br /><span class="mention" title="Maximus#1045">@Maximus</span><br /><span class="mention" title="ville#2962">@ville</span><br /><span class="mention" title="LILLITANIUM#2359">@LILLITANIUM</span><br />For a total of <span class="pre">6</span> Votes<br /><br /><b>The Following Voted for <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span></b><br /><span class="mention" title="Ds#474">@Ds</span><br />For a total of <span class="pre">1</span> Vote<br /><br /><b>The Following Voted for <span class="mention" title="Elcar0#1528">@Elcar0</span></b><br /><span class="mention" title="McTsts#4705">@McTsts</span><br />For a total of <span class="pre">1</span> Vote<br /><br /><b>The Following Voted for <span class="mention" title="BenTechy66#8809">@BenTechy66</span></b><br /><span class="mention" title="Thrimian#7285">@Thrimian</span><br /><span class="mention" title="cashwarrior1#5973">@cashwarrior1</span><br /><span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br /><span class="mention" title="Robotron#3660">@Robotron</span><br /><span class="mention" title="Regicide1218#5350">@Regicide1218</span><br /><span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><br /><span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br /><span class="mention" title="JR [FFF]#6781">@JR [FFF]</span> -M<br />For a total of <span class="pre">9</span> Votes<br /><br /><b>The Following Voted for <span class="mention" title="Ds#474">@Ds</span></b><br /><span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br />For a total of <span class="pre">1</span> Vote<br /><br /><b>The Following Voted for <span class="mention" title="McTsts#4705">@McTsts</span></b><br /><span class="mention" title="Elcar0#1528">@Elcar0</span><br />For a total of <span class="pre">1</span> Vote</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">24-Nov-17 10:14 </span>
+<div class="msg-content">
+The next dawn rose over Verdict Village, the <span class="mention">@everyone</span> confident that they had exponged the killers amungst them. However there was horror as the body of <span class="mention" title="Maximus#1045">@Maximus</span> was found laying in his bed! Who is still killing amongst them!!<span class="msg-edited" title="24-Nov-17 10:16 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">24-Nov-17 10:20 </span>
+<div class="msg-content">
+Such a horrific act of cruelty! The citizens once more wondered who could have done this, and how long they had until they would fall victim themselves. They didn&#39;t want to die, so they decided to finish this today! Let&#39;s kill some murderers!<br /><b>Who shall burn due to suspicion of killing <span class="mention" title="Maximus#1045">@Maximus</span>?</b><br /><i>Part 1:</i><br />&#128190; - <span class="mention" title="Thrimian#7285">@Thrimian</span><br />&#128570;  - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128373; - <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span><br />&#128511; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#128128; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br />&#128060; - <span class="mention" title="LILLITANIUM#2359">@LILLITANIUM</span><br />&#128104;‍❤️‍&#128104; - <span class="mention" title="ville#2962">@ville</span><br />&#128293; - <span class="mention" title="Elcar0#1528">@Elcar0</span><br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#127477;&#127472; - <span class="mention" title="ciphercobra#9766">@ciphercobra</span><br />&#127927; - <span class="mention" title="Malreath#617">@Malreath</span><span class="msg-edited" title="24-Nov-17 10:22 ">(edited)</span></div>
+<div class="msg-content">
+<i>Part 2:</i><br />&#127837; - <span class="mention" title="Spanish Spagetti#828">@Spanish Spagetti</span><br />&#129415; - <span class="mention" title="Regicide1218#5350">@Regicide1218</span><br />&#128372; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><br />&#129370; - <span class="mention" title="cashwarrior1#5973">@cashwarrior1</span><br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br />&#128405; - <span class="mention" title="Marsim#9859">@Marsim</span><br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span><br />&#128701; - <span class="mention" title="Toiletti#2969">@Toiletti</span><br />&#128540; - <span class="mention" title="Timothy#888">@Timothy</span><br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br />&#127345; - <span class="mention" title="Ds#474">@Ds</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">24-Nov-17 08:44 </span>
+<div class="msg-content">
+<span class="mention">@everyone</span> You all have <span class="pre">15</span> minutes left to cast your ballot!</div>
+<div class="msg-content">
+60 seconds!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">24-Nov-17 09:00 </span>
+<div class="msg-content">
+The unfortunate one selected for death by BBQ is: <span class="mention" title="LILLITANIUM#2359">@LILLITANIUM</span><br /><br /><b>The Following voted for <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span></b><br /><span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br /><span class="mention" title="Marsim#9859">@Marsim</span><br /><span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br /><span class="mention" title="LILLITANIUM#2359">@LILLITANIUM</span><br /><span class="mention" title="Toiletti#2969">@Toiletti</span><br /><span class="mention" title="McTsts#4705">@McTsts</span><br />For a total of <span class="pre">6</span> votes<br /><br /><b>The Following voted for <span class="mention" title="LILLITANIUM#2359">@LILLITANIUM</span></b><br /><span class="mention" title="Ds#474">@Ds</span><br /><span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><br /><span class="mention" title="Timothy#888">@Timothy</span><br /><span class="mention" title="Elcar0#1528">@Elcar0</span>    <br /><span class="mention" title="JR [FFF]#6781">@JR [FFF]</span> -M<br /><span class="mention" title="Thrimian#7285">@Thrimian</span><br /><span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br /><span class="mention" title="Regicide1218#5350">@Regicide1218</span><br /><span class="mention" title="Robotron#3660">@Robotron</span><br /><span class="mention" title="ville#2962">@ville</span><br />for a total of <span class="pre">11</span> votes<span class="msg-edited" title="24-Nov-17 09:00 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">24-Nov-17 10:46 </span>
+<div class="msg-content">
+<span class="mention" title="Maximus#1045">@Maximus</span> was loved and cared about by the whole town! It is such a disaster to see him go... however, <span class="mention" title="LILLITANIUM#2359">@LILLITANIUM</span> was considered responsible, so she had to burn tonight!<br />So many people had died in the last few days, did it finally end? But no, once again, the town&#39;s hopes that the curse was over, was in vain... for the curse of the werewolves was still going!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/141211057485119488/23da03d207ae044b6663ce61ae3a5b62.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="terabix#1770">terabix</span>
+<span class="msg-date">24-Nov-17 11:42 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">25-Nov-17 10:00 </span>
+<div class="msg-content">
+Once more, only one death had fallen this night. It was still one too many, but everyone was happy that they survived the night. Everyone? Not really, it was <span class="mention" title="Marsim#9859">@Marsim</span> who could not celebrate their survival of the night. Little did the town know how or why he had died... <i>(or maybe they did, because most people got really disturbed by the cannonballs. Whoever killed him, must&#39;ve done it out of annoyance)</i><br />Any way, <span class="mention">@everyone</span> was certain that this had been done by the werewolves! Someone must die for this horrific act!<br /><b>Who shall burn due to suspicion of killing <span class="mention" title="Marsim#9859">@Marsim</span>?</b> <br /><i><span class="mention" title="ville#2962">@ville</span> shall.</i><br /><br /><b>Who voted to kill <span class="mention" title="ville#2962">@ville</span>:</b><br /><span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> <br /><span class="mention" title="alekkat#349">@alekkat</span><br /><span class="mention" title="JR [FFF]#6781">@JR [FFF]</span> - <span class="mention">@Mayor</span> vote (counts double)<br /><span class="mention" title="Thrimian#7285">@Thrimian</span><br /><span class="mention" title="cashwarrior1#5973">@cashwarrior1</span><br />For a total of <span class="pre">6</span> votes.<br /><br /><b>Who voted to kill <span class="mention" title="Spanish Spagetti#828">@Spanish Spagetti</span>:</b><br /><span class="mention" title="Ds#474">@Ds</span><br /><span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br /><span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br /><span class="mention" title="ville#2962">@ville</span><br />For a total of <span class="pre">4</span> votes.<br /><br /><b>Who voted to kill <span class="mention" title="Timothy#888">@Timothy</span>:</b><br /><span class="mention" title="Robotron#3660">@Robotron</span><br />For a total of <span class="pre">1</span> vote.<br /><br /><b>Who voted to kill <span class="mention" title="Ds#474">@Ds</span>:</b><br /><span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br />For a total of <span class="pre">1</span> vote.<span class="msg-edited" title="25-Nov-17 09:10 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/383935146312728578/e4b2fd9cff634d4a12093765fa375cae.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium003#1591">Randium003</span>
+<span class="msg-date">25-Nov-17 12:03 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">25-Nov-17 09:08 </span>
+<div class="msg-content">
+The town was sure about it! Of course it was the silent <span class="mention" title="ville#2962">@ville</span> who killed <span class="mention" title="Marsim#9859">@Marsim</span>! <span class="mention">@everyone</span> saw him in the shadows, looking hatefully at <span class="mention" title="Marsim#9859">@Marsim</span> and at how he was molesting the town. He had to die!<br /><br />As any healthy town, <i>Verdict Village</i> did not tolerate murder, so they decided to burn <span class="mention" title="ville#2962">@ville</span> alive! That&#39;ll teach him to kill <span class="mention" title="Marsim#9859">@Marsim</span>.<br />The town ate a good meal of roasted meat on the fire before they went to bed.<br /><i>(Don&#39;t worry, it was chicken, not <span class="mention" title="ville#2962">@ville</span>, that was roasted and eaten.)</i><br /><br />They celebrated, because they were sure the curse had finally lift off. Tomorrow, they would happily leave the town, freed from the werewolves. Or so they thought. &#39;cause the werewolves enjoyed the smell of rotten meat, and they wanted just a bit more....</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">25-Nov-17 09:35 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">26-Nov-17 09:55 </span>
+<div class="msg-content">
+It was a bummer that the sun could not be seen through the thick. Noone could see the beautiful sunrise! However, one of them didn&#39;t see anything <i>at all</i>. It was very unfortunate to see <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span>, lying on the town&#39;s square. Such a horrific act left the town to wonder who kept doing this. Was it truly the werewolves who were killing <span class="mention">@everyone</span>, or was it another group who seemed to threaten the town?<br /><br /><b>Who voted to kill <span class="mention" title="Malreath#617">@Malreath</span>:</b><br /><span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br /><span class="mention" title="Thrimian#7285">@Thrimian</span><br /><span class="mention" title="Regicide1218#5350">@Regicide1218</span><br /><span class="mention" title="Robotron#3660">@Robotron</span><br /><span class="mention" title="McTsts#4705">@McTsts</span><br /><span class="mention" title="Ds#474">@Ds</span><br /><br /><b>Who voted to kill <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span>:</b><br /><span class="mention" title="alekkat#349">@alekkat</span><br /><span class="mention" title="JR [FFF]#6781">@JR [FFF]</span><br /><span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><span class="msg-edited" title="26-Nov-17 09:05 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">26-Nov-17 01:14 </span>
+<div class="msg-content">
+&#127837; - <span class="mention" title="Spanish Spagetti#828">@Spanish Spagetti</span>  is under the protection of <span class="mention">@Guardian</span><span class="msg-edited" title="26-Nov-17 01:15 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">26-Nov-17 08:30 </span>
+<div class="msg-content">
+30 minutes left to vote!</div>
+<div class="msg-content">
+10 minutes left! The town seems to be divided, <span class="mention">@everyone</span>!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">26-Nov-17 09:03 </span>
+<div class="msg-content">
+That&#39;s it, <span class="mention" title="Buddy1913#9588">@Buddy1913</span>. That&#39;s game!</div>
+<div class="msg-content">
+Yeah, that&#39;s it. Alright, let&#39;s write the final story.</div>
+<div class="msg-content">
+Even though it was late, something weird had happened in the late evening; the mist had disappeared! <span class="mention">@everyone</span> was free to go, to explore the world once more!<br /><i>Verdict Village</i> was abandoned, never to be visited again. None wanted to be reminded of all their loved ones they had lost in that horrible town. The survivors lived on, to live long, happy lives.<br />The <span class="mention">@Mayor</span>, <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span>, became a wealthy man, gaining great rewards for exterminating the problem, even though his own life was at risk. Stories were told that he once outran the werewolves himself, to keep the others safe.<br />So did the <span class="mention">@Guardian</span> <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> and the <span class="mention">@Reporter</span> <span class="mention" title="Regicide1218#5350">@Regicide1218</span> become respected men. They were employed by the king himself, who made them wealthy and happily ever after.<br /><br />The lands were freed of the curse forever! Or so they thought, for <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span>, a <span class="pre">cursed civilian</span>, gave the curse to his children, who then gave it to their children, who gave it to their children, and so forth... No, the lands were not freed from the werewolves&#39; curse yet. They had lost the battle, but the war wasn&#39;t over. <i>It would never be.</i><br /><br />And that is the story of <i>Verdict Village</i>. The town who was abandoned after it was freed. The werewolves are gone forever, but heed for those who have <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> as an ancestor. For they may once more haunt the lands with the curse... the forsaken curse of <i><b>THE WEREWOLVES</b></i>.<span class="msg-edited" title="26-Nov-17 09:19 ">(edited)</span></div>
+<div class="msg-content">
+<b>THE GAME IS OVER. THE INNOCENTS HAVE WON. IF YOU ARE STILL ALIVE, YOU HAVE WON THE GAME. CLAIM YOUR PRIZE BY CLICKING ON THE <img class="emoji" title=":werewolf:" src="https://cdn.discordapp.com/emojis/380837095633321985.png" /> EMOJI DOWN BELOW THIS MESSAGE OVER <span class="mention">@here</span>!</b></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/335565530100400129/cbcab61db53e708434dbaa191f4912b4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DogeFlakes#1016">DogeFlakes</span>
+<span class="msg-date">26-Nov-17 10:23 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">26-Nov-17 10:53 </span>
+<div class="msg-content">
+<span class="mention">@Participant</span>s, don&#39;t forget to claim your prize.</div>
+<div class="msg-content">
+It will expire 24 hours after the time it has been posted. If you haven&#39;t claimed it by then, you will no longer be able to gain your victory badge.</div>
+</div>
+</div>
+</div>
+</body>
+</html>

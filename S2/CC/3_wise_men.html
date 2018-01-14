@@ -1,0 +1,979 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Werewolves - s2_cc_3_wise_men</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/375597071094382603/f5d3e0b23688a9edbd1269767354253e.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Werewolves</div>
+<div class="channel-name">s2_cc_3_wise_men</div>
+<div class="misc">107 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">23-Nov-17 01:28 </span>
+<div class="msg-content">
+<span class="mention">@here</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 02:06 </span>
+<div class="msg-content">
+Welcome</div>
+<div class="msg-content">
+I wish to offer you an alliance of peace and am the chosen spokesperson for my rather large group of friends as I am the most expendable.</div>
+<div class="msg-content">
+Feel free to ask me any questions you may have and I shall answer to the best of my ability</div>
+<div class="msg-content">
+But to get started, I have chosen you because I know for a fact that none of you is a wolf</div>
+<div class="msg-content">
+Therefore you have been deemed trustworthy, to an extent...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 02:32 </span>
+<div class="msg-content">
+What is your role and what do you think my role is ?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 02:50 </span>
+<div class="msg-content">
+My role unfortunately is innocent, which is why I am the one from my group to reach out for alliances</div>
+<div class="msg-content">
+I cannot confirm your role as of yet, just that you are not the warlock or a wolf</div>
+<div class="msg-content">
+for my ally the crowd seeker cannot obtain that knowledge. We have confirmed the warlock and you have been cleared as not being a wolf</div>
+<div class="msg-content">
+which goes for the other 2 members in this group as well</div>
+<div class="msg-content">
+I suppose I could say my role is village mayor, but that does you no good.</div>
+<div class="msg-content">
+I would ask you to state your role so that it could be confirmed by the crowd seeker tonight, but I would also ask you to not state your role at the same time due to the possibility of someone being a cursed civilian in this group. So it seems to be a catch 22. The choice is yours if you wish to answer or not</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:14 </span>
+<div class="msg-content">
+I am Innocent</div>
+<div class="msg-content">
+Is it right that Ben was Warlock?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:21 </span>
+<div class="msg-content">
+Indeed he was</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:21 </span>
+<div class="msg-content">
+&#127881;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:24 </span>
+<div class="msg-content">
+Sir Rex should be making the announcement any time</div>
+<div class="msg-content">
+I&#39;m patiently waiting for his slow ass to hurry up hehe</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:24 </span>
+<div class="msg-content">
+Do you know what joker was?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:25 </span>
+<div class="msg-content">
+Wolf</div>
+<div class="msg-content">
+wasn&#39;t it announced to you?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:25 </span>
+<div class="msg-content">
+I was not shure archer was telling the truth</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:26 </span>
+<div class="msg-content">
+oh, I believe Rex announced it earlier today along with vyryn and archer</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:27 </span>
+<div class="msg-content">
+what was vyryns role?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:28 </span>
+<div class="msg-content">
+fortune teller</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:28 </span>
+<div class="msg-content">
+that is bad but we can&#39;t change it anymore</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:29 </span>
+<div class="msg-content">
+yes, it is bad to lose such a powerful ally</div>
+<div class="msg-content">
+So, do you know of any other potential wolves or innocents?</div>
+<div class="msg-content">
+My circle of trusted companions seems to grow smaller each night that passes</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:31 </span>
+<div class="msg-content">
+Not realy</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:31 </span>
+<div class="msg-content">
+And I am in search of allies to help track down and exterminate the remaining wolves</div>
+<div class="msg-content">
+bummer</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:32 </span>
+<div class="msg-content">
+I just know that Knight Moneypriority said in a conspiracy that he is Innocent</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:33 </span>
+<div class="msg-content">
+And what about <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> Will you be joining this conversation?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:33 </span>
+<div class="msg-content">
+It was the same conspiracy ben said he was warlock</div>
+<div class="msg-content">
+In that conspiracy also the love of the first 2 deaths was formed</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:34 </span>
+<div class="msg-content">
+Strange, I wonder why Ben would reveal himself like that</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:34 </span>
+<div class="msg-content">
+an unoffical cult</div>
+<div class="msg-content">
+now we are only 2</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:35 </span>
+<div class="msg-content">
+Ah, I see. I was talking to Knight Moneypriority and he mentioned being in a cult. I assumed he was referring to being a cult member as his role</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:36 </span>
+<div class="msg-content">
+maybe he is in bouth</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:37 </span>
+<div class="msg-content">
+Tis possible</div>
+<div class="msg-content">
+Any reason Ben revealed himself to you in this cult?</div>
+<div class="msg-content">
+That he stated I mean?</div>
+<div class="msg-content">
+It just doesn&#39;t make sense why someone would do such a thing, as he placed a target on his own back by doing so</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:38 </span>
+<div class="msg-content">
+We said if only we survive we would winn but i never thougth it will work</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:39 </span>
+<div class="msg-content">
+Look under the channel introduction and rules</div>
+<div class="msg-content">
+The warlock is listed under the werewolf category</div>
+<div class="msg-content">
+Therefore he could only win if all innocents were killed</div>
+<div class="msg-content">
+as well as the flute</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:40 </span>
+<div class="msg-content">
+yes he thought we should work together</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:40 </span>
+<div class="msg-content">
+Was Freddy a part of this cult group by chance?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:40 </span>
+<div class="msg-content">
+no</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:40 </span>
+<div class="msg-content">
+interesting</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:41 </span>
+<div class="msg-content">
+only Buhna, Ben ,Caine, Knight Moneypriority and me</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:41 </span>
+<div class="msg-content">
+He mentioned being controled by someone who was allied with the wolves</div>
+<div class="msg-content">
+But no matter, he is dead now</div>
+<div class="msg-content">
+Interesting that Ben was the outsider killing off the other members of this cult</div>
+<div class="msg-content">
+Yet Joker was in a shared group as well consisting of myself, Bhuna, and Caine</div>
+<div class="msg-content">
+So either one (Joker or Ben) could have been relaying information</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:45 </span>
+<div class="msg-content">
+What do you think how could we win, what is your plann?</div>
+<div class="msg-content">
+Or how can I help you to kill the werewolves?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:47 </span>
+<div class="msg-content">
+I assume it was Ben that approached you all to form this group?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:49 </span>
+<div class="msg-content">
+?? <i>beacuse of bad english skills</i><span class="msg-edited" title="23-Nov-17 09:50 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:50 </span>
+<div class="msg-content">
+The unofficial cult group, I was wondering who originally made it is all<span class="msg-edited" title="23-Nov-17 09:50 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:50 </span>
+<div class="msg-content">
+Bhuna  formed the conspiracy</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:51 </span>
+<div class="msg-content">
+Interesting, he also formed the group of elders...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:51 </span>
+<div class="msg-content">
+because he was the one who invited us all to the village/game</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:51 </span>
+<div class="msg-content">
+I see</div>
+<div class="msg-content">
+Tried to get you as allies from the start</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:52 </span>
+<div class="msg-content">
+<i>we are part of a minecaft map making team, leaded by bhuna</i></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:52 </span>
+<div class="msg-content">
+but the random roles pitted you against eachother</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:52 </span>
+<div class="msg-content">
+yes</div>
+<div class="msg-content">
+so bhuna tryed to connect us</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:53 </span>
+<div class="msg-content">
+Well, I would have hoped you were a cult member of the actual cult role, and could help in killing a wolf tonight. But if you are truthful in your role as innocent then I shall call upon your assistence for the lynching tomorrow</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:53 </span>
+<div class="msg-content">
+yes</div>
+<div class="msg-content">
+who is evil?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:54 </span>
+<div class="msg-content">
+Until then, I must go and do some more investigating to determine the identity of the next wolf</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:54 </span>
+<div class="msg-content">
+good luck</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 09:56 </span>
+<div class="msg-content">
+Thank you.  I fear sharing too much here as I have yet to hear from Typhus, but I shall let you know come dawn of what information I have gathered during the night. Be safe</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 10:12 </span>
+<div class="msg-content">
+I just want to note that Moneypriority voted for Ben</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 10:20 </span>
+<div class="msg-content">
+Indeed he did, I have been talking with him in the flute victim channel. Unusual to talk in an open channel opposed to a private conspiracy channel, but as we are the only ones in the channel still alive and the flute is dead, there is no risk of others being added. So it serves its purpose lol.</div>
+<div class="msg-content">
+Have you, Ben, Caine, or Money ever played this game before?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 10:21 </span>
+<div class="msg-content">
+I only in real life</div>
+<div class="msg-content">
+but I don&#39;t know much about the others</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 10:22 </span>
+<div class="msg-content">
+I see. How much do you trust money being innocent?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 10:23 </span>
+<div class="msg-content">
+60% to 75%, we should not be to shure about him</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 10:23 </span>
+<div class="msg-content">
+Not innocent as not a wolf, but true innocent as in not a runner, baker, cult member, cursed, or any other role that falls under the innocent category</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 10:25 </span>
+<div class="msg-content">
+his vote is realy important , the werewolves would give everything to keep the warlook</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">23-Nov-17 10:25 </span>
+<div class="msg-content">
+Agreed</div>
+<div class="msg-content">
+But the issue I&#39;m running into is, a cursed civilian is an innocent. If attacked by wolves, he would become one. So if he is innocent but cursed, I cannot trust vital information to him as if he were to be turned then it would be handed over to the wolves</div>
+<div class="msg-content">
+Which means the cursed are on our side, but we cannot share too much with them. Do you think now that Ben is killed you could verify his true role? If he is truly innocent then I shall have it confirmed tomorrow night. If he holds another innocent role, I need the exact role to confirm it. As you seem to have more trust with him than myself, I would ask you to verify with him</div>
+<div class="msg-content">
+Same for you, you are true innocent, correct?</div>
+<div class="msg-content">
+I&#39;m out for the night, I shall speak more tomorrow. Good night my friend</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 10:44 </span>
+<div class="msg-content">
+Yes, I am just a normal innocent but I can&#39;t confirm to 100% that he is innocent but we should stay in contact with him. I will try to get in touch with him.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/292396062415519746/fa844e356e55ad4062757424092de9d1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#167;įŕ Ţ&#253;phů&#167;#5185">&#167;įŕ Ţ&#253;phů&#167;</span>
+<span class="msg-date">24-Nov-17 12:06 </span>
+<div class="msg-content">
+Innocent</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">24-Nov-17 01:58 </span>
+<div class="msg-content">
+Any thoughts on who to target tonight?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">24-Nov-17 02:39 </span>
+<div class="msg-content">
+I have no information about werewolves. I will follow you.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">24-Nov-17 02:46 </span>
+<div class="msg-content">
+What about you <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> do you have any news that could benefit our cause?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/292396062415519746/fa844e356e55ad4062757424092de9d1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#167;įŕ Ţ&#253;phů&#167;#5185">&#167;įŕ Ţ&#253;phů&#167;</span>
+<span class="msg-date">26-Nov-17 04:50 </span>
+<div class="msg-content">
+Me not I fear not</div>
+<div class="msg-content">
+I&#39;m merely observing</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">26-Nov-17 04:54 </span>
+<div class="msg-content">
+As all in here have been proven trustworthy, I believe this channel has become obsolete</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">26-Nov-17 04:54 </span>
+<div class="msg-content">
+yeah</div>
+<div class="msg-content">
+continue in <span class="mention">#s2_cc_confirmed_inoocents</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">26-Nov-17 09:46 </span>
+<div class="msg-content">
+wow this is still open <span class="mention">@Game Master</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">26-Nov-17 09:47 </span>
+<div class="msg-content">
+This is the last <b>conpiracy channel</b> that had been created. I&#39;m almost finished archiving them all.</div>
+</div>
+</div>
+</div>
+</body>
+</html>

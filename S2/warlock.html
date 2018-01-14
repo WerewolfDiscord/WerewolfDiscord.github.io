@@ -1,0 +1,710 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Werewolves - s2_warlock</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/375597071094382603/f5d3e0b23688a9edbd1269767354253e.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Werewolves</div>
+<div class="channel-name">s2_warlock</div>
+<div class="misc">67 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">19-Nov-17 09:47 </span>
+<div class="msg-content">
+um</div>
+<div class="msg-content">
+som1 sed i was a werewolf</div>
+<div class="msg-content">
+i&#39;m lonely in here &#128550;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">19-Nov-17 09:49 </span>
+<div class="msg-content">
+don&#39;t worry, you have us here with you.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">19-Nov-17 09:51 </span>
+<div class="msg-content">
+yay</div>
+<div class="msg-content">
+would one of you mind explaining what I actually do</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">19-Nov-17 09:52 </span>
+<div class="msg-content">
+sure thing.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">19-Nov-17 09:54 </span>
+<div class="msg-content">
+er?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">19-Nov-17 09:55 </span>
+<div class="msg-content">
+Once a night you get to ask the <span class="mention">@Game Master</span> s the position of another player. your victory condition is the same as the wolves. you win when there are no innocents left<span class="msg-edited" title="19-Nov-17 09:56 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">19-Nov-17 10:43 </span>
+<div class="msg-content">
+K</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">19-Nov-17 10:45 </span>
+<div class="msg-content">
+===============================<br />YOU ARE THE WARLOCK<br />===============================<br />It is your goal to help guide the wolves to victory, if they win, you win.<br /><br />Influence the innocent<br />During the day, the innocents will try to kill the wolves. Make them believe that they are the innocent but don&#39;t make the day an obstacle to further your aim; make it another opportunity to kill more victims!<br /><br />Kill the fortune tellers<br />Some innocents have powerful roles that could kill the wolves before they can murder the whole town. Try to find them, so that they can be killed first!<br /><br />Find The Wolves<br />The Wolves would benifit from your knowledge, seek them out! but beware, Wolves are dangerous untamed beasts! don&#39;t make yourself their next meal.<br /><br />Devine insight<br />You may gaze into the ether and determine ones true heart, when the moon is full.<span class="msg-edited" title="19-Nov-17 11:04 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">19-Nov-17 10:45 </span>
+<div class="msg-content">
+Pinned a message.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">19-Nov-17 10:45 </span>
+<div class="msg-content">
+Cool</div>
+<div class="msg-content">
+So does anything fly if you ain&#39;t ded</div>
+<div class="msg-content">
+<span class="mention" title="Randium#6521">@Randium</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">19-Nov-17 10:51 </span>
+<div class="msg-content">
+Whaddaya mean, does anything fly?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">19-Nov-17 10:52 </span>
+<div class="msg-content">
+Can I talk with whoever I want</div>
+<div class="msg-content">
+In dm or otherwise</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">19-Nov-17 10:52 </span>
+<div class="msg-content">
+Yes. You can open as many <b>conspiracy channels</b> as you want.</div>
+<div class="msg-content">
+No, DMs are not allowed.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">19-Nov-17 10:53 </span>
+<div class="msg-content">
+Roight ok</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">19-Nov-17 11:09 </span>
+<div class="msg-content">
+Can I talk in village chat or do I not live in the village</div>
+<div class="msg-content">
+<span class="mention" title="Randium#6521">@Randium</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">19-Nov-17 11:10 </span>
+<div class="msg-content">
+Yes, you can talk there.</div>
+<div class="msg-content">
+But my word of advice is to not tell you&#39;re the warlock. &#128539;</div>
+<div class="msg-content">
+I mean, the werewolves will appreciate it, the others probably don&#39;t. &#128527;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">19-Nov-17 11:10 </span>
+<div class="msg-content">
+Do I have to act like a warlock</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">19-Nov-17 11:10 </span>
+<div class="msg-content">
+Noooo, not at all!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">19-Nov-17 11:11 </span>
+<div class="msg-content">
+K</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">19-Nov-17 11:11 </span>
+<div class="msg-content">
+You can act the way <b>you</b> want to act.</div>
+<div class="msg-content">
+If you want to act like a warlock, you may. If you&#39;d rather not, then don&#39;t.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">19-Nov-17 11:12 </span>
+<div class="msg-content">
+for example, in the last game, I was playing and not helping admin. i was the fortune teller, yet my character was lord of the land and acted as such.</div>
+<div class="msg-content">
+Role play is not a nessesity. though it may be encouraged &#128515;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">20-Nov-17 07:20 </span>
+<div class="msg-content">
+<span class="mention">@Game Master</span> next time can we have a game that&#39;s set in the future</div>
+<div class="msg-content">
+like so everyone stops talking like proper posh</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">20-Nov-17 07:22 </span>
+<div class="msg-content">
+I say!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">20-Nov-17 07:32 </span>
+<div class="msg-content">
+<span class="mention" title="Randium#6521">@Randium</span> plz</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 07:33 </span>
+<div class="msg-content">
+I beg thy pardon, I haveth not decided yet. Please do allow me to reconsider your offer, sir.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">20-Nov-17 07:42 </span>
+<div class="msg-content">
+<span class="mention" title="Randium#6521">@Randium</span> can I create a conspiracy chat <i>Suspected Werewolves</i> with Me &amp; BhunaBoy</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 07:43 </span>
+<div class="msg-content">
+Sure.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 09:23 </span>
+<div class="msg-content">
+<b>===========================<br />ARRROOOOOOH!<br />===========================</b><br />Your senses have told you that the werewolves have woken up. Name <b>any player</b> that is still alive, and we will reveal their role to you.<span class="msg-edited" title="20-Nov-17 09:23 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">20-Nov-17 09:24 </span>
+<div class="msg-content">
+BhunaBoi</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 09:25 </span>
+<div class="msg-content">
+You want to see the role of <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span>? Are you sure?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">20-Nov-17 09:26 </span>
+<div class="msg-content">
+och aye</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 09:26 </span>
+<div class="msg-content">
+Alright then.</div>
+<div class="msg-content">
+&#128121; - <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span> has the role of the <span class="pre">INNOCENT</span>!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">20-Nov-17 09:27 </span>
+<div class="msg-content">
+k cool thx</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">21-Nov-17 11:23 </span>
+<div class="msg-content">
+<span class="mention">@Game Master</span> why aren&#39;t all options avaliable to vote for reporter</div>
+<div class="msg-content">
+Yet</div>
+<div class="msg-content">
+Nvm</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 11:30 </span>
+<div class="msg-content">
+Yeah, sorry. Real life just jumped on me and smacked me to the ground. &#128523; Had to take care of that.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">21-Nov-17 11:30 </span>
+<div class="msg-content">
+Lol</div>
+<div class="msg-content">
+Hate it when that happens :p</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 09:59 </span>
+<div class="msg-content">
+<b>===========================<br />ARRROOOOOOH!<br />===========================</b><br />Your senses have told you that the werewolves have woken up. Name <b>any player</b> that is still alive, and we will reveal their role to you.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">21-Nov-17 10:08 </span>
+<div class="msg-content">
+<span class="mention" title="Randium#6521">@Randium</span> reveal Ts&#39;s role please</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 10:08 </span>
+<div class="msg-content">
+Are you sure?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">21-Nov-17 10:08 </span>
+<div class="msg-content">
+aye</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 10:08 </span>
+<div class="msg-content">
+<span class="mention" title="McTsts#4705">@McTsts</span>, right?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">21-Nov-17 10:08 </span>
+<div class="msg-content">
+aye</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 10:08 </span>
+<div class="msg-content">
+&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span> has the role of the <span class="pre">CULT LEADER</span>!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">21-Nov-17 10:09 </span>
+<div class="msg-content">
+o shi</div>
+<div class="msg-content">
+k</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">22-Nov-17 08:20 </span>
+<div class="msg-content">
+btw <span class="mention">@Game Master</span> It might seem I&#39;ve been breaking some rules intentionally as of late.<br />I was not.<br /><br />It was a mistake on my behalf for not properly reading the roles.<br />I apologize for my actions and will do my best to adhere to the rules.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">22-Nov-17 08:54 </span>
+<div class="msg-content">
+Can you explain what you are talking about?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">22-Nov-17 08:55 </span>
+<div class="msg-content">
+what with the selfbot and all</div>
+<div class="msg-content">
+<span class="mention" title="Randium#6521">@Randium</span></div>
+<div class="msg-content">
+and the screenshot suspicion</div>
+</div>
+</div>
+</div>
+</body>
+</html>

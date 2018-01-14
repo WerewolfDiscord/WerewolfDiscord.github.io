@@ -1,0 +1,904 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Werewolves - s2_cc_sword_training</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/375597071094382603/f5d3e0b23688a9edbd1269767354253e.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Werewolves</div>
+<div class="channel-name">s2_cc_sword_training</div>
+<div class="misc">92 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 02:08 </span>
+<div class="msg-content">
+Look, look! Over <span class="mention">@here</span>, a new channel has been made!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 02:09 </span>
+<div class="msg-content">
+Here, take this training sword. The metal bar for a blade will ensure neither of us will be injured for training</div>
+<div class="msg-content">
+<i>gives fencing rapier</i></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 02:11 </span>
+<div class="msg-content">
+Awesome, such a wonderful training environment</div>
+<div class="msg-content">
+So, now that we are in a private channel, how many people do you trust so far?</div>
+<div class="msg-content">
+or distrust?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 02:13 </span>
+<div class="msg-content">
+Trust 5. Semi trust you. Everyone else is on my list</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 02:14 </span>
+<div class="msg-content">
+Interesting notion to trust so many</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 02:15 </span>
+<div class="msg-content">
+I already know the roles of all but you</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 02:21 </span>
+<div class="msg-content">
+That&#39;s not very comforting</div>
+<div class="msg-content">
+To know all roles but only trust 5</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 02:22 </span>
+<div class="msg-content">
+I don&#39;t know all roles</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 02:23 </span>
+<div class="msg-content">
+Unless you are only referring to those 5 you mentioned. In which case, how do you know they are truthful?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 02:23 </span>
+<div class="msg-content">
+Just the roles of those 5</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 02:23 </span>
+<div class="msg-content">
+ahh, I see</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 02:23 </span>
+<div class="msg-content">
+I may or may not have the same or similar roles to them</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 02:24 </span>
+<div class="msg-content">
+So you are saying you are part of a cult then</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 02:24 </span>
+<div class="msg-content">
+Not the cult</div>
+<div class="msg-content">
+Something for good<span class="msg-edited" title="20-Nov-17 02:24 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 02:25 </span>
+<div class="msg-content">
+Hmm, that is the only group that consists of 5 members</div>
+<div class="msg-content">
+Unless you are excluding yourself from that count</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 02:25 </span>
+<div class="msg-content">
+We do not consist of five members, but we have allies. We number 4, but have an ally<span class="msg-edited" title="20-Nov-17 02:26 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 02:27 </span>
+<div class="msg-content">
+Would you be willing to share the names of these allies?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 02:28 </span>
+<div class="msg-content">
+The b order must be kept secret</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 02:29 </span>
+<div class="msg-content">
+That is fine, I understand the need for secrecy in such a group</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 02:29 </span>
+<div class="msg-content">
+Though we provide food for the town, we are more than simple workers</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 02:29 </span>
+<div class="msg-content">
+Especially as you cannot confirm my trust as of yet</div>
+<div class="msg-content">
+Which hopefully I can rectify</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 02:31 </span>
+<div class="msg-content">
+Though we don&#39;t quite know each other, we share a common enemy.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 02:31 </span>
+<div class="msg-content">
+I think everyone shares a common enemy of the town</div>
+<div class="msg-content">
+We have strength in numbers if we can unite, but they have the advantage of secrecy and can hide in plain sight</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 02:34 </span>
+<div class="msg-content">
+Indeed, which is why until we know who they are, we must ensure our own safety. Werewolves hate silver, so I know you are not one of them. Look out for yourself and for others.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 02:35 </span>
+<div class="msg-content">
+I shall do my best</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 02:36 </span>
+<div class="msg-content">
+Remember, you can&#39;t take on a werewolf in a fight, such skill takes years of training. Try to fend it off and get to safety.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 02:40 </span>
+<div class="msg-content">
+Well I am innocent, and I assume you are as well as I think the wolves would not be reaching out for allies</div>
+<div class="msg-content">
+But I have been contacted by another villager as well, claiming to be part of a group. I was hoping you could verify whether he is in the same group as you or not</div>
+<div class="msg-content">
+Can you confirm with your group if another has contacted me or not? I don&#39;t need a name</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 03:03 </span>
+<div class="msg-content">
+Yes, one more. The Archer</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 03:36 </span>
+<div class="msg-content">
+Well I didn&#39;t need a name lol, but thank you. He in fact did contact me so I have no reason to doubt you are in the same group.</div>
+<div class="msg-content">
+I was actually hoping you two were from different groups. I would have loved to bring the two groups together to form a stronger alliance</div>
+<div class="msg-content">
+In this case, I will continue to seek out a member of the cult and try to bring these groups together.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 04:14 </span>
+<div class="msg-content">
+You continue searching for the cult. I&#39;ll keep gathering information to search for the werewolves</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 04:21 </span>
+<div class="msg-content">
+Sounds good</div>
+<div class="msg-content">
+Can you confirm if either Ben or Joker are with your group?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 04:23 </span>
+<div class="msg-content">
+Niether</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 04:25 </span>
+<div class="msg-content">
+Ok thank you, I have my suspicions about those two...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 07:33 </span>
+<div class="msg-content">
+Shall I do something drastic to try and unite the bakers and cult members?</div>
+<div class="msg-content">
+Doing so will most likely pin a target on my back however, but having two powerful groups will help ensure victory for the innocents</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 07:38 </span>
+<div class="msg-content">
+Yes. Although it may make you a target, it may save the town</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 07:43 </span>
+<div class="msg-content">
+Who is this ally you mentioned earlier, if you don&#39;t mind me asking</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 07:44 </span>
+<div class="msg-content">
+Vyrn, although we are somewhat suspicious of him due to it being the first day</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 07:46 </span>
+<div class="msg-content">
+Did he say what his role was? Also, as I trust you at this point, my true role is runner. I do not wish to reveal it to the elders as I do not know ifnthere is a wolf in there or not. This will buy me an extra day if I&#39;m attacked and also cause them to waste an attack on me if they believe me to be roleless</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 08:10 </span>
+<div class="msg-content">
+I&#39;m about to make an announcement for all bakers and cult members to message me. Tell the rest of the bakers not to contact me. That way any who claim to be a baker I know cannot be trusted</div>
+<div class="msg-content">
+Potentially drawing out the cult to form a team as well as wolves trying to sneak into the group</div>
+<div class="msg-content">
+<span class="mention" title="Regicide1218#5350">@Regicide1218</span></div>
+<div class="msg-content">
+Welp, I hope the cult team takes a chance. If they think I&#39;m a wolf trying to find their identity then it&#39;s doubtful they&#39;ll contact me. Which means I put a target on my back for nothing... Maybe I should&#39;ve thought this thru a little better lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 09:35 </span>
+<div class="msg-content">
+Ok. I will forward this information to the others</div>
+<div class="msg-content">
+Would you like me to just have them added to this chat?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">20-Nov-17 09:46 </span>
+<div class="msg-content">
+If they are in agreement then yes. If they do not trust me then I don&#39;t want to impose. Let them choose if they wish to be added or not</div>
+<div class="msg-content">
+So far no cultists have contacted me</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">21-Nov-17 12:25 </span>
+<div class="msg-content">
+Seems The Archer and Lord Galaxx are both wanting to go for the Reporter role. I must say, I would rather see someone within your elite group obtain the position, as I cannot trust the other elders at this time</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">21-Nov-17 01:02 </span>
+<div class="msg-content">
+Done</div>
+<div class="msg-content">
+<span class="mention" title="Regicide1218#5350">@Regicide1218</span> <span class="mention" title="Legolas#2139">@Legolas</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 01:03 </span>
+<div class="msg-content">
+yo</div>
+<div class="msg-content">
+finally here</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">21-Nov-17 01:03 </span>
+<div class="msg-content">
+<span class="mention" title="JR [FFF]#6781">@JR [FFF]</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">21-Nov-17 01:04 </span>
+<div class="msg-content">
+hey, so where are the other two?</div>
+<div class="msg-content">
+Or just Archer agreed to join us here</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 01:05 </span>
+<div class="msg-content">
+the other are rarely online</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">21-Nov-17 01:07 </span>
+<div class="msg-content">
+Jay, something isn&#39;t quite right with galaxx</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 01:08 </span>
+<div class="msg-content">
+yes</div>
+<div class="msg-content">
+he&#39;s not behaving like he would as a innocent</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">21-Nov-17 01:57 </span>
+<div class="msg-content">
+We have reason to believe that Mr Joker is a werewolf. Advise caution around him. Hold your tongue and don&#39;t do anything drastic until we have role confirmation</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 01:58 </span>
+<div class="msg-content">
+well I think it&#39;s confirmed that he is a wervolve</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">21-Nov-17 02:06 </span>
+<div class="msg-content">
+Rex, I&#39;m sure you&#39;ve spoken with Archer about the claims of Galaxx, correct?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">21-Nov-17 04:00 </span>
+<div class="msg-content">
+He thinks I&#39;m<br />A. Not a baker.<br />B. An evil role.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 04:00 </span>
+<div class="msg-content">
+les kill him</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">21-Nov-17 04:07 </span>
+<div class="msg-content">
+Not yet. The more hasty we are to rush to a decision, the more likely we are to make enemies</div>
+<div class="msg-content">
+I&#39;m guessing Tim is cult</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">21-Nov-17 04:17 </span>
+<div class="msg-content">
+Well he seen the roles of you, me, and Joker. Yours was known to him, mine was known to you but to him as innocent so him seeing runner serves as proof of his claim to be the crowd seeker as well as Joker being the wolf</div>
+<div class="msg-content">
+Why do you suspect Tim as cult?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">21-Nov-17 04:21 </span>
+<div class="msg-content">
+Look at votes, he is either cult or wolf</div>
+<div class="msg-content">
+To have five votes when everyone else but Archer has the start. Bakers voted for Archer.</div>
+<div class="msg-content">
+So what large cohorts of players does that leave?</div>
+<div class="msg-content">
+&quot;ok. let me explain why I think @marhjo#5178 is a werewolf. I got information from the crowd seeker. He told me that he knows the roles from @Sir Rex <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span> and @marhjo#5178 . One of them is runner, one is baker and one is werewolf. after I got this information I asked <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span> which role he has. I know @Sir Rex role, so it left just one role left, the werewolf.&quot;<br />-Archer<span class="msg-edited" title="21-Nov-17 04:27 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">21-Nov-17 04:29 </span>
+<div class="msg-content">
+Yes, and I confirmed my role here yesterday, before the crowd seeker could use his ability</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 04:33 </span>
+<div class="msg-content">
+how did you confirmed it?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">21-Nov-17 05:51 </span>
+<div class="msg-content">
+Well, unless you think it is a coincidence that I names myself a runner yesterday, and my name along with runner popped up together as the crowd seekers choices</div>
+<div class="msg-content">
+But, if Joker hangs tonight and you become the reporter, you will know for sure what his role was and thus know my role regardless</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">21-Nov-17 05:53 </span>
+<div class="msg-content">
+He is most likely a runner. Probability of a successful like pick among those three would be less than 5%. Highly unlikely that he is not a runner</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">21-Nov-17 05:54 </span>
+<div class="msg-content">
+Yeah, then there&#39;s that as well &#128070; lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/223983177742417933/981bab0357193c9740a63af469e8ce1c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="JR [FFF]#6781">JR [FFF]</span>
+<span class="msg-date">21-Nov-17 06:51 </span>
+<div class="msg-content">
+Well you guys sure got Joker all worked up lol</div>
+</div>
+</div>
+</div>
+</body>
+</html>

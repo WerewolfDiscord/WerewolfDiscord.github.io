@@ -1,0 +1,1775 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Werewolves - s2_the_cult</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/375597071094382603/f5d3e0b23688a9edbd1269767354253e.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Werewolves</div>
+<div class="channel-name">s2_the_cult</div>
+<div class="misc">199 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">19-Nov-17 10:09 </span>
+<div class="msg-content">
+First message!</div>
+<div class="msg-content">
+Who else is with me?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">19-Nov-17 10:12 </span>
+<div class="msg-content">
+Hi I&#39;m also here</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">19-Nov-17 10:13 </span>
+<div class="msg-content">
+Cool!</div>
+<div class="msg-content">
+Also who is the cult leader?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137268957802397696/781eff41af6ba428a4b76b2e91656d15.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ds#474">Ds</span>
+<span class="msg-date">19-Nov-17 10:14 </span>
+<div class="msg-content">
+we don&#39;t know</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">19-Nov-17 10:15 </span>
+<div class="msg-content">
+We were gonna say it later. But spoilers: it&#39;s <span class="mention" title="McTsts#4705">@McTsts</span>.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137268957802397696/781eff41af6ba428a4b76b2e91656d15.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ds#474">Ds</span>
+<span class="msg-date">19-Nov-17 10:15 </span>
+<div class="msg-content">
+haha</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">19-Nov-17 10:15 </span>
+<div class="msg-content">
+Haha OK cool</div>
+<div class="msg-content">
+We must protect him even if it means sacrificing ourselves as we are powerful!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">19-Nov-17 10:17 </span>
+<div class="msg-content">
+Cool</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">19-Nov-17 10:46 </span>
+<div class="msg-content">
+===============================<br />YOU ARE THE CULT<br />===============================<br />The govement doesn&#39;t know what it&#39;s doing! Floundering around while these wolves run rampant! you will save this town and the people in it from this terror!<br /><br />Take Out the wolves<br />once a night you can assasinate a suspect before the moon shines full. let the wolves meet the tips of your daggers.<br /><br />Defend Your leader<br />Your leader <span class="mention" title="McTsts#4705">@McTsts</span> is the beating heart of this organisation. no one else is quallified to lead, if he dies you will surely fracture.<br /><br />Influence the innocent<br />Dont let that be your only action though, Guide your fellow innocents to the wolves and hang them!<span class="msg-edited" title="19-Nov-17 11:22 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">19-Nov-17 10:48 </span>
+<div class="msg-content">
+Pinned a message.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">19-Nov-17 11:21 </span>
+<div class="msg-content">
+May it begin &#128520;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">19-Nov-17 11:21 </span>
+<div class="msg-content">
+Mwuhahahaha</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">19-Nov-17 11:22 </span>
+<div class="msg-content">
+Now time to see who is who. Let&#39;s watch chat</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">20-Nov-17 04:51 </span>
+<div class="msg-content">
+Does it make sense to try to make somone from this cult mayor?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">20-Nov-17 07:18 </span>
+<div class="msg-content">
+<span class="mention" title="Randium#6521">@Randium</span>  when do we assasinate the first time?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 07:18 </span>
+<div class="msg-content">
+I was currently debating with <span class="mention" title="Buddy1913#9588">@Buddy1913</span> about it.</div>
+<div class="msg-content">
+Technically, you can already kill someone. But I think it&#39;d lorewise be more logical if you start killing <i>after</i> someone has died.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">20-Nov-17 07:19 </span>
+<div class="msg-content">
+So we&#39;d share the information we gathered and then vote on who to kill, right?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 07:19 </span>
+<div class="msg-content">
+I mean, your cult isn&#39;t necessarily bad, it just wants to kill the werewolves in a less orthodox way.</div>
+<div class="msg-content">
+Yeah.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">20-Nov-17 07:33 </span>
+<div class="msg-content">
+<span class="mention" title="Ds#474">@Ds</span>  Are you here?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137268957802397696/781eff41af6ba428a4b76b2e91656d15.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ds#474">Ds</span>
+<span class="msg-date">20-Nov-17 07:33 </span>
+<div class="msg-content">
+Yep</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">20-Nov-17 07:34 </span>
+<div class="msg-content">
+Jay Jr. is probably going to be Mayor. He seems to plot too much and I think a different mayor would be better for us</div>
+<div class="msg-content">
+Bhuna and Ben seem to be the only other possible options</div>
+<div class="msg-content">
+I do not trust Ben</div>
+<div class="msg-content">
+Do you have any further information? <span class="mention" title="Ds#474">@Ds</span></div>
+<div class="msg-content">
+Ben however still seems better in total</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137268957802397696/781eff41af6ba428a4b76b2e91656d15.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ds#474">Ds</span>
+<span class="msg-date">20-Nov-17 07:36 </span>
+<div class="msg-content">
+didn&#39;t read any of the chats yet</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">20-Nov-17 07:36 </span>
+<div class="msg-content">
+cool</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137268957802397696/781eff41af6ba428a4b76b2e91656d15.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ds#474">Ds</span>
+<span class="msg-date">20-Nov-17 07:36 </span>
+<div class="msg-content">
+haha</div>
+<div class="msg-content">
+will do now I guess</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">20-Nov-17 07:37 </span>
+<div class="msg-content">
+So you&#39;ll just do what I say &#128521;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137268957802397696/781eff41af6ba428a4b76b2e91656d15.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ds#474">Ds</span>
+<span class="msg-date">20-Nov-17 07:37 </span>
+<div class="msg-content">
+that&#39;s fine too ;)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">20-Nov-17 07:37 </span>
+<div class="msg-content">
+According to my information Ben is Warlock</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 07:37 </span>
+<div class="msg-content">
+<span class="mention">#s2_story_time</span> and the <b>Secret Channels</b> that you are part of are always most important to read, I think.</div>
+<div class="msg-content">
+<span class="mention">#s2_town_conversation</span> and <span class="mention">#s2_out_of_character</span> can help, but you can easily playing the game without reading those, when you&#39;re part of at least one <b>Secret Channel</b>.<span class="msg-edited" title="20-Nov-17 07:38 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">20-Nov-17 07:39 </span>
+<div class="msg-content">
+So options are: Ben, Bhuna, Jay<br />I don&#39;t know how to play this but I&#39;d vote for Ben and then kill Ben since he&#39;s Warlock</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 07:40 </span>
+<div class="msg-content">
+By the way, it has been decided.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">20-Nov-17 07:40 </span>
+<div class="msg-content">
+rip</div>
+<div class="msg-content">
+I thought 20 minutes?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 07:40 </span>
+<div class="msg-content">
+The first night, you will not have the right to kill a suspect.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">20-Nov-17 07:40 </span>
+<div class="msg-content">
+oh that</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 07:40 </span>
+<div class="msg-content">
+Nooo, that is indeed open for 20 minutes. You can make your votes last-minute!</div>
+<div class="msg-content">
+But lore-wise, it seems more logical if you kill people <i>after</i> the werewolves have killed (or attempted to kill) someone.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">20-Nov-17 07:41 </span>
+<div class="msg-content">
+But why?</div>
+<div class="msg-content">
+We already have some information</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 07:42 </span>
+<div class="msg-content">
+Yes, but no evidence that they&#39;re here.</div>
+<div class="msg-content">
+It is still a rumour that lumbers through the town...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">20-Nov-17 07:43 </span>
+<div class="msg-content">
+&#128546;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">20-Nov-17 08:08 </span>
+<div class="msg-content">
+Yeah makes sense to me randium. And besides we want the innocents on our side for this.  And what evidence do you have that Ben is warlock? You want to say your information here so we can all have the information. We are a team and must act as such. Also it would be good to make a list of all roles and then add to it what we think of the different players roles to try and narrow down on our targets.</div>
+<div class="msg-content">
+I&#39;ll work on the list tonight when I get time.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">20-Nov-17 08:20 </span>
+<div class="msg-content">
+I have a spreadsheet</div>
+<div class="msg-content">
+Bhuna shared a screenshot of Ben saying he is warlock to the elders</div>
+<div class="msg-content">
+I&#39;m not sure if <span class="mention" title="ciphercobra#9766">@ciphercobra</span> and <span class="mention" title="Toiletti#2969">@Toiletti</span> are really here</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 08:29 </span>
+<div class="msg-content">
+I haven&#39;t seen <span class="mention" title="Toiletti#2969">@Toiletti</span> yet, but <span class="mention" title="ciphercobra#9766">@ciphercobra</span> told me he&#39;d be off for a short while. Consider him AFK or dead for now.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">20-Nov-17 08:30 </span>
+<div class="msg-content">
+ok thanks</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/376481677754630145/eeb7b1d4a13a7da93c6a2b85fa83ea52.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toiletti#2969">Toiletti</span>
+<span class="msg-date">20-Nov-17 09:03 </span>
+<div class="msg-content">
+I&#39;m here!</div>
+<div class="msg-content">
+Just needed some time to realize I&#39;m Tim the Plumberer lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">20-Nov-17 09:29 </span>
+<div class="msg-content">
+Lol</div>
+<div class="msg-content">
+There shouldn&#39;t be any showing of screenshots. <span class="mention" title="Randium#6521">@Randium</span>  am I correct in this assumption?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 09:32 </span>
+<div class="msg-content">
+Yes. Screenshots are forbidden.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">20-Nov-17 09:32 </span>
+<div class="msg-content">
+I assume that&#39;s why it was changed</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 09:32 </span>
+<div class="msg-content">
+And if I am not mistaken, you aren&#39;t even <b>able</b> to upload any screenshots.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">20-Nov-17 09:33 </span>
+<div class="msg-content">
+Well it <i>was</i> possible at least</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">20-Nov-17 09:38 </span>
+<div class="msg-content">
+<span class="mention" title="Randium#6521">@Randium</span> you should remind Dr. Cipher of the prohibition if he truly did do such a thing.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 09:39 </span>
+<div class="msg-content">
+Dr. Cipher hasn&#39;t done that. What makes you think so? &#129300;</div>
+<div class="msg-content">
+Are you thinking about the wrong person, perhaps?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">20-Nov-17 10:00 </span>
+<div class="msg-content">
+Yeah lol I meant bhuna</div>
+<div class="msg-content">
+Looked at the wrong message</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">21-Nov-17 02:07 </span>
+<div class="msg-content">
+Let&#39;s make one of us reporter if we can?<span class="msg-edited" title="21-Nov-17 02:07 ">(edited)</span></div>
+<div class="msg-content">
+<span class="mention" title="Toiletti#2969">@Toiletti</span> Already has a vote so maybe vote for him</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 03:00 </span>
+<div class="msg-content">
+Ok</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 05:34 </span>
+<div class="msg-content">
+Hey we need to vote on hanging someone.</div>
+<div class="msg-content">
+I think we should go for Lord galaxx</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/376481677754630145/eeb7b1d4a13a7da93c6a2b85fa83ea52.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Toiletti#2969">Toiletti</span>
+<span class="msg-date">21-Nov-17 07:05 </span>
+<div class="msg-content">
+okay. I&#39;m just really busy recently, could happen that I&#39;m coming online too late sometimes :/</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 08:04 </span>
+<div class="msg-content">
+Just cast a vote early then. I work for most of the in-game day so I have it hard too</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">21-Nov-17 08:58 </span>
+<div class="msg-content">
+<span class="mention" title="Ds#474">@Ds</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 10:01 </span>
+<div class="msg-content">
+<b>===========================<br />FOH-DA-RI-DO-KA-MA-NA-JI<br />===========================</b><br /><b>Cultists, time to rise!</b><br />Obviously, the local authorities are weaklings who do not dare to kill others in an <b>effictive</b> way. Luckily, this town has you, the <i>purifiers</i>, to cleanse these lands of the forsaken werewolves!<br /><b>Whom do you wish to purify tonight?</b><span class="msg-edited" title="21-Nov-17 10:07 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 10:22 </span>
+<div class="msg-content">
+Poll?</div>
+<div class="msg-content">
+<span class="mention" title="Randium#6521">@Randium</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 10:23 </span>
+<div class="msg-content">
+Oh. Right.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 10:23 </span>
+<div class="msg-content">
+Lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 10:23 </span>
+<div class="msg-content">
+Seems like I was sleeping. &#128584;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 10:23 </span>
+<div class="msg-content">
+I mean we could do it without one</div>
+<div class="msg-content">
+Just would be difficult</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">21-Nov-17 10:24 </span>
+<div class="msg-content">
+<span class="mention" title="Thrimian#7285">@Thrimian</span> Who do you think is werewolf?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 10:25 </span>
+<div class="msg-content">
+<b>===========================<br />FOH-DA-RI-DO-KA-MA-NA-JI<br />===========================</b><br /><b>Cultists, time to rise!</b><br />Obviously, the local authorities are weaklings who do not dare to kill others in an <b>effictive</b> way. Luckily, this town has you, the <i>purifiers</i>, to cleanse these lands of the forsaken werewolves!<br /><b>Whom do you wish to purify tonight?</b><br /><i>Part 1:</i><br />&#128190; - <span class="mention" title="Thrimian#7285">@Thrimian</span><br />&#128005; - <span class="mention" title="Vyryn#4618">@Vyryn</span><br />&#129416; <span class="mention" title="Legolas#2139">@Legolas</span><br />&#128570;  - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128373; - <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span><br />&#128511; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#128128; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br />&#128060; - <span class="mention" title="LILLITANIUM#2359">@LILLITANIUM</span><br />&#128104;‍❤️‍&#128104; - <span class="mention" title="ville#2962">@ville</span><br />&#128293; - <span class="mention" title="Elcar0#1528">@Elcar0</span><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span><br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#127477;&#127472; - <span class="mention" title="ciphercobra#9766">@ciphercobra</span><br />&#127927; - <span class="mention" title="Malreath#617">@Malreath</span></div>
+<div class="msg-content">
+<i>Part 2:</i><br />&#127837; - <span class="mention" title="Spanish Spagetti#828">@Spanish Spagetti</span><br />&#129415; - <span class="mention" title="Regicide1218#5350">@Regicide1218</span><br />&#128372; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><br />&#129370; - <span class="mention" title="cashwarrior1#5973">@cashwarrior1</span><br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br />&#128405; - <span class="mention" title="Marsim#9859">@Marsim</span><br />&#127929; - <span class="mention" title="BenTechy66#8809">@BenTechy66</span><br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span><br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br />&#128701; - <span class="mention" title="Toiletti#2969">@Toiletti</span><br />&#128540; - <span class="mention" title="Timothy#888">@Timothy</span><br />&#128125; - <span class="mention" title="Maximus#1045">@Maximus</span><br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br />&#127345; - <span class="mention" title="Ds#474">@Ds</span></div>
+<div class="msg-content">
+Pinned a message.</div>
+<div class="msg-content">
+Pinned a message.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 10:30 </span>
+<div class="msg-content">
+I think Ben the Technician is as well as Mr Kluxury and, Maximus the Greatest. Because they all voted on Ben to become mayor yesterday and joker did as well and he was a werewolf.</div>
+<div class="msg-content">
+Seems they tend to vote for one another.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">21-Nov-17 10:30 </span>
+<div class="msg-content">
+I also think MrK is werewolf</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 10:31 </span>
+<div class="msg-content">
+So you want to go for Mr K?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">21-Nov-17 10:31 </span>
+<div class="msg-content">
+I think both of them are probably Werewolf</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 10:31 </span>
+<div class="msg-content">
+<span class="mention">@here</span> we need everyone to vote!</div>
+<div class="msg-content">
+I think all three of them are currently</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">21-Nov-17 10:32 </span>
+<div class="msg-content">
+But Joker wrote sth that makes me believe either Ben or MrK or me are werewolf</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 10:33 </span>
+<div class="msg-content">
+Hmm. Well maybe if he wasn&#39;t one then maybe we should look at the reporter as well</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">21-Nov-17 10:35 </span>
+<div class="msg-content">
+Archer?</div>
+<div class="msg-content">
+He&#39;s Baker</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 10:37 </span>
+<div class="msg-content">
+Oh really? How did you find that one out?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">21-Nov-17 10:37 </span>
+<div class="msg-content">
+Sir Rex claimed he is Baker in elders</div>
+<div class="msg-content">
+in a very convincing way</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 10:37 </span>
+<div class="msg-content">
+In elders?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">21-Nov-17 10:38 </span>
+<div class="msg-content">
+Bhuna&#39;s conspiracy</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 10:38 </span>
+<div class="msg-content">
+Ahh</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">21-Nov-17 10:38 </span>
+<div class="msg-content">
+The Archer, Dr Carl E, Mr Freddy and Sir Rex seem to be the Bakers</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 10:38 </span>
+<div class="msg-content">
+Well if that&#39;s the case we need to band together with him and his cohort of bakers</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">21-Nov-17 10:38 </span>
+<div class="msg-content">
+I&#39;m not 100% certain</div>
+<div class="msg-content">
+I&#39;ve never played this at all</div>
+<div class="msg-content">
+But I looked at the votes and everything they said</div>
+<div class="msg-content">
+They vote for the same things</div>
+<div class="msg-content">
+And I&#39;ve seen more evidence of them belonging together</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 10:40 </span>
+<div class="msg-content">
+Hmm maybe I&#39;ll start a conspiracy with him then to ascertain more info</div>
+<div class="msg-content">
+Well then for the vote.. You want to go with Mr K?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">21-Nov-17 10:40 </span>
+<div class="msg-content">
+And the people that voted for archer are the ones I suspect as werewolves</div>
+<div class="msg-content">
+Yeah</div>
+<div class="msg-content">
+Let&#39;s go with MrK</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 10:40 </span>
+<div class="msg-content">
+Let&#39;s do it!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">21-Nov-17 10:40 </span>
+<div class="msg-content">
+I hope we aren&#39;t wrong about this</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 10:41 </span>
+<div class="msg-content">
+<span class="mention">@here</span> vote for Mr. Kluxury!</div>
+<div class="msg-content">
+<span class="mention" title="Randium#6521">@Randium</span> open a conspiracy with me and Lego (Archer)</div>
+<div class="msg-content">
+Let&#39;s name it <i><b>union</b></i><span class="msg-edited" title="21-Nov-17 10:44 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 11:03 </span>
+<div class="msg-content">
+Ok let&#39;s see how it goes haha</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">21-Nov-17 11:08 </span>
+<div class="msg-content">
+<span class="mention" title="Thrimian#7285">@Thrimian</span> Any progress?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 11:09 </span>
+<div class="msg-content">
+He says he is apart of the backers but is apparently part of several conspiracy channels</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">21-Nov-17 11:09 </span>
+<div class="msg-content">
+Do not reveal who is Leader</div>
+<div class="msg-content">
+I&#39;m pretty sure he is Baker</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 11:13 </span>
+<div class="msg-content">
+I&#39;m never going to reveal that but I did tell him I am part of the cult</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">21-Nov-17 11:14 </span>
+<div class="msg-content">
+Yeah that&#39;s fine</div>
+<div class="msg-content">
+Would it make sense to possibly say who we will kill?<span class="msg-edited" title="21-Nov-17 11:15 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137268957802397696/781eff41af6ba428a4b76b2e91656d15.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ds#474">Ds</span>
+<span class="msg-date">21-Nov-17 11:16 </span>
+<div class="msg-content">
+In a chat everyone can see?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">21-Nov-17 11:16 </span>
+<div class="msg-content">
+nono</div>
+<div class="msg-content">
+To Bakers as proof</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">21-Nov-17 11:16 </span>
+<div class="msg-content">
+Yeah I can do that</div>
+<div class="msg-content">
+Looks like your assumption was correct and he is in league with the crowd seeker.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">22-Nov-17 10:45 </span>
+<div class="msg-content">
+Well Archer is dead now haha. Guess we were right about him being innocent. Now to move on to the next one.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">22-Nov-17 03:03 </span>
+<div class="msg-content">
+I invited Rex into the convo to try and get the rest of the bakers</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">22-Nov-17 05:57 </span>
+<div class="msg-content">
+Ok who are we hanging?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">22-Nov-17 06:01 </span>
+<div class="msg-content">
+Also <span class="mention">@here</span> I am bringing everyone into our conspiracy channel. Don&#39;t tell anyone who our leader is but it is a fairly safe group.</div>
+<div class="msg-content">
+And vote for sir Rex to be reporter!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">22-Nov-17 08:03 </span>
+<div class="msg-content">
+Let&#39;s kill Mr Freddy the flute player!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">22-Nov-17 10:27 </span>
+<div class="msg-content">
+<b>===========================<br />FOH-DA-RI-DO-KA-MA-NA-JI<br />===========================</b><br /><b>Cultists, time to rise!</b><br />Obviously, the local authorities are weaklings who do not dare to kill others in an <b>effictive</b> way. Luckily, this town has you, the <i>purifiers</i>, to cleanse these lands of the forsaken werewolves!<br /><b>Whom do you wish to purify tonight?</b><br /><i>Part 1:</i><br />&#128190; - <span class="mention" title="Thrimian#7285">@Thrimian</span><br />&#128005; - <span class="mention" title="Vyryn#4618">@Vyryn</span><br />&#128570;  - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128373; - <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span><br />&#128511; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#128128; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br />&#128060; - <span class="mention" title="LILLITANIUM#2359">@LILLITANIUM</span><br />&#128104;‍❤️‍&#128104; - <span class="mention" title="ville#2962">@ville</span><br />&#128293; - <span class="mention" title="Elcar0#1528">@Elcar0</span><br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#127477;&#127472; - <span class="mention" title="ciphercobra#9766">@ciphercobra</span><br />&#127927; - <span class="mention" title="Malreath#617">@Malreath</span></div>
+<div class="msg-content">
+<i>Part 2:</i><br />&#127837; - <span class="mention" title="Spanish Spagetti#828">@Spanish Spagetti</span><br />&#129415; - <span class="mention" title="Regicide1218#5350">@Regicide1218</span><br />&#128372; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><br />&#129370; - <span class="mention" title="cashwarrior1#5973">@cashwarrior1</span><br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br />&#128405; - <span class="mention" title="Marsim#9859">@Marsim</span><br />&#127929; - <span class="mention" title="BenTechy66#8809">@BenTechy66</span><br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span><br />&#128701; - <span class="mention" title="Toiletti#2969">@Toiletti</span><br />&#128540; - <span class="mention" title="Timothy#888">@Timothy</span><br />&#128125; - <span class="mention" title="Maximus#1045">@Maximus</span><br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br />&#127345; - <span class="mention" title="Ds#474">@Ds</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">22-Nov-17 10:28 </span>
+<div class="msg-content">
+I say vote for vyryn the late!!<span class="msg-edited" title="22-Nov-17 10:28 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">22-Nov-17 10:42 </span>
+<div class="msg-content">
+<span class="mention" title="Thrimian#7285">@Thrimian</span>  do you know if there is a group of innocents?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">22-Nov-17 10:46 </span>
+<div class="msg-content">
+Yes I&#39;m talking with the bakers and have the crowdseeker as well as us all in one conspiracy channel<span class="msg-edited" title="22-Nov-17 10:47 ">(edited)</span></div>
+<div class="msg-content">
+It&#39;s in <b>union</b></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">22-Nov-17 10:48 </span>
+<div class="msg-content">
+And did you get any useful information</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">22-Nov-17 10:50 </span>
+<div class="msg-content">
+They gave me the crowd seekers name as sir galaxx and the bakers are sir rex, little tim, and Mathew Ron.</div>
+<div class="msg-content">
+The Archer was also a baker</div>
+<div class="msg-content">
+I&#39;m asking sir Rex to Relay the roles of the dead to me</div>
+<div class="msg-content">
+The crowd seeker is checking Ben the technician tonight by using two known player roles and a third unknown to find out.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">22-Nov-17 11:57 </span>
+<div class="msg-content">
+<span class="mention">@here</span> vote on vyryn the late!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">22-Nov-17 11:57 </span>
+<div class="msg-content">
+ok</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">23-Nov-17 12:03 </span>
+<div class="msg-content">
+He has been creating a lot of conspiracy channels asking for people&#39;s roles and who they are voting on. Seems he is fishing for the right player with the right roles to kill if he is a werewolf.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">23-Nov-17 01:42 </span>
+<div class="msg-content">
+Mr Kluxury was a werewolf.</div>
+<div class="msg-content">
+Ok I guess there is a main chat with all found innocents thus far with the mayor, bakers, fortune teller, and crowdseeker</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">23-Nov-17 02:01 </span>
+<div class="msg-content">
+Well minus the fortune teller as vyryn was apparently the fortune teller. Sir Rex could have said something but he did not inform me of that when I said that was going to be our target last night.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">23-Nov-17 02:13 </span>
+<div class="msg-content">
+Is any cult member in this chat?</div>
+<div class="msg-content">
+Also I assume the werewolves also killed vyryn, right?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">23-Nov-17 02:28 </span>
+<div class="msg-content">
+<span class="mention" title="McTsts#4705">@McTsts</span> this is the cult chat so everyone here is a cult member. Though not myself and randium obviously<span class="msg-edited" title="23-Nov-17 02:29 ">(edited)</span></div>
+<div class="msg-content">
+Also you can scroll up in chat history to view previous votes<span class="msg-edited" title="23-Nov-17 02:37 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">23-Nov-17 02:32 </span>
+<div class="msg-content">
+We did so that means they could have gotten a cursed civilian, a runner, or voted for the same person</div>
+<div class="msg-content">
+Oh and I&#39;ve added everyone here to a confirmed innocents channel</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">23-Nov-17 02:37 </span>
+<div class="msg-content">
+What transpired you need to find out yourself</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">23-Nov-17 02:49 </span>
+<div class="msg-content">
+<span class="mention" title="Buddy1913#9588">@Buddy1913</span>  My question was if there was anyone in that innocents chat from here. I know that everyone except the game masters are cult members in here<span class="msg-edited" title="23-Nov-17 02:49 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">23-Nov-17 03:04 </span>
+<div class="msg-content">
+There wasn&#39;t before. They just added me in this morning and I checked it out and have asked to have everyone here be added into the group. It is completely safe there and should help us eliminate the threat.</div>
+<div class="msg-content">
+Looks like Ben the technician is the warlock</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">23-Nov-17 03:17 </span>
+<div class="msg-content">
+Probably will be killed today</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">23-Nov-17 03:18 </span>
+<div class="msg-content">
+Yeah that&#39;s the innocents channel. Crowd seeker found his role.</div>
+<div class="msg-content">
+I&#39;ve put it up to have you added to the channel. It&#39;s completely safe there. They won&#39;t let cursed civilians enter the group at all. And it&#39;ll will give you some more people to talk to lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">23-Nov-17 06:26 </span>
+<div class="msg-content">
+<span class="mention" title="Ds#474">@Ds</span> Why are you voting for Jay?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">23-Nov-17 08:09 </span>
+<div class="msg-content">
+<span class="mention" title="Ds#474">@Ds</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">23-Nov-17 09:06 </span>
+<div class="msg-content">
+Hey <span class="mention">@here</span> tonight we are voting for maximus the greatest. So when we get the poll be sure to vote.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">23-Nov-17 09:06 </span>
+<div class="msg-content">
+===========================<br />FOH-DA-RI-DO-KA-MA-NA-JI<br />===========================<br />Cultists, time to rise!<br />Obviously, the local authorities are weaklings who do not dare to kill others in an effictive way. Luckily, this town has you, the purifiers, to cleanse these lands of the forsaken werewolves!<br />Whom do you wish to purify tonight?<br />Part 1:<br />&#128190; - <span class="mention" title="Thrimian#7285">@Thrimian</span><br />&#128570;  - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128373; - <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span><br />&#128511; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> <br />&#128128; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br />&#128060; - <span class="mention" title="LILLITANIUM#2359">@LILLITANIUM</span><br />&#128104;‍❤️‍&#128104; - <span class="mention" title="ville#2962">@ville</span><br />&#128293; - <span class="mention" title="Elcar0#1528">@Elcar0</span><br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#127477;&#127472; - <span class="mention" title="ciphercobra#9766">@ciphercobra</span><br />&#127927; - <span class="mention" title="Malreath#617">@Malreath</span></div>
+<div class="msg-content">
+Part 2:<br />&#127837; - <span class="mention" title="Spanish Spagetti#828">@Spanish Spagetti</span><br />&#129415; - <span class="mention" title="Regicide1218#5350">@Regicide1218</span><br />&#128372; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><br />&#129370; - <span class="mention" title="cashwarrior1#5973">@cashwarrior1</span><br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br />&#128405; - <span class="mention" title="Marsim#9859">@Marsim</span><br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span><br />&#128701; - <span class="mention" title="Toiletti#2969">@Toiletti</span><br />&#128540; - <span class="mention" title="Timothy#888">@Timothy</span><br />&#128125; - <span class="mention" title="Maximus#1045">@Maximus</span><br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br />&#127345; - <span class="mention" title="Ds#474">@Ds</span><span class="msg-edited" title="23-Nov-17 09:07 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">23-Nov-17 09:08 </span>
+<div class="msg-content">
+Vote maximus the greatest! <span class="mention">@here</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">24-Nov-17 04:57 </span>
+<div class="msg-content">
+Hey <span class="mention" title="Ds#474">@Ds</span> don&#39;t vote on Jay! He is an ally!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">24-Nov-17 09:06 </span>
+<div class="msg-content">
+<b>Cultists, time to rise!</b> Whom do you wish to purify tonight? <span class="mention">@here</span> <br /><br />Part 1:<br />&#128190; - <span class="mention" title="Thrimian#7285">@Thrimian</span><br />&#128570;  - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128373; - <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span><br />&#128511; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> <br />&#128128; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br />&#128104;‍❤️‍&#128104; - <span class="mention" title="ville#2962">@ville</span><br />&#128293; - <span class="mention" title="Elcar0#1528">@Elcar0</span><br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#127477;&#127472; - <span class="mention" title="ciphercobra#9766">@ciphercobra</span><br />&#127927; - <span class="mention" title="Malreath#617">@Malreath</span><span class="msg-edited" title="24-Nov-17 09:08 ">(edited)</span></div>
+<div class="msg-content">
+Part 2:<br />&#127837; - <span class="mention" title="Spanish Spagetti#828">@Spanish Spagetti</span><br />&#129415; - <span class="mention" title="Regicide1218#5350">@Regicide1218</span><br />&#128372; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><br />&#129370; - <span class="mention" title="cashwarrior1#5973">@cashwarrior1</span><br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br />&#128405; - <span class="mention" title="Marsim#9859">@Marsim</span><br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span><br />&#128701; - <span class="mention" title="Toiletti#2969">@Toiletti</span><br />&#128540; - <span class="mention" title="Timothy#888">@Timothy</span><br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br />&#127345; - <span class="mention" title="Ds#474">@Ds</span><span class="msg-edited" title="24-Nov-17 09:06 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">24-Nov-17 09:12 </span>
+<div class="msg-content">
+<span class="mention">@here</span> our victim tonight will be Mark Sim! Vote while you can!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">24-Nov-17 09:13 </span>
+<div class="msg-content">
+like that wasn&#39;t completely unexpected.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">24-Nov-17 10:12 </span>
+<div class="msg-content">
+I know right lol</div>
+<div class="msg-content">
+I&#39;m surprised he has survived so long with how destructive he is<span class="msg-edited" title="24-Nov-17 10:13 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">25-Nov-17 10:25 </span>
+<div class="msg-content">
+Cultists, time to rise! Whom do you wish to purify tonight? <span class="mention">@here</span> <br /><br />&#128190; - @Mr Thanii<br />&#128570;  - @Al Ketta<br />&#128373; - @Jay Jr.<br />&#128511; - @Herald Typhus <br />&#128128; - @Lord Galaxx<br />&#128293; - @Dr. Carl E.<br />&#129302; - @Matthew Ron<br />&#127477;&#127472; - @Dr. Cipher<br />&#127927; - @Mr Aethereal<br />&#127837; - @Luigi<br />&#129415; - @Sir Rex<br />&#128372; - @Lord Ilias<br />&#129370; - @Knight Moneypriority<br />&#127954; - @Rudolf the Proud<br />&#128736; - @Old Titus<br />&#128701; - @Tim the Plumberer<br />&#128540; - @Little Tim<br />&#129365; - @Ruben<br />&#127345; - @Daniel Strong<span class="msg-edited" title="25-Nov-17 10:26 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137268957802397696/781eff41af6ba428a4b76b2e91656d15.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ds#474">Ds</span>
+<span class="msg-date">25-Nov-17 10:28 </span>
+<div class="msg-content">
+but there is no &#128164; person, hmmmm</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">25-Nov-17 10:38 </span>
+<div class="msg-content">
+Kills the Game Masters</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">25-Nov-17 10:40 </span>
+<div class="msg-content">
+means do nothing</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">25-Nov-17 10:42 </span>
+<div class="msg-content">
+&#128557;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">25-Nov-17 11:22 </span>
+<div class="msg-content">
+We are killing Rudolf tonight</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/242983689921888256/47f5be43aacdfca52f0f748f53482267.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="McTsts#4705">McTsts</span>
+<span class="msg-date">25-Nov-17 11:52 </span>
+<div class="msg-content">
+Yeah</div>
+<div class="msg-content">
+I&#39;m voting for him</div>
+<div class="msg-content">
+Us 2 voting for him is enough anyway</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/266777706501242881/7fedc994ff380e98a9a7b3d8ac6cc54c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Thrimian#7285">Thrimian</span>
+<span class="msg-date">26-Nov-17 12:13 </span>
+<div class="msg-content">
+Yeah</div>
+</div>
+</div>
+</div>
+</body>
+</html>

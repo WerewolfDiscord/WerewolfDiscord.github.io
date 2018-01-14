@@ -1,0 +1,593 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Werewolves - s2_the_guardian</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/375597071094382603/f5d3e0b23688a9edbd1269767354253e.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Werewolves</div>
+<div class="channel-name">s2_the_guardian</div>
+<div class="misc">49 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/102036304845377536/57780d2ea1eba67f7d2403cc4379b68f.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="marhjo#5178">marhjo</span>
+<span class="msg-date">20-Nov-17 09:23 </span>
+<div class="msg-content">
+:OOOO</div>
+<div class="msg-content">
+I&#39;m GUARDIAN!!!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">20-Nov-17 09:27 </span>
+<div class="msg-content">
+Congratulations on your promotion, citizen!</div>
+<div class="msg-content">
+From tomorrow on, you will be able to choose a person each day. They will be protected by you, and they will be unable to get killed during the day.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/102036304845377536/57780d2ea1eba67f7d2403cc4379b68f.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="marhjo#5178">marhjo</span>
+<span class="msg-date">20-Nov-17 09:29 </span>
+<div class="msg-content">
+Time for some &#129300;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/102036304845377536/57780d2ea1eba67f7d2403cc4379b68f.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="marhjo#5178">marhjo</span>
+<span class="msg-date">21-Nov-17 11:04 </span>
+<div class="msg-content">
+When do i need to choose someone to protect?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 11:31 </span>
+<div class="msg-content">
+Oh. As soon as possible, please.</div>
+<div class="msg-content">
+Maybe we should set a time limit for that. &#129300;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/102036304845377536/57780d2ea1eba67f7d2403cc4379b68f.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="marhjo#5178">marhjo</span>
+<span class="msg-date">21-Nov-17 11:35 </span>
+<div class="msg-content">
+Then I&#39;ll protect Ben the Techniciant</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 11:47 </span>
+<div class="msg-content">
+You choose to protect Ben? Interesting... Are you sure?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/102036304845377536/57780d2ea1eba67f7d2403cc4379b68f.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="marhjo#5178">marhjo</span>
+<span class="msg-date">21-Nov-17 12:14 </span>
+<div class="msg-content">
+I dont knooow :( its still early..</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/102036304845377536/57780d2ea1eba67f7d2403cc4379b68f.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="marhjo#5178">marhjo</span>
+<span class="msg-date">21-Nov-17 01:12 </span>
+<div class="msg-content">
+I&#39;ve made up my mind, i would like to save myself from lynching</div>
+<div class="msg-content">
+<span class="mention" title="Randium#6521">@Randium</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 01:13 </span>
+<div class="msg-content">
+Yourself? Are you sure?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/102036304845377536/57780d2ea1eba67f7d2403cc4379b68f.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="marhjo#5178">marhjo</span>
+<span class="msg-date">21-Nov-17 01:14 </span>
+<div class="msg-content">
+Noooo xD i&#39;m so split xD</div>
+<div class="msg-content">
+When do i need to inform last choice?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 01:17 </span>
+<div class="msg-content">
+Erm.....</div>
+<div class="msg-content">
+Let&#39;s say from now on, before <span class="pre">12:00</span> GMT. &#128539;</div>
+<div class="msg-content">
+But you&#39;re already 17 minutes late for that, so just... do it as quick as possible.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/102036304845377536/57780d2ea1eba67f7d2403cc4379b68f.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="marhjo#5178">marhjo</span>
+<span class="msg-date">21-Nov-17 01:19 </span>
+<div class="msg-content">
+Lily!!!</div>
+<div class="msg-content">
+Thats final</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">21-Nov-17 01:24 </span>
+<div class="msg-content">
+Okay.</div>
+<div class="msg-content">
+100% sure? &#128539;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">22-Nov-17 10:23 </span>
+<div class="msg-content">
+<b>Congradulations and much fanfare on your promotion citisen!</b><br />Starting from 0900 tomorrow morning you will be able to select one of your fellows to hold under your protection, you will act as their guard and protect them from any hostilities. rendering them immune to death while the sun is up. we expect your selection to be submitted before 1200 noon.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">23-Nov-17 09:56 </span>
+<div class="msg-content">
+All times are GMT I suppose?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">23-Nov-17 10:44 </span>
+<div class="msg-content">
+Dear <span class="mention">@Guardian</span>, you will have until <span class="pre">12:00</span> GMT to choose a person to protect! Whom will you choose?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">23-Nov-17 11:06 </span>
+<div class="msg-content">
+12:00 GMT is... 2 hours from now. Will choose by then.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">23-Nov-17 11:08 </span>
+<div class="msg-content">
+It is indeed</div>
+<div class="msg-content">
+Though you can pick the next protected person after the day voting tonight</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">23-Nov-17 11:10 </span>
+<div class="msg-content">
+Okay</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">23-Nov-17 11:20 </span>
+<div class="msg-content">
+<span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> you understand that you can only guarantee protection from the day vote, not the wolves/cult right?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">23-Nov-17 11:20 </span>
+<div class="msg-content">
+Yes, I do</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">23-Nov-17 12:43 </span>
+<div class="msg-content">
+I will protect &#128701; - Tim the Plumberer</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">23-Nov-17 01:19 </span>
+<div class="msg-content">
+Cool</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">23-Nov-17 09:36 </span>
+<div class="msg-content">
+Dear <span class="mention">@Guardian</span>,<br />Your Role for the day has been completed however a new dawn will approach soon Who will you protect tomorrow?<br />You have until <span class="pre">12:00</span> GMT to decide.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">23-Nov-17 10:08 </span>
+<div class="msg-content">
+<i>(That&#39;s a good udea, to already ask it during the night, and allow them to change it in the morning, if they hapoen to make up their mind)</i></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">24-Nov-17 10:14 </span>
+<div class="msg-content">
+So, I can change who I shall protect at any time before 12 GMT right?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">24-Nov-17 10:15 </span>
+<div class="msg-content">
+Correct.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">24-Nov-17 09:11 </span>
+<div class="msg-content">
+Dear <span class="mention">@Guardian</span>,<br />Your day of rest has come to an end,  however a new dawn will approach soon Who will you protect tomorrow?<br />You have until <span class="pre">12:00</span> GMT to decide.<span class="msg-edited" title="24-Nov-17 09:11 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">25-Nov-17 12:17 </span>
+<div class="msg-content">
+I would like to protect Rudolf.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">25-Nov-17 12:20 </span>
+<div class="msg-content">
+Are you certain <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> ?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">25-Nov-17 12:21 </span>
+<div class="msg-content">
+Yes.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">25-Nov-17 12:21 </span>
+<div class="msg-content">
+Then it is written <span class="mention">@Game Master</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">25-Nov-17 04:49 </span>
+<div class="msg-content">
+You haven&#39;t updated the message to show I protected Rudolf</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">25-Nov-17 06:19 </span>
+<div class="msg-content">
+becasue i can&#39;t &#128550;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">26-Nov-17 12:04 </span>
+<div class="msg-content">
+For the sake of it, I&#39;ll protect Luigi today.</div>
+<div class="msg-content">
+I want to know how the remaining wolf reacts to that.<span class="msg-edited" title="26-Nov-17 12:04 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">26-Nov-17 12:24 </span>
+<div class="msg-content">
+You&#39;re certain <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> ?<span class="msg-edited" title="26-Nov-17 12:25 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">26-Nov-17 12:30 </span>
+<div class="msg-content">
+Yep</div>
+</div>
+</div>
+</div>
+</body>
+</html>

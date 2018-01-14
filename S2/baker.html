@@ -1,0 +1,980 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Werewolves - s2_baker</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/375597071094382603/f5d3e0b23688a9edbd1269767354253e.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Werewolves</div>
+<div class="channel-name">s2_baker</div>
+<div class="misc">103 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">19-Nov-17 09:36 </span>
+<div class="msg-content">
+yoyoyoyo</div>
+<div class="msg-content">
+<img class="emoji" title=":gorbinHI:" src="https://cdn.discordapp.com/emojis/355057160675393547.png" /></div>
+<div class="msg-content">
+oh no</div>
+<div class="msg-content">
+<span class="mention" title="Randium#6521">@Randium</span> you have a set a few too much ticks in the permissions</div>
+<div class="msg-content">
+i could give <span class="mention" title="sacrify#6387">@sacrify</span> access</div>
+<div class="msg-content">
+i could give <span class="mention">@everyone</span> access</div>
+<div class="msg-content">
+you see?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">19-Nov-17 09:54 </span>
+<div class="msg-content">
+Wait, what?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">19-Nov-17 09:54 </span>
+<div class="msg-content">
+yes</div>
+<div class="msg-content">
+i could kill the game with one click</div>
+<div class="msg-content">
+i could give everyone access to every channel in secret channel category</div>
+<div class="msg-content">
+ok fixed</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">19-Nov-17 09:55 </span>
+<div class="msg-content">
+Can you read all the channels as well?</div>
+<div class="msg-content">
+How did that happen?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="sacrify#6387">sacrify</span>
+<span class="msg-date">19-Nov-17 09:55 </span>
+<div class="msg-content">
+dail</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">19-Nov-17 09:56 </span>
+<div class="msg-content">
+i havent chnaged anything expect adding sacrify to herre</div>
+<div class="msg-content">
+but i could have killed the game</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">19-Nov-17 10:27 </span>
+<div class="msg-content">
+The Archer LOL</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">19-Nov-17 10:27 </span>
+<div class="msg-content">
+&#128527; You know it.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">19-Nov-17 10:30 </span>
+<div class="msg-content">
+yesi do &#128516;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">19-Nov-17 11:18 </span>
+<div class="msg-content">
+Wait, what happened here?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">19-Nov-17 11:43 </span>
+<div class="msg-content">
+Am I allowed to search someone&#39;s pockets while they are passed out drunk?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">19-Nov-17 11:46 </span>
+<div class="msg-content">
+you attempt to but your theiving skill is too low, (lvl 100/99 required)<span class="msg-edited" title="19-Nov-17 11:46 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">19-Nov-17 11:48 </span>
+<div class="msg-content">
+He&#39;s passed out drunk. If he does wake up, the most he can do is piss himself</div>
+<div class="msg-content">
+That was almost an entire bottle of 199 proof alcohol</div>
+<div class="msg-content">
+He should be dead by now</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">20-Nov-17 09:10 </span>
+<div class="msg-content">
+Yo bakers.</div>
+<div class="msg-content">
+I think we can trust Vyryn 75%</div>
+<div class="msg-content">
+but not 100%. I said he has to do whatever we do. if we vote on someone, he has to do the same</div>
+<div class="msg-content">
+it would be too cool of we would be wervolves now</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">20-Nov-17 10:28 </span>
+<div class="msg-content">
+can I be the guardian?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 01:26 </span>
+<div class="msg-content">
+I voted for you</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">20-Nov-17 01:35 </span>
+<div class="msg-content">
+ok. another one of us will be the reporter. another one the mayor</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">20-Nov-17 02:16 </span>
+<div class="msg-content">
+ok?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 02:17 </span>
+<div class="msg-content">
+Alright, but I&#39;m on the second list, so don&#39;t count on me for much as far as elections go</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">20-Nov-17 02:18 </span>
+<div class="msg-content">
+?</div>
+<div class="msg-content">
+ah understood</div>
+<div class="msg-content">
+man</div>
+<div class="msg-content">
+you didn&#39;t vote for me</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 02:54 </span>
+<div class="msg-content">
+Has someone else contacted Jay jr?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">20-Nov-17 03:01 </span>
+<div class="msg-content">
+I did</div>
+<div class="msg-content">
+you too?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 03:03 </span>
+<div class="msg-content">
+Yes</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">20-Nov-17 03:03 </span>
+<div class="msg-content">
+what has he said?</div>
+<div class="msg-content">
+he said he&#39;s a innocent to me</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 03:04 </span>
+<div class="msg-content">
+He was just double checking. From what he has said, we can infer that he is not a werewolf, as he was holding a silver sword in chat earlier</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">20-Nov-17 03:10 </span>
+<div class="msg-content">
+I&#39;m really unusre. but having him as an opponent is always bad</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 07:09 </span>
+<div class="msg-content">
+Old Titus claims runner, as well as galaxx. Bhuna and Jay jr claim innocent. Be on the lookout<span class="msg-edited" title="20-Nov-17 07:09 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/335939091830931476/8ca5917db895b7f323201462beafb4a1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Robotron#3660">Robotron</span>
+<span class="msg-date">20-Nov-17 07:38 </span>
+<div class="msg-content">
+&#128499; &#129416; 1⃣ <br />&#128499; &#129415; 2⃣</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">20-Nov-17 09:39 </span>
+<div class="msg-content">
+All bakers, we may have an ally. Jay jr claims runner. He seeks to unite the baker&#39;s and cultists to give a better hope of survival to the town. I recommend you join.<span class="msg-edited" title="20-Nov-17 09:39 ">(edited)</span></div>
+<div class="msg-content">
+If you do wish to join, contact me here</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 06:37 </span>
+<div class="msg-content">
+JR is cult member?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 07:07 </span>
+<div class="msg-content">
+<span class="mention" title="Buddy1913#9588">@Buddy1913</span> add me to the channel pls</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">21-Nov-17 07:11 </span>
+<div class="msg-content">
+Huh?</div>
+<div class="msg-content">
+Which channel.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 07:12 </span>
+<div class="msg-content">
+Rex+JR</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">21-Nov-17 07:14 </span>
+<div class="msg-content">
+I can&#39;t see a channel by that name</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 07:16 </span>
+<div class="msg-content">
+is there a channel where both have access to?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">21-Nov-17 07:19 </span>
+<div class="msg-content">
+There are multiple channels that it could be<span class="msg-edited" title="21-Nov-17 07:20 ">(edited)</span></div>
+<div class="msg-content">
+Also would need one of them to confirm that you can as opposed to you asking to join</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 07:30 </span>
+<div class="msg-content">
+All bakers, we may have an ally. Jay jr claims runner. He seeks to unite the baker&#39;s and cultists to give a better hope of survival to the town. I recommend you join. <br />If you do wish to join, contact me here</div>
+<div class="msg-content">
+Sir Rex</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">21-Nov-17 07:35 </span>
+<div class="msg-content">
+Yea but I don&#39;t know which channel he is referring to. I&#39;m not going to take a stab in the dark and add you to a channel without knowing for certain you belong there</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 07:42 </span>
+<div class="msg-content">
+ok</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 12:07 </span>
+<div class="msg-content">
+can I be at least reporter?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">21-Nov-17 01:00 </span>
+<div class="msg-content">
+The channel is called sword training</div>
+<div class="msg-content">
+<span class="mention" title="Buddy1913#9588">@Buddy1913</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 01:30 </span>
+<div class="msg-content">
+we got Lord galaxy on our side</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">21-Nov-17 01:31 </span>
+<div class="msg-content">
+Galaxx is with us?<span class="msg-edited" title="21-Nov-17 01:31 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 01:34 </span>
+<div class="msg-content">
+yes</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">21-Nov-17 01:34 </span>
+<div class="msg-content">
+Inform Jay jr</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 01:34 </span>
+<div class="msg-content">
+he gave me information (we can trust him) that either JayJR or MrJoker is a wervolve</div>
+<div class="msg-content">
+because of that, I&#39;m not sure if we should inform him</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">21-Nov-17 01:36 </span>
+<div class="msg-content">
+I&#39;d wager to say more of Mr Joker, due to Jay holding a silver sword in chat</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 01:36 </span>
+<div class="msg-content">
+why does this silver sword makes him so save in your eyes?</div>
+<div class="msg-content">
+ok. Mr.Joker is wervolve. I&#39;m 100% sure</div>
+<div class="msg-content">
+ok. let me explain why I think @marhjo#5178 is a wervolve. I got information from the crowd seeker. He told me that he knows the roles from <span class="mention" title="Regicide1218#5350">@Regicide1218</span> @JR#6781 and @marhjo#5178 . One of them is runner, one is baker and one is wervolve. after I got this information I asked @JR#6781 which role he has. I know <span class="mention" title="Regicide1218#5350">@Regicide1218</span> role, so it left just one role left, the wervolve.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">21-Nov-17 01:54 </span>
+<div class="msg-content">
+JR claims runner</div>
+<div class="msg-content">
+I would suspect that marhjo is ww</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 01:55 </span>
+<div class="msg-content">
+he is a wervolve</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">21-Nov-17 04:25 </span>
+<div class="msg-content">
+So... Who to lynch?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">21-Nov-17 05:37 </span>
+<div class="msg-content">
+Any ideas about Al Ketta?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 05:39 </span>
+<div class="msg-content">
+he&#39;s rarely talking</div>
+<div class="msg-content">
+<span class="mention" title="Timothy#888">@Timothy</span> what are you doing? voting to kill a innocent??</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/335939091830931476/8ca5917db895b7f323201462beafb4a1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Robotron#3660">Robotron</span>
+<span class="msg-date">21-Nov-17 07:30 </span>
+<div class="msg-content">
+&#128373; &#128259; &#128701;      <img class="emoji" title=":werewolf:" src="https://cdn.discordapp.com/emojis/380837095633321985.png" /></div>
+<div class="msg-content">
+&#127895; &#128373; &#129335; <img class="emoji" title=":werewolf:" src="https://cdn.discordapp.com/emojis/380837095633321985.png" /></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/139013016493621248/e9eb9aedc9b33ad00188c88741f4ef7c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Timothy#888">Timothy</span>
+<span class="msg-date">21-Nov-17 07:59 </span>
+<div class="msg-content">
+Sorry i change it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/335939091830931476/8ca5917db895b7f323201462beafb4a1.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Robotron#3660">Robotron</span>
+<span class="msg-date">21-Nov-17 08:02 </span>
+<div class="msg-content">
+&#127867;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 09:20 </span>
+<div class="msg-content">
+well mrjoker isn&#39;t a wervole</div>
+<div class="msg-content">
+nvd</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">21-Nov-17 09:33 </span>
+<div class="msg-content">
+Iemme guess, he was a runner</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 09:36 </span>
+<div class="msg-content">
+he is a wervolve, something happened that confused me</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">21-Nov-17 09:43 </span>
+<div class="msg-content">
+Ok. Good. Relay this to the rest of the town. I&#39;ll inform the elders.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 09:48 </span>
+<div class="msg-content">
+He was a wervole</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">21-Nov-17 09:49 </span>
+<div class="msg-content">
+a werevole?</div>
+<div class="msg-content">
+i didn&#39;t think we added those this round.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 09:50 </span>
+<div class="msg-content">
+me i hate this word &#128516;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">21-Nov-17 11:04 </span>
+<div class="msg-content">
+werewolf</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">21-Nov-17 11:06 </span>
+<div class="msg-content">
+thrimian opened a conspiracy with me</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/139013016493621248/e9eb9aedc9b33ad00188c88741f4ef7c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Timothy#888">Timothy</span>
+<span class="msg-date">22-Nov-17 04:37 </span>
+<div class="msg-content">
+Who did you choose?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">22-Nov-17 04:42 </span>
+<div class="msg-content">
+For...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/139013016493621248/e9eb9aedc9b33ad00188c88741f4ef7c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Timothy#888">Timothy</span>
+<span class="msg-date">22-Nov-17 05:40 </span>
+<div class="msg-content">
+Last vote</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">22-Nov-17 05:40 </span>
+<div class="msg-content">
+To hang, I chose Joker</div>
+</div>
+</div>
+</div>
+</body>
+</html>

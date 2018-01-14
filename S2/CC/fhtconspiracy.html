@@ -1,0 +1,556 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Werewolves - s2_cc_fhtconspiracy</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/375597071094382603/f5d3e0b23688a9edbd1269767354253e.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Werewolves</div>
+<div class="channel-name">s2_cc_fhtconspiracy</div>
+<div class="misc">53 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">20-Nov-17 09:37 </span>
+<div class="msg-content">
+Hallo meine alten Freunde, lange ist es her.</div>
+<div class="msg-content">
+Wie l&#228;uft es so bei euch?</div>
+<div class="msg-content">
+Wir haben uns das lezte mal in Castelvillage gesehen oder?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137644986710753280/367a6539725925f3dfec1cba0a35b5c3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ruebe5w#2877">Ruebe5w</span>
+<span class="msg-date">21-Nov-17 01:02 </span>
+<div class="msg-content">
+Die Gesch&#228;fte laufen, die Menschen wollen in Wettk&#228;mpfe gegeneinander antreten, und wenn es nur mit Wetten  ist. Gibt es Neuigkeiten aus eurem Dorf?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">21-Nov-17 01:04 </span>
+<div class="msg-content">
+Nicht wirklich, im Dorf ist momentan sehr ruhig.</div>
+<div class="msg-content">
+Aber ich habe viele Ger&#252;chte in diesem Dorf mitbekommen.</div>
+<div class="msg-content">
+Ich wei&#223;, dass Bhuna Dorfbewohner war und  Catine war Amor.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137644986710753280/367a6539725925f3dfec1cba0a35b5c3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ruebe5w#2877">Ruebe5w</span>
+<span class="msg-date">21-Nov-17 01:09 </span>
+<div class="msg-content">
+Ohja, es gibt so einige...Es sind schon wirklich schlimme Zeiten. Aber um Mal von unseren &#196;ngsten wegzukommen, m&#246;chtet ihr auch eine Wette aufstellen, wer in der n&#228;chsten Nacht unter die Erde kommt? Es kostet nur 1 &#129365; Mindesteinsatz.</div>
+<div class="msg-content">
+Ohja, es gibt so einige...Es sind schon wirklich schlimme Zeiten. Aber um Mal von unseren &#196;ngsten wegzukommen, m&#246;chtet ihr auch eine Wette aufstellen, wer in der n&#228;chsten Nacht unter die Erde kommt? Es kostet nur 1 &#129365; Mindesteinsatz.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">21-Nov-17 03:07 </span>
+<div class="msg-content">
+Ich wette Knight Moneypriority ist Werwofl und setze 10 &#129365; darauf</div>
+<div class="msg-content">
+Ich setze 25 &#129365; darauf,dass Ben the Technician Warlock ist.</div>
+<div class="msg-content">
+Wenn ich als n&#228;chstes sterbe stimmen die obrigen Ger&#252;chte h&#246;chst warscheinlich</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/139013016493621248/e9eb9aedc9b33ad00188c88741f4ef7c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Timothy#888">Timothy</span>
+<span class="msg-date">22-Nov-17 04:35 </span>
+<div class="msg-content">
+Die aktuelle Abstimmung ist ja f&#252;r Tod?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">23-Nov-17 09:21 </span>
+<div class="msg-content">
+Willkommen <span class="mention" title="Maximus#1045">@Maximus</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/310467587932815372/501b778486661a07d7677506d9427148.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Maximus#1045">Maximus</span>
+<span class="msg-date">23-Nov-17 09:22 </span>
+<div class="msg-content">
+thank you &#128521;</div>
+<div class="msg-content">
+wenn du das sagst</div>
+<div class="msg-content">
+ich bin auf jeden Fall gespannt</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:23 </span>
+<div class="msg-content">
+Ich habe jetzt aus 2 Quellen erfahren, dass Ben Warlock gewesen seien soll, also ist die abstimmung  gut verlaufen</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/310467587932815372/501b778486661a07d7677506d9427148.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Maximus#1045">Maximus</span>
+<span class="msg-date">23-Nov-17 09:24 </span>
+<div class="msg-content">
+dann muss es stimmen</div>
+<div class="msg-content">
+abend tim</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:25 </span>
+<div class="msg-content">
+ja, bin mir sehr sicher und bald muss der Reporter das best&#228;tigen</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/310467587932815372/501b778486661a07d7677506d9427148.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Maximus#1045">Maximus</span>
+<span class="msg-date">23-Nov-17 09:25 </span>
+<div class="msg-content">
+dann haben wir es sicher</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">23-Nov-17 09:25 </span>
+<div class="msg-content">
+ich spreche nicht deutsch &#128546;</div>
+<div class="msg-content">
+but i get the jist of what&#39;s being said :p</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/310467587932815372/501b778486661a07d7677506d9427148.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Maximus#1045">Maximus</span>
+<span class="msg-date">23-Nov-17 09:26 </span>
+<div class="msg-content">
+sorry sould we write in english</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">23-Nov-17 09:26 </span>
+<div class="msg-content">
+by all means carry on in German<span class="msg-edited" title="23-Nov-17 09:26 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:26 </span>
+<div class="msg-content">
+I asked Randium and he gave his ok</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">23-Nov-17 09:26 </span>
+<div class="msg-content">
+it&#39;s interesting &#128515;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:26 </span>
+<div class="msg-content">
+Thank you</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/310467587932815372/501b778486661a07d7677506d9427148.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Maximus#1045">Maximus</span>
+<span class="msg-date">23-Nov-17 09:27 </span>
+<div class="msg-content">
+also wir werden sehen</div>
+<div class="msg-content">
+die einzige Sorge die ich habe ist aktuell, dass einer von uns aus irgendwelchen l&#228;cherlichen gr&#252;nden stirbt</div>
+<div class="msg-content">
+ich muss das spiel nicht gewinnen, will aber doch gerne ins lategame kommen</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">23-Nov-17 09:29 </span>
+<div class="msg-content">
+I understood that bit!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:29 </span>
+<div class="msg-content">
+Ich stehe gerade mit einer neuen Quelle in kontakt</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/310467587932815372/501b778486661a07d7677506d9427148.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Maximus#1045">Maximus</span>
+<span class="msg-date">23-Nov-17 09:30 </span>
+<div class="msg-content">
+wer ist diese Quelle ?</div>
+<div class="msg-content">
+wenn ich fragen darf ?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">23-Nov-17 09:31 </span>
+<div class="msg-content">
+der Reporter hat anscheinend gesagt joker war wolf und vyryn fortune teller</div>
+<div class="msg-content">
+<i>yes</i></div>
+<div class="msg-content">
+jemand gutes</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">24-Nov-17 11:25 </span>
+<div class="msg-content">
+Da warens nur noch drei &#128533;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137644986710753280/367a6539725925f3dfec1cba0a35b5c3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ruebe5w#2877">Ruebe5w</span>
+<span class="msg-date">24-Nov-17 04:24 </span>
+<div class="msg-content">
+&#128530;</div>
+<div class="msg-content">
+Kann Maximus eigentlich diesen Chat noch lesen?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">24-Nov-17 04:35 </span>
+<div class="msg-content">
+Ja</div>
+<div class="msg-content">
+Mir f&#228;llt gerade auf, dass alle Seeher, sowohl gut als auch b&#246;se, tod sind.<span class="msg-edited" title="24-Nov-17 04:38 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">24-Nov-17 04:46 </span>
+<div class="msg-content">
+Alle Toten k&#246;nnen diesen Chat lesen, also, ja, Maximus auch. &#129303;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">24-Nov-17 04:47 </span>
+<div class="msg-content">
+Sprichst du deutsch?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">24-Nov-17 05:13 </span>
+<div class="msg-content">
+Nicht so vehl. Ich spreche Nederlandisch, also Deutsch is nicht so schreklich.<span class="msg-edited" title="24-Nov-17 05:13 ">(edited)</span></div>
+<div class="msg-content">
+Ich habe alles mit <i>das, der, die</i> total vergessen, das war eine Katastrofe.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">24-Nov-17 06:00 </span>
+<div class="msg-content">
+Not so well, I speak Dutch. also German is not -no idea-<br />I have -dunno- that was a catastrophe.</div>
+<div class="msg-content">
+I can only speak English and read fragments of German, French and Spanish.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137645249890615296/5f5bc64ccf0a9956f11d1a2e2719fd22.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="CommandLord aka illio#8935">CommandLord aka illio</span>
+<span class="msg-date">25-Nov-17 05:02 </span>
+<div class="msg-content">
+<span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> du bist nicht zuf&#228;llig im Cult? Ich habe n&#228;hmlich kontakt zu den B&#228;ckern, die sich mit dem Cult verbinden wollen.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137644986710753280/367a6539725925f3dfec1cba0a35b5c3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ruebe5w#2877">Ruebe5w</span>
+<span class="msg-date">25-Nov-17 05:47 </span>
+<div class="msg-content">
+N&#246;, bin ich nicht</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/137644986710753280/367a6539725925f3dfec1cba0a35b5c3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Ruebe5w#2877">Ruebe5w</span>
+<span class="msg-date">26-Nov-17 09:28 </span>
+<div class="msg-content">
+Wer wart Ihr?</div>
+</div>
+</div>
+</div>
+</body>
+</html>
