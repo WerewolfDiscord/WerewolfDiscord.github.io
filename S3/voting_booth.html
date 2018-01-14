@@ -1,0 +1,552 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Werewolves - s3_voting_booth</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/375597071094382603/f5d3e0b23688a9edbd1269767354253e.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Werewolves</div>
+<div class="channel-name">s3_voting_booth</div>
+<div class="misc">60 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">01-Dez-17 11:59 </span>
+<div class="msg-content">
+<i></i>Who shall become the town&#39;s new <span class="mention">@Mayor</span>? You can vote <span class="mention">@here</span>:</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">01-Dez-17 12:04 </span>
+<div class="msg-content">
+<b>Who shall become the new <span class="mention">@Mayor</span>?</b><br /><u>Day 1:</u><br /><b>Who voted for <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> to become the <span class="mention">@Mayor</span>:</b><br /><span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><br /><span class="mention" title="Marsim#9859">@Marsim</span><br /><span class="mention" title="souless_2nd#3288">@souless_2nd</span> <br /><br /><b>Who voted on <span class="mention" title="Marsim#9859">@Marsim</span> to become the <span class="mention">@Mayor</span>:</b><br /><span class="mention" title="Freedmoon#1128">@Freedmoon</span><br /><br /><b>Who voted for <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> to become the <span class="mention">@Mayor</span>:</b><br /><span class="mention" title="DogeFlakes#1016">@DogeFlakes</span><br /><br /><b>Who voted for <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> to become the <span class="mention">@Mayor</span>:</b><br /><span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br /><br /><b>Who voted for <span class="mention" title="BenTechy66#8809">@BenTechy66</span> to become the <span class="mention">@Mayor</span>:</b><br /><span class="mention" title="ProNoob135#1100">@ProNoob135</span><br /><span class="mention" title="WhyThough - The best username&#174;#6032">@WhyThough - The best username&#174;</span><br /><span class="mention" title="Phil Inc.#5399">@Phil Inc.</span><br /><span class="mention" title="Leviticus#4878">@Leviticus</span><br /><span class="mention" title="Vyryn#4618">@Vyryn</span><br /><span class="mention" title="alekkat#349">@alekkat</span><br /><span class="mention" title="BenTechy66#8809">@BenTechy66</span><br /><span class="mention" title="Predator123s#5633">@Predator123s</span><br /><br /><b>Who voted for <span class="mention" title="Chopper2112#496">@Chopper2112</span> to become the <span class="mention">@Mayor</span>:</b><br /><span class="mention" title="Lilith#6468">@Lilith</span><br /><span class="mention" title="MichaelMouseStar#4266">@MichaelMouseStar</span><br /><span class="mention" title="marhjo#5178">@marhjo</span><br /><span class="mention" title="McTsts#4705">@McTsts</span><br /><span class="mention" title="Chopper2112#496">@Chopper2112</span><br /><span class="mention" title="BlendedSpider#914">@BlendedSpider</span><br /><span class="mention" title="Eminem#5031">@Eminem</span><br /><br /><b>Who voted for <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> to become the <span class="mention">@Mayor</span>:</b><br /><span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br /><br /><b>Who voted for <span class="mention" title="Leviticus#4878">@Leviticus</span> to become the <span class="mention">@Mayor</span>:</b><br /><span class="mention" title="Vyryn#4618">@Vyryn</span><span class="msg-edited" title="01-Dez-17 09:37 ">(edited)</span></div>
+<div class="msg-content">
+<b>Who voted for <span class="mention" title="Lilith#6468">@Lilith</span> to become the <span class="mention">@Mayor</span>:</b><br /><span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><span class="msg-edited" title="01-Dez-17 09:31 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">01-Dez-17 09:31 </span>
+<div class="msg-content">
+<span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span>, your voting has been disqualified because you have voted on two different players.</div>
+<div class="msg-content">
+<span class="mention" title="MichaelMouseStar#4266">@MichaelMouseStar</span>, your voting has been disqualified because you have voted on two different players.<span class="msg-edited" title="01-Dez-17 09:34 ">(edited)</span></div>
+<div class="msg-content">
+Your new <span class="mention">@Mayor</span> shall now be <span class="mention" title="BenTechy66#8809">@BenTechy66</span>!<span class="msg-edited" title="01-Dez-17 09:38 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">02-Dez-17 10:44 </span>
+<div class="msg-content">
+<b>Who shall be put into the guillotine due to suspicion of killing <span class="mention" title="Leviticus#4878">@Leviticus</span> and <span class="mention" title="Marsim#9859">@Marsim</span>?</b><br />&#129300; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> <br />&#128546; - <span class="mention" title="marhjo#5178">@marhjo</span><br />&#129472; - <span class="mention" title="MichaelMouseStar#4266">@MichaelMouseStar</span><br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span><br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br />&#129338; - <span class="mention" title="Legolas#2139">@Legolas</span><br />&#127859; - <span class="mention" title="Ds#474">@Ds</span><br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span><br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128563; - <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span><br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br />&#127918; - <span class="mention" title="BenTechy66#8809">@BenTechy66</span><br />&#127829; - <span class="mention" title="Chopper2112#496">@Chopper2112</span><br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br />&#128008; - <span class="mention" title="WhyThough - The best username&#174;#6032">@WhyThough - The best username&#174;</span><br />&#128375; - <span class="mention" title="BlendedSpider#914">@BlendedSpider</span><br />&#128005; - <span class="mention" title="Vyryn#4618">@Vyryn</span><br />&#128376; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><span class="msg-edited" title="02-Dez-17 10:45 ">(edited)</span></div>
+<div class="msg-content">
+&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span><br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span><br />&#128076; - <span class="mention" title="ed588#6120">@ed588</span><br />&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span><br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span><br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span><br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span><br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span><br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span><br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span><br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span><br />&#128019; - <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span><br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span><br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span><br />&#127820; - <span class="mention" title="Banana#2546">@Banana</span><br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">02-Dez-17 11:02 </span>
+<div class="msg-content">
+Oh, and be careful whom you vote on, <span class="mention">@everyone</span>! If the Angel gets killed by this lynch, then the Angel wins!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">02-Dez-17 12:23 </span>
+<div class="msg-content">
+Also, the town decided it was time to choose a <span class="mention">@Reporter</span>! <b>Who shall become the <span class="mention">@Reporter</span> of the town?</b><br />The <span class="mention">@Reporter</span> knows all the roles of all the dead players. It is up to him whether he shares that or not. So watch out you don&#39;t choose a werewolf, they might use it to bend the truth...<br />&#129300; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> <br />&#128546; - <span class="mention" title="marhjo#5178">@marhjo</span><br />&#129472; - <span class="mention" title="MichaelMouseStar#4266">@MichaelMouseStar</span><br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span><br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br />&#129338; - <span class="mention" title="Legolas#2139">@Legolas</span><br />&#127859; - <span class="mention" title="Ds#474">@Ds</span><br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span><br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128563; - <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span><br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br />&#127918; - <span class="mention" title="BenTechy66#8809">@BenTechy66</span><br />&#127829; - <span class="mention" title="Chopper2112#496">@Chopper2112</span><br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br />&#128008; - <span class="mention" title="WhyThough - The best username&#174;#6032">@WhyThough - The best username&#174;</span><br />&#128375; - <span class="mention" title="BlendedSpider#914">@BlendedSpider</span><br />&#128005; - <span class="mention" title="Vyryn#4618">@Vyryn</span><br />&#128376; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><span class="msg-edited" title="02-Dez-17 12:24 ">(edited)</span></div>
+<div class="msg-content">
+&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span><br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span><br />&#128076; - <span class="mention" title="ed588#6120">@ed588</span><br />&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span><br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span><br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span><br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span><br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span><br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span><br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span><br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span><br />&#128019; - <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span><br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span><br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span><br />&#127820; - <span class="mention" title="Banana#2546">@Banana</span><br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">02-Dez-17 08:56 </span>
+<div class="msg-content">
+4 minutes left, <span class="mention">@everyone</span>!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">02-Dez-17 09:15 </span>
+<div class="msg-content">
+<b>Who voted to kill <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span>:</b><br /><span class="mention" title="WhyThough - The best username&#174;#6032">@WhyThough - The best username&#174;</span><br /><span class="mention" title="MichaelMouseStar#4266">@MichaelMouseStar</span><br /><span class="mention" title="RafMeister#7090">@RafMeister</span><br /><span class="mention" title="Phil Inc.#5399">@Phil Inc.</span><br /><span class="mention" title="marhjo#5178">@marhjo</span><br /><span class="mention" title="McTsts#4705">@McTsts</span><br /><span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br /><span class="mention" title="alekkat#349">@alekkat</span><br /><span class="mention" title="Lilith#6468">@Lilith</span><br /><span class="mention" title="HurricanKai#4953">@HurricanKai</span></div>
+<div class="msg-content">
+<b>Who voted to make <span class="mention" title="marhjo#5178">@marhjo</span> the <span class="mention">@Reporter</span>:</b><br /><span class="mention" title="MichaelMouseStar#4266">@MichaelMouseStar</span><br /><span class="mention" title="Legolas#2139">@Legolas</span><br /><span class="mention" title="marhjo#5178">@marhjo</span><br /><span class="mention" title="McTsts#4705">@McTsts</span><br /><span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span><br /><span class="mention" title="Chopper2112#496">@Chopper2112</span><br /><span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br /><span class="mention" title="Unbihexium#5073">@Unbihexium</span><br />@WhyThough - The offical meme&#174;#6032<br /><span class="mention" title="Freedmoon#1128">@Freedmoon</span><br /><span class="mention" title="Lilith#6468">@Lilith</span><span class="msg-edited" title="02-Dez-17 09:17 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">03-Dez-17 01:19 </span>
+<div class="msg-content">
+<b>Who shall be killed due to suspicion of killing <span class="mention" title="MichaelMouseStar#4266">@MichaelMouseStar</span>, <span class="mention" title="Chopper2112#496">@Chopper2112</span> and <span class="mention" title="Ds#474">@Ds</span>?</b><br />&#129300; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><br />&#128546; - <span class="mention" title="marhjo#5178">@marhjo</span><br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span><br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br />&#129338; - <span class="mention" title="Legolas#2139">@Legolas</span><br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span><br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#127918; - <span class="mention" title="BenTechy66#8809">@BenTechy66</span><br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br />&#128008; - @WhyThough - The offical meme&#174;#6032<br />&#128375; - <span class="mention" title="BlendedSpider#914">@BlendedSpider</span><br />&#128005; - <span class="mention" title="Vyryn#4618">@Vyryn</span><br />&#128376; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span><br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span><span class="msg-edited" title="03-Dez-17 01:21 ">(edited)</span></div>
+<div class="msg-content">
+&#128076; - ed588#6120<br />&#129351; - Unbihexium#5073<br />&#127908; - Eminem#5031<br />&#128039; - APenGuWhiChIsSOCool ✓ᵛᵉʳᶦᶠᶦᵉᵈ#7424<br />&#127922; - Phil Inc.#5399<br />&#128123; - HurricanKai#4953<br />&#128034; - souless_2nd#3288<br />&#129302; - Robotron#3660<br />&#128519; - Predator123s#5633<br />&#127792; - RafMeister#7090<br />&#128019; - BigNinjaChicken#2151<br />&#129366; - Freedmoon#1128<br />&#128533; - ProNoob135#1100<br />&#127814; - Ganymede#2650<br />&#127820; - Banana#2546<br />&#128124; - Lilith#6468</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">03-Dez-17 04:29 </span>
+<div class="msg-content">
+Also, let us not forget to choose a new <span class="mention">@Mayor</span>! <br /><b>Who shall become the new Mayor?</b><br />&#129300; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><br />&#128546; - <span class="mention" title="marhjo#5178">@marhjo</span><br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span><br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br />&#129338; - <span class="mention" title="Legolas#2139">@Legolas</span><br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span><br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br />&#128008; - <span class="mention" title="WhyThough - The best username&#174;#6032">@WhyThough - The best username&#174;</span><br />&#128375; - <span class="mention" title="BlendedSpider#914">@BlendedSpider</span><br />&#128005; - <span class="mention" title="Vyryn#4618">@Vyryn</span><br />&#128376; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span><br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span><span class="msg-edited" title="03-Dez-17 04:30 ">(edited)</span></div>
+<div class="msg-content">
+&#128076; - ed588#6120<br />&#129351; - Unbihexium#5073<br />&#127908; - Eminem#5031<br />&#128039; - APenGuWhiChIsSOCool ✓ᵛᵉʳᶦᶠᶦᵉᵈ#7424<br />&#127922; - Phil Inc.#5399<br />&#128123; - HurricanKai#4953<br />&#128034; - souless_2nd#3288<br />&#129302; - Robotron#3660<br />&#128519; - Predator123s#5633<br />&#127792; - RafMeister#7090<br />&#128019; - BigNinjaChicken#2151<br />&#129366; - Freedmoon#1128<br />&#128533; - ProNoob135#1100<br />&#127814; - Ganymede#2650<br />&#127820; - Banana#2546<br />&#128124; - Lilith#6468</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">03-Dez-17 08:49 </span>
+<div class="msg-content">
+10 minutes left tp vote, <span class="mention">@everyone</span>!</div>
+<div class="msg-content">
+3 minutes left!</div>
+<div class="msg-content">
+Both votings are gonna be a close call... who will become the <span class="mention">@Mayor</span>, and who shall die tonight?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">03-Dez-17 09:04 </span>
+<div class="msg-content">
+<b>Who voted to kill <span class="mention" title="WhyThough - The best username&#174;#6032">@WhyThough - The best username&#174;</span> :</b><br /><span class="mention" title="HurricanKai#4953">@HurricanKai</span><br /><span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br /><span class="mention" title="BlendedSpider#914">@BlendedSpider</span><br /><span class="mention" title="Legolas#2139">@Legolas</span><br /><span class="mention" title="RafMeister#7090">@RafMeister</span><br /><span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span><br /><span class="mention" title="ed588#6120">@ed588</span><br /><span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><span class="msg-edited" title="03-Dez-17 09:05 ">(edited)</span></div>
+<div class="msg-content">
+<b>Who chose <span class="mention" title="BlendedSpider#914">@BlendedSpider</span> to become the <span class="mention">@Mayor</span>:</b><br /><span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><br /><span class="mention" title="McTsts#4705">@McTsts</span><br /><span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br /><span class="mention" title="Legolas#2139">@Legolas</span><br /><span class="mention" title="Vyryn#4618">@Vyryn</span><br /><span class="mention" title="HurricanKai#4953">@HurricanKai</span><br /><span class="mention" title="RafMeister#7090">@RafMeister</span><br /><span class="mention" title="ed588#6120">@ed588</span><span class="msg-edited" title="03-Dez-17 09:07 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">04-Dez-17 03:40 </span>
+<div class="msg-content">
+&#129300; - CommandLord aka illio#8935<br />&#128546; - marhjo#5178<br />&#128736; - McTsts#4705<br />&#127954; - DolphinPride138#3572<br />&#129338; - Legolas#2139<br />&#128373; - DogeFlakes#1016<br />&#128049; - alekkat#0349<br />&#128062; - Sir Typhus#5185<br />&#127918; - BenTechy66#8809<br />&#128160; - MrKukurykpl#1238<br />&#128008; - WhyThough - The offical meme&#174;#6032<br />&#128375; - BlendedSpider#0914<br />&#128005; - Vyryn#4618<br />&#128376; - Lord of Galaxy#9211<br />&#129415; - The Last Angel To Fall#7475<br />&#127790; - Abyss#5306<br />&#128076; - ed588#6120<br />&#129351; - Unbihexium#5073<br />&#127908; - Eminem#5031<br />&#128039; - APenGuWhiChIsSOCool ✓ᵛᵉʳ</div>
+<div class="msg-content">
+:game<i>die: - Phil Inc.#5399<br />:ghost: - HurricanKai#4953<br />:turtle: - souless</i>2nd#3288<br />:robot: - Robotron#3660<br />:innocent: - Predator123s#5633<br />:chestnut: - RafMeister#7090<br />:rooster: - BigNinjaChicken#2151<br />:french_bread: - Freedmoon#1128<br />:confused: - ProNoob135#1100<br />:eggplant: - Ganymede#2650<br />:banana: - Banana#2546<br />:angel: - Lilith#6468</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">04-Dez-17 08:00 </span>
+<div class="msg-content">
+<span class="mention">@everyone</span>, you have 1 hour left to vote!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">04-Dez-17 09:03 </span>
+<div class="msg-content">
+<u><b>Who voted to kill <span class="mention" title="Banana#2546">@Banana</span>:</b></u><br /><span class="mention" title="RafMeister#7090">@RafMeister</span><br /><span class="mention" title="HurricanKai#4953">@HurricanKai</span><br /><span class="mention" title="Legolas#2139">@Legolas</span><br /><span class="mention" title="Eminem#5031">@Eminem</span><br /><span class="mention" title="Phil Inc.#5399">@Phil Inc.</span><br /><span class="mention" title="alekkat#349">@alekkat</span><br /><span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span><br /><span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><span class="msg-edited" title="04-Dez-17 09:03 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">05-Dez-17 03:13 </span>
+<div class="msg-content">
+With the shocking deaths of @BlendedSpider and @Vyryn the town was adamant to find the killers. Who shall have a but more than a close shave tonight! <br /><br />&#129300; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><br />&#128546; - <span class="mention" title="marhjo#5178">@marhjo</span><br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span><br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br />&#129338; - <span class="mention" title="Legolas#2139">@Legolas</span><br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span><br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br />&#128376; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span><br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span><br />&#128076; - <span class="mention" title="ed588#6120">@ed588</span><span class="msg-edited" title="05-Dez-17 03:13 ">(edited)</span></div>
+<div class="msg-content">
+&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span><br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span><br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span><br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span><br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span><br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span><br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span><br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span><br />&#128019; - <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span><br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span><br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span><br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span></div>
+<div class="msg-content">
+Furthermore, the <span class="mention">@Mayor</span> has once again been killed, who will be taking his place?<br /><br />&#129300; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><br />&#128546; - <span class="mention" title="marhjo#5178">@marhjo</span><br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span><br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br />&#129338; - <span class="mention" title="Legolas#2139">@Legolas</span><br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span><br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br />&#128376; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span><br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span><br />&#128076; - <span class="mention" title="ed588#6120">@ed588</span></div>
+<div class="msg-content">
+&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span><br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span><br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span><br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span><br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span><br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span><br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span><br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span><br />&#128019; - <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span><br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span><br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span><br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span></div>
+<div class="msg-content">
+<span class="mention">@everyone</span> sorry for the delay in voting!<span class="msg-edited" title="05-Dez-17 03:23 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">06-Dez-17 10:08 </span>
+<div class="msg-content">
+<b>Who voted to kill <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span>:</b><br /><span class="mention" title="RafMeister#7090">@RafMeister</span><br /><span class="mention" title="Robotron#3660">@Robotron</span><br /><span class="mention" title="Eminem#5031">@Eminem</span><br /><span class="mention" title="Predator123s#5633">@Predator123s</span><br /><span class="mention" title="Phil Inc.#5399">@Phil Inc.</span><br /><span class="mention" title="Lilith#6468">@Lilith</span></div>
+<div class="msg-content">
+<b>Who voted to elect <span class="mention" title="HurricanKai#4953">@HurricanKai</span> as the <span class="mention">@Mayor</span>:</b><br /><span class="mention" title="HurricanKai#4953">@HurricanKai</span><br /><span class="mention" title="RafMeister#7090">@RafMeister</span><br /><span class="mention" title="ed588#6120">@ed588</span><br /><span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br /><span class="mention" title="souless_2nd#3288">@souless_2nd</span><br /><span class="mention" title="Eminem#5031">@Eminem</span><br /><span class="mention" title="Lilith#6468">@Lilith</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">06-Dez-17 11:42 </span>
+<div class="msg-content">
+Nobody died! However, that doesn&#39;t mean we&#39;re freed of the curse!<br /><b>Who shall be killed tonight?</b><br /><br />&#129300; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> <br />&#128546; - <span class="mention" title="marhjo#5178">@marhjo</span> <br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span> <br />&#129338; - <span class="mention" title="Legolas#2139">@Legolas</span> <br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> <br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span> <br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> <br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> <br />&#128376; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> <br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span> <br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span><br />&#128076; - <span class="mention" title="ed588#6120">@ed588</span><span class="msg-edited" title="06-Dez-17 01:23 ">(edited)</span></div>
+<div class="msg-content">
+&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span> <br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span> <br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span> <br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span> <br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span> <br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span> <br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span> <br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span> <br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span> <br />&#128019; - <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span> <br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span> <br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span> <br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span> <br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span><span class="msg-edited" title="06-Dez-17 01:25 ">(edited)</span></div>
+<div class="msg-content">
+Also, we finally have a day with a <span class="mention">@Mayor</span> and a <span class="mention">@Reporter</span>! This means that we can finally choose a <span class="mention">@Guardian</span> as well!<br />Who shall be killed tonight?<br /><br />&#129300; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> <br />&#128546; - <span class="mention" title="marhjo#5178">@marhjo</span> <br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span> <br />&#129338; - <span class="mention" title="Legolas#2139">@Legolas</span> <br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> <br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span> <br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> <br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> <br />&#128376; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> <br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span> <br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span><br />&#128076; - <span class="mention" title="ed588#6120">@ed588</span><span class="msg-edited" title="06-Dez-17 01:23 ">(edited)</span></div>
+<div class="msg-content">
+&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span> <br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span> <br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span> <br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span> <br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span> <br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span> <br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span> <br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span> <br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span> <br />&#128019; - <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span> <br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span> <br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span> <br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span> <br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span><span class="msg-edited" title="06-Dez-17 01:25 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">06-Dez-17 09:29 </span>
+<div class="msg-content">
+<b>who voted to kill</b> <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><br /><span class="mention" title="marhjo#5178">@marhjo</span><br /><span class="mention" title="alekkat#349">@alekkat</span><br /><span class="mention" title="RafMeister#7090">@RafMeister</span><br /><span class="mention" title="McTsts#4705">@McTsts</span><br /><span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br /><span class="mention" title="Eminem#5031">@Eminem</span><br /><span class="mention" title="Freedmoon#1128">@Freedmoon</span><br /><span class="mention" title="Predator123s#5633">@Predator123s</span><br /><span class="mention" title="Phil Inc.#5399">@Phil Inc.</span><br /><br /><b>People who voted <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> for <span class="mention">@Guardian</span> </b><br /><span class="mention" title="marhjo#5178">@marhjo</span><br /><span class="mention" title="RafMeister#7090">@RafMeister</span><br /><span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span><br /><span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br /><span class="mention" title="Eminem#5031">@Eminem</span><br /><span class="mention" title="Freedmoon#1128">@Freedmoon</span><br /><span class="mention" title="Phil Inc.#5399">@Phil Inc.</span><br /><span class="mention" title="Lilith#6468">@Lilith</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">07-Dez-17 09:28 </span>
+<div class="msg-content">
+Who killed all those people? Someone must pay for this horrible act!<br /><b>Whom shall be killed due to suspicion of killing <span class="mention" title="McTsts#4705">@McTsts</span>, <span class="mention" title="marhjo#5178">@marhjo</span> and <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span>?</b><br />&#129338; - <span class="mention" title="Legolas#2139">@Legolas</span><br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span><br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span><br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span><br />&#128076; - <span class="mention" title="ed588#6120">@ed588</span><br />&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span><br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span><br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span></div>
+<div class="msg-content">
+&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span><br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span> <br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span> <br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span><br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span> <br />&#128019; - <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span><br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span><br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span><br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span></div>
+<div class="msg-content">
+Also, since <span class="mention" title="marhjo#5178">@marhjo</span> died, a new <span class="mention">@Reporter</span> is wanted in this town!<br /><i></i>Who shall become <i>Evil&#39;s End</i>&#39;s next <span class="mention">@Reporter</span>?<i></i><br />&#129338; - <span class="mention" title="Legolas#2139">@Legolas</span><br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span><br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span><br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span><br />&#128076; - <span class="mention" title="ed588#6120">@ed588</span><br />&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span><br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span><br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span></div>
+<div class="msg-content">
+&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span><br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span> <br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span> <br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span><br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span> <br />&#128019; - <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span><br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span><br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span><br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">07-Dez-17 09:05 </span>
+<div class="msg-content">
+<b>Who voted on <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span> to be killed:</b><br /><span class="mention" title="Lilith#6468">@Lilith</span><br /><span class="mention" title="Eminem#5031">@Eminem</span><br /><span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br /><span class="mention" title="Freedmoon#1128">@Freedmoon</span><br /><span class="mention" title="Predator123s#5633">@Predator123s</span></div>
+<div class="msg-content">
+<b>Who voted on <span class="mention" title="Lilith#6468">@Lilith</span> to become the <span class="mention">@Reporter</span>:</b><br /><span class="mention" title="Lilith#6468">@Lilith</span><br /><span class="mention" title="souless_2nd#3288">@souless_2nd</span><br /><span class="mention" title="Eminem#5031">@Eminem</span><br /><span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br /><span class="mention" title="Freedmoon#1128">@Freedmoon</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">08-Dez-17 01:19 </span>
+<div class="msg-content">
+Who killed @sheer Edian??! <br />The killing has to stop. There&#39;s almost no one left<br />Who will be executed for the murder of @sheer Edian!<br /><br />&#129338; - <span class="mention" title="Legolas#2139">@Legolas</span> <br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> <br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span> <br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> <br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> <br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> <br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span> <br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span> <br />&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span> <br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span> <br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span></div>
+<div class="msg-content">
+&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span> <br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span> <br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span> <br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span> <br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span> <br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span> <br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span> <br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span> <br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span> <br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">08-Dez-17 09:13 </span>
+<div class="msg-content">
+<b>Who chose to kill <span class="mention" title="HurricanKai#4953">@HurricanKai</span>:</b><br /><span class="mention" title="Freedmoon#1128">@Freedmoon</span><br /><span class="mention" title="alekkat#349">@alekkat</span><br /><span class="mention" title="Eminem#5031">@Eminem</span><br /><span class="mention" title="Predator123s#5633">@Predator123s</span><br /><span class="mention" title="Phil Inc.#5399">@Phil Inc.</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">09-Dez-17 03:32 </span>
+<div class="msg-content">
+How could we ever forget about the voting polls? Let&#39;s do them now!<br /><b>Who shall be killed due to suspicious of murdering <span class="mention" title="Legolas#2139">@Legolas</span>?</b><br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span><br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span><br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span><br />&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span><br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span><br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span><br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span><br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span><br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span><br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span><br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span><br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span><br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span></div>
+<div class="msg-content">
+And since the <span class="mention">@Mayor</span> has died, it is time to pick a new one!<br /><i></i>Who shall become <i>Evil End&#39;s</i> new <span class="mention">@Mayor</span>?<i></i><br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span><br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span><br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span><br />&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span><br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span><br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span><br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span><br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span><br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span><br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span><br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span><br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span><br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">09-Dez-17 03:36 </span>
+<div class="msg-content">
+(yay down to one message!)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">09-Dez-17 11:22 </span>
+<div class="msg-content">
+<b>Who voted for <span class="mention" title="RafMeister#7090">@RafMeister</span> to be killed:</b><br /><span class="mention" title="alekkat#349">@alekkat</span><br /><span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br /><span class="mention" title="Robotron#3660">@Robotron</span><br /><span class="mention" title="Eminem#5031">@Eminem</span><br /><span class="mention" title="Freedmoon#1128">@Freedmoon</span><br /><span class="mention" title="Predator123s#5633">@Predator123s</span><br /><span class="mention" title="Phil Inc.#5399">@Phil Inc.</span><br /><span class="mention" title="Lilith#6468">@Lilith</span></div>
+<div class="msg-content">
+<b>The <span class="mention">@Mayor</span> vote was a tie! Nobody shall become the <span class="mention">@Mayor</span> today!</b></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">10-Dez-17 11:00 </span>
+<div class="msg-content">
+Noooo, not our favourite beekeeper! Who shall pay for that?<br /><b>Who shall be killed due to suspicious of murdering <span class="mention" title="Unbihexium#5073">@Unbihexium</span>?</b><br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span><br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span><br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span><br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span><br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span><br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span><br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span><br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span><br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span><br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span><br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span></div>
+<div class="msg-content">
+Yesterday wasn&#39;t a success, but today&#39;s the day where we will finally have ourselves a <span class="mention">@Mayor</span>!<br /><i></i>Who shall become <i>Evil&#39;s End</i> next <s>victim</s> <span class="mention">@Mayor</span>?<i></i> <br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span><br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span><br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span><br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span><br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span><br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span><br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span><br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span><br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span><br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span><br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">10-Dez-17 08:48 </span>
+<div class="msg-content">
+Only 10 minutes left, <span class="mention">@everyone</span>!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">10-Dez-17 09:08 </span>
+<div class="msg-content">
+<b>Who voted to kill <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span>:</b><br /><span class="mention" title="Robotron#3660">@Robotron</span><br /><span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br /><span class="mention" title="Lilith#6468">@Lilith</span><br /><span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br /><span class="mention" title="Eminem#5031">@Eminem</span><br /><span class="mention" title="Predator123s#5633">@Predator123s</span><br /><span class="mention" title="Phil Inc.#5399">@Phil Inc.</span></div>
+<div class="msg-content">
+<b>Who voted to make <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span> <span class="mention">@Mayor</span>:</b><br /><span class="mention" title="Robotron#3660">@Robotron</span><br /><span class="mention" title="Lilith#6468">@Lilith</span><br /><span class="mention" title="Eminem#5031">@Eminem</span><br /><span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">11-Dez-17 11:42 </span>
+<div class="msg-content">
+Killing Primus McGlee, such a horrific act! They must pay for this!<br /><b>Who shall be killed due to suspicious of murdering @souless_2nd?</b><br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span><br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span><br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span><br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span><br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span><br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span><br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span><br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span><br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span><span class="msg-edited" title="11-Dez-17 11:42 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">11-Dez-17 09:22 </span>
+<div class="msg-content">
+<b>Who voted to kill <span class="mention" title="Lilith#6468">@Lilith</span>:</b><br /><span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br /><span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br /><span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br /><span class="mention" title="Robotron#3660">@Robotron</span><br /><span class="mention" title="Eminem#5031">@Eminem</span><br /><span class="mention" title="Freedmoon#1128">@Freedmoon</span><br /><span class="mention" title="Phil Inc.#5399">@Phil Inc.</span></div>
+</div>
+</div>
+</div>
+</body>
+</html>

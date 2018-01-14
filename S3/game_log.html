@@ -1,0 +1,455 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Werewolves - s3_game_log</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/375597071094382603/f5d3e0b23688a9edbd1269767354253e.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Werewolves</div>
+<div class="channel-name">s3_game_log</div>
+<div class="misc">43 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">30-Nov-17 03:45 </span>
+<div class="msg-content">
+&#129300; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> has the role of the <span class="pre">Werewolf</span>!<br />&#128546; - <span class="mention" title="marhjo#5178">@marhjo</span> has the role of the <span class="pre">Cursed Civilian</span>!<br />&#129472; - <span class="mention" title="MichaelMouseStar#4266">@MichaelMouseStar</span> has the role of the <span class="pre">Priestess</span>!<br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span> has the role of the <span class="pre">Cupid</span>!<br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span> has the role of the <span class="pre">Lone Wolf</span>!<br />&#129338; - <span class="mention" title="Legolas#2139">@Legolas</span> has the role of the <span class="pre">Tanner</span>!<br />&#127859; - <span class="mention" title="Ds#474">@Ds</span> has the role of the <span class="pre">Werewolf</span>!<br />&#127472;&#127477; - <span class="mention" title="Marsim#9859">@Marsim</span> has the role of the <span class="pre">Infected Werewolf</span>!<br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> has the role of the <span class="pre">Warlock</span>!<br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span> has the role of the <span class="pre">Baker</span>!<br />&#128563; - <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span> has the role of the <span class="pre">Werewolf</span>!<br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> has the role of the <span class="pre">Runner</span>!<br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> has the role of the <span class="pre">Huntress</span>!<br />&#127918; - <span class="mention" title="BenTechy66#8809">@BenTechy66</span> has the role of the <span class="pre">Baker</span>!<br />&#127829; - <span class="mention" title="Chopper2112#496">@Chopper2112</span> has the role of the <span class="pre">Innocent</span>!<br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> has the role of the <span class="pre">Executioner</span>!<br />&#128008; - <span class="mention" title="WhyThough - The best username&#174;#6032">@WhyThough - The best username&#174;</span> has the role of the <span class="pre">Innocent</span>!<br />&#128058; - <span class="mention" title="Leviticus#4878">@Leviticus</span> has the role of the <span class="pre">Fortune Teller</span>!<br />&#128375; - <span class="mention" title="BlendedSpider#914">@BlendedSpider</span> has the role of the <span class="pre">Barber</span>!<br />&#128057; - <span class="mention" title="Nigward1#3954">@Nigward1</span> has the role of the <span class="pre">Werewolf</span>!<span class="msg-edited" title="30-Nov-17 03:57 ">(edited)</span></div>
+<div class="msg-content">
+&#128005; - <span class="mention" title="Vyryn#4618">@Vyryn</span> has the role of the <span class="pre">Werewolf</span>!<br />&#128376; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> has the role of the <span class="pre">Flute Player</span>!<br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span> has the role of the <span class="pre">Baker</span>!<br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span> has the role of the <span class="pre">Royal Knight</span>!<br />&#128076; - <span class="mention" title="ed588#6120">@ed588</span> has the role of the <span class="pre">White Werewolf</span>!<br />&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span> has the role of the <span class="pre">Cursed Civilian</span>!<br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span> has the role of the <span class="pre">Cult Leader</span>!<br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span> has the role of the <span class="pre">Runner</span>!<br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span> has the role of the <span class="pre">Cult Member</span>!<br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span> has the role of the <span class="pre">Infected Wolf</span>!<br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span> has the role of the <span class="pre">Cult Member</span>!<br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span> has the role of the <span class="pre">Crowd Seeker</span>!<br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span> has the role of the <span class="pre">Baker</span>!<br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span> has the role of the <span class="pre">Curse Caster</span>!<br />&#128019; - <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span> has the role of the <span class="pre">Dog</span>!<br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span> has the role of the <span class="pre">Angel</span>!<br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span> has the role of the <span class="pre">Baker</span>!<br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span> has the role of the <span class="pre">Innocent</span>!<br />&#127820; - <span class="mention" title="Banana#2546">@Banana</span> has the role of the <span class="pre">Innocent</span>!<br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span> has the role of the <span class="pre">Vampire</span>!<span class="msg-edited" title="30-Nov-17 06:47 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">30-Nov-17 09:40 </span>
+<div class="msg-content">
+<b>List of people who have signed up:</b><br /><span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> shall be known as <span class="pre">Odysseus</span>.<br /><span class="mention" title="marhjo#5178">@marhjo</span> shall be known as <span class="pre">Mr. John</span>.<br /><span class="mention" title="MichaelMouseStar#4266">@MichaelMouseStar</span> shall be known as <span class="pre">Jack Michaelson</span>.<br /><span class="mention" title="McTsts#4705">@McTsts</span> shall be known as <span class="pre">St. Stem</span>.<br /><span class="mention" title="DolphinPride138#3572">@DolphinPride138</span> shall be known as <span class="pre">Dolph Pride</span>.<br /><span class="mention" title="Legolas#2139">@Legolas</span> shall be known as <span class="pre">Fred the Feeble Footman</span>.<br /><span class="mention" title="Ds#474">@Ds</span> shall be known as <span class="pre">David Smith</span>.<br /><span class="mention" title="Marsim#9859">@Marsim</span> shall be known as <span class="pre">Sam Mirk</span>.<br /><span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> shall be known as <span class="pre">Dogela Dogsy</span>.<br /><span class="mention" title="alekkat#349">@alekkat</span> shall be known as <span class="pre">Takela Catsy</span>.<br /><span class="mention" title="BhunaBoy#4095">@BhunaBoy</span> shall be known as <span class="pre">Bhaun Brown</span>.<br /><span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> shall be known as <span class="pre">The lord Rejector</span>.<br /><span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> shall be known as <span class="pre">Ben Hur</span>.<br /><span class="mention" title="BenTechy66#8809">@BenTechy66</span> shall be known as <span class="pre">Ben the Devil</span>.<br /><span class="mention" title="Chopper2112#496">@Chopper2112</span> shall be known as <span class="pre">Helico P. Ter</span>.<br /><span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> shall be known as <span class="pre">Dr. Ku Klury</span>.<br /><span class="mention" title="WhyThough - The best username&#174;#6032">@WhyThough - The best username&#174;</span> shall be known as <span class="pre">D. A. B.</span>.<br /><span class="mention" title="Leviticus#4878">@Leviticus</span> shall be known as <span class="pre">Count Levi</span>.<br /><span class="mention" title="BlendedSpider#914">@BlendedSpider</span> shall be known as <span class="pre">Hairy Harry</span>.<br /><span class="mention" title="Nigward1#3954">@Nigward1</span> shall be known as <span class="pre">Brandon</span>.<span class="msg-edited" title="30-Nov-17 10:14 ">(edited)</span></div>
+<div class="msg-content">
+<span class="mention" title="Vyryn#4618">@Vyryn</span> shall be known as <span class="pre">Anduin Vrynn</span>.<br /><span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> shall be known as <span class="pre">Local peasant</span>.<br /><span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span> shall be known as <span class="pre">Angelo Falli&#241;o</span>.<br /><span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span> shall be known as <span class="pre">Abe the Lightbringer</span>.<br /><span class="mention" title="ed588#6120">@ed588</span> shall be known as <span class="pre">Sheer Edian</span>.<br /><span class="mention" title="Unbihexium#5073">@Unbihexium</span> shall be known as <span class="pre">Bill the Beekeeper</span>.<br /><span class="mention" title="Eminem#5031">@Eminem</span> shall be known as <span class="pre">MANAMANA</span>.<br /><span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span> shall be known as <span class="pre">Bastian the Birdkeeper</span>.<br /><span class="mention" title="Phil Inc.#5399">@Phil Inc.</span> shall be known as <span class="pre">Ferdinand McFiltonson</span>.<br /><span class="mention" title="HurricanKai#4953">@HurricanKai</span> shall be known as <span class="pre">Caine the Slow</span>.<br /><span class="mention" title="souless_2nd#3288">@souless_2nd</span> shall be known as <span class="pre">Primus McGlee</span>.<br /><span class="mention" title="Robotron#3660">@Robotron</span> shall be known as <span class="pre">Martin</span>.<br /><span class="mention" title="Predator123s#5633">@Predator123s</span> shall be known as <span class="pre">Hunter Stevenson</span>.<br /><span class="mention" title="RafMeister#7090">@RafMeister</span> shall be known as <span class="pre">Ralph Meijer</span>.<br /><span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span> shall be known as <span class="pre">SmallSamuraiTurkey</span>.<br /><span class="mention" title="Freedmoon#1128">@Freedmoon</span> shall be known as <span class="pre">Slavery Sam</span>.<br /><span class="mention" title="ProNoob135#1100">@ProNoob135</span> shall be known as <span class="pre">Accident Expert</span>.<br /><span class="mention" title="Ganymede#2650">@Ganymede</span> shall be known as <span class="pre">Gaia Medeia</span>.<br /><span class="mention" title="Banana#2546">@Banana</span> shall be known as <span class="pre">Ben N. A.</span>.<br /><span class="mention" title="Lilith#6468">@Lilith</span> shall be known as <span class="pre">Lilith the Lich Queen</span><span class="msg-edited" title="30-Nov-17 11:22 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">30-Nov-17 10:59 </span>
+<div class="msg-content">
+This message is giving you your role for season 3 of the <i>Werewolves</i> game.<br /><br />Your role is <span class="pre">rolehere</span>.<br /><br /><b>You are not allowed to share a screenshot of this message!</b> You can claim whatever you want about your role, but you may under <b>NO</b> circumstances show this message in any way to any other participants.<br />We hope you are happy with the role you gained, and we hope you&#39;ll enjoy the game as much as we do.<br /><br />Good luck... &#127765;<span class="msg-edited" title="30-Nov-17 11:02 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">01-Dez-17 07:58 </span>
+<div class="msg-content">
+<u><b>Day 1:</b></u><br />A <span class="mention">@Mayor</span> has been elected: is now the <span class="mention">@Mayor</span>.<br /><br />The tanner (<span class="mention" title="Legolas#2139">@Legolas</span>) has chosen three targets for tonight;<br /><span class="mention" title="Legolas#2139">@Legolas</span> shall be displayed as the <span class="pre">Innocent</span>.<br /><span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span>  shall be displayed as the <span class="pre">Werewolf</span>.<br /><span class="mention" title="Robotron#3660">@Robotron</span> shall be displayed as the <span class="pre">Werewolf</span>.<br /><br /><span class="mention" title="Vyryn#4618">@Vyryn</span> has created a channel called <span class="mention">#s3_cc_truth_or_consequences</span> with <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span>, <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span>, <span class="mention" title="Legolas#2139">@Legolas</span>, <span class="mention" title="marhjo#5178">@marhjo</span>, <span class="mention" title="McTsts#4705">@McTsts</span>, <span class="mention" title="Lilith#6468">@Lilith</span>, <span class="mention" title="Leviticus#4878">@Leviticus</span> and <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span>. Noone trusts the fact that the creator of the channel prefers to be anonymous, so they all stay quiet.<br /><span class="mention" title="marhjo#5178">@marhjo</span> and <span class="mention" title="McTsts#4705">@McTsts</span> suspect that <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span> is using his alt account to create the group, and suspect <span class="mention" title="Lilith#6468">@Lilith</span> of being <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span>&#39;s alternate account.<span class="msg-edited" title="01-Dez-17 11:06 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">02-Dez-17 12:09 </span>
+<div class="msg-content">
+<u><b>Night 1:</b></u><br /><br />The lone wolf <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span> has chosen to kill <span class="mention" title="Marsim#9859">@Marsim</span>.<br />The werewolves have chosen to kill <span class="mention" title="Leviticus#4878">@Leviticus</span>.<br /><br />The vampire <span class="mention" title="Lilith#6468">@Lilith</span> has chosen to demonize <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span>.<br />The flute player <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span>#6211 has enchanted <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span> and <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span> .<br />The curse caster has put a curse upon <span class="mention" title="BenTechy66#8809">@BenTechy66</span>.<br />The priestess has saved <span class="mention" title="Chopper2112#496">@Chopper2112</span>.<br /><br />The dog <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span> has chosen to continue the game as a <span class="pre">werewolf</span>.<br />The cupid <span class="mention" title="McTsts#4705">@McTsts</span> has chosen <span class="mention" title="marhjo#5178">@marhjo</span> as their lover.<br /><br />The crowd seeker <span class="mention" title="Robotron#3660">@Robotron</span> has inspected <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span>, <span class="mention" title="Chopper2112#496">@Chopper2112</span> and <span class="mention" title="Leviticus#4878">@Leviticus</span>, and evaluated that they were no bakers.<br />The fortune teller <span class="mention" title="Leviticus#4878">@Leviticus</span> revealed <span class="mention" title="ProNoob135#1100">@ProNoob135</span>&#39;s role, who turns out to be a baker.<br />The Warlock did not respond and thus not inspect anyone.<br /><br /><span class="mention" title="MichaelMouseStar#4266">@MichaelMouseStar</span> reveals himself to <span class="mention" title="WhyThough - The best username&#174;#6032">@WhyThough - The best username&#174;</span> as the priestess. Together, they find the bakers and create a channel called <span class="mention">#s3_cc_town_hall</span>.<br /><br /><b><u>Evaluation:</u></b><br /><span class="mention" title="Leviticus#4878">@Leviticus</span> is dead. &#128128;<br /><span class="mention" title="Marsim#9859">@Marsim</span> is dead. &#128128;<br /><span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span> is now a werewolf.<br /><span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span> has been demonized.<span class="msg-edited" title="02-Dez-17 02:07 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">02-Dez-17 10:31 </span>
+<div class="msg-content">
+<u><b>CURRENT ROLE DISTRIBUTION:</b></u><br />&#129300; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> has the role of the <span class="pre">Werewolf</span>!<br />&#128546; - <span class="mention" title="marhjo#5178">@marhjo</span> has the role of the <span class="pre">Cursed Civilian</span>!<br />&#129472; - <span class="mention" title="MichaelMouseStar#4266">@MichaelMouseStar</span> has the role of the <span class="pre">Priestess</span>!<br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span> has the role of the <span class="pre">Cupid</span>!<br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span> has the role of the <span class="pre">Lone Wolf</span>!<br />&#129338; - <span class="mention" title="Legolas#2139">@Legolas</span> has the role of the <span class="pre">Tanner</span>!<br />&#127859; - <span class="mention" title="Ds#474">@Ds</span> has the role of the <span class="pre">Werewolf</span>!<br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> has the role of the <span class="pre">Warlock</span>!<br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span> has the role of the <span class="pre">Baker</span>!<br />&#128563; - <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span> has the role of the <span class="pre">Werewolf</span>!<br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> has the role of the <span class="pre">Runner</span>!<br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> has the role of the <span class="pre">Huntress</span>!<br />&#127918; - <span class="mention" title="BenTechy66#8809">@BenTechy66</span> has the role of the <span class="pre">Baker</span>!<br />&#127829; - <span class="mention" title="Chopper2112#496">@Chopper2112</span> has the role of the <span class="pre">Innocent</span>!<br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> has the role of the <span class="pre">Executioner</span>!<br />&#128008; - <span class="mention" title="WhyThough - The best username&#174;#6032">@WhyThough - The best username&#174;</span> has the role of the <span class="pre">Innocent</span>!<br />&#128375; - <span class="mention" title="BlendedSpider#914">@BlendedSpider</span> has the role of the <span class="pre">Barber</span>!</div>
+<div class="msg-content">
+&#128005; - <span class="mention" title="Vyryn#4618">@Vyryn</span> has the role of the <span class="pre">Werewolf</span>!<br />&#128376; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> has the role of the <span class="pre">Flute Player</span>!<br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span> has the role of the <span class="pre">Baker</span>! <b>[ENCHANTED]</b><br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span> has the role of the <span class="pre">Royal Knight</span>! <b>[ENCHANTED]</b><br />&#128076; - <span class="mention" title="ed588#6120">@ed588</span> has the role of the <span class="pre">White Werewolf</span>!<br />&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span> has the role of the <span class="pre">Cursed Civilian</span>!<br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span> has the role of the <span class="pre">Cult Leader</span>!<br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span> has the role of the <span class="pre">Runner</span>! <b>[DEMONIZED]</b><br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span> has the role of the <span class="pre">Cult Member</span>!<br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span> has the role of the <span class="pre">Infected Wolf</span>!<br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span> has the role of the <span class="pre">Cult Member</span>!<br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span> has the role of the <span class="pre">Crowd Seeker</span>!<br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span> has the role of the <span class="pre">Baker</span>!<br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span> has the role of the <span class="pre">Curse Caster</span>!<br />&#128019; - <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span> has the role of the <span class="pre">Dog</span>!<br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span> has the role of the <span class="pre">Angel</span>!<br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span> has the role of the <span class="pre">Baker</span>!<br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span> has the role of the <span class="pre">Innocent</span>!<br />&#127820; - <span class="mention" title="Banana#2546">@Banana</span> has the role of the <span class="pre">Innocent</span>!<br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span> has the role of the <span class="pre">Vampire</span>!<span class="msg-edited" title="02-Dez-17 10:32 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">02-Dez-17 01:16 </span>
+<div class="msg-content">
+<b><u>Day 2:</u></b><br /><br /><span class="mention" title="BhunaBoy#4095">@BhunaBoy</span> approaches <span class="mention" title="marhjo#5178">@marhjo</span> and makes him believe that he is the fortune teller. <span class="mention" title="Leviticus#4878">@Leviticus</span>, the fortune teller, died yesterday, and he didn&#39;t tell anyone he was the fortunte teller. This means there is nobody to disprove <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span>&#39;s claim.<br /><br /><span class="mention" title="McTsts#4705">@McTsts</span> (cupid) has started talking to <span class="mention" title="Unbihexium#5073">@Unbihexium</span> <i>(cursed civilian)</i>, <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span> <i>(dog, now werewolf)</i> and <span class="mention" title="RafMeister#7090">@RafMeister</span> (curse caster) telling them each that he&#39;s a cupid. He asks them to reveal their roles, so he can work together with them. They fall for the bluff and reveal themselves.<br /><br />Surprisingly enough, <span class="mention" title="Ds#474">@Ds</span> decides to reveal his role as a <span class="pre">werewolf</span> to <span class="mention" title="marhjo#5178">@marhjo</span> (cursed civilian) and <span class="mention" title="McTsts#4705">@McTsts</span> (cupid).<br /><br /><span class="mention" title="BlendedSpider#914">@BlendedSpider</span> (barber) assassinates <span class="mention">@Mayor</span> <span class="mention" title="BenTechy66#8809">@BenTechy66</span>. He chooses to stay anonymous.<br /><br /><span class="mention" title="MichaelMouseStar#4266">@MichaelMouseStar</span>&#39;s channel called <span class="mention">#s3_cc_town_hall</span> that already includes the bakers keeps growing. Sometimes, werewolves get added, but they are removed quickly. At some point, <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span> gets added, presuming he is the fortune teller.<br />At this point, things get heated.<br /><br /><b><u>Evaluation:</u></b><br /><span class="mention" title="BenTechy66#8809">@BenTechy66</span> (<span class="mention">@Mayor</span>) is dead. &#128128;<br /><span class="mention" title="BhunaBoy#4095">@BhunaBoy</span> is dead. &#128128;<span class="msg-edited" title="02-Dez-17 10:16 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">02-Dez-17 10:17 </span>
+<div class="msg-content">
+<b><u>Night 2:</u></b><br /><br />The cult has chosen to kill <span class="mention" title="Chopper2112#496">@Chopper2112</span>.<br />The white werewolf (<span class="mention" title="ed588#6120">@ed588</span>) has chosten to kill <span class="mention" title="Ds#474">@Ds</span>.<br />The werewolves have chosen to kill <span class="mention" title="MichaelMouseStar#4266">@MichaelMouseStar</span>.<br /><br />The Infected Wolf (<span class="mention" title="HurricanKai#4953">@HurricanKai</span>) has chosen to turn <span class="mention" title="marhjo#5178">@marhjo</span> (<span class="mention">@Reporter</span>) into a werewolf.<br />The vampire (<span class="mention" title="Lilith#6468">@Lilith</span>) has chosen to demonize <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span>.<br />The flute player has chosen to enchant <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> and <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span>.<br />The curse caster and the priestess used their powers both on <span class="mention" title="marhjo#5178">@marhjo</span>. It was in vain, for he had already turned into a werewolf.<br /><br />The crowd seeker <span class="mention" title="Robotron#3660">@Robotron</span> inspected <span class="mention" title="Legolas#2139">@Legolas</span>, <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> and <span class="mention" title="Vyryn#4618">@Vyryn</span>, and evaluated that they were not bakers.<br />The warlock did not respond and thus not inspect anyone.<br /><br /><u><b>Evaluation:</b></u><br /><span class="mention" title="Chopper2112#496">@Chopper2112</span> is dead. &#128128;<br /><span class="mention" title="MichaelMouseStar#4266">@MichaelMouseStar</span> is dead. &#128128; <br /><span class="mention" title="Ds#474">@Ds</span> is dead. &#128128;<span class="msg-edited" title="03-Dez-17 12:29 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">03-Dez-17 12:57 </span>
+<div class="msg-content">
+<u><b>CURRENT ROLE DISTRIBUTION:</b></u><br />&#129300; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> has the role of the <span class="pre">Werewolf</span>! <b>[ENCHANTED]</b><br />&#128546; - <span class="mention" title="marhjo#5178">@marhjo</span> has the role of the <span class="pre">Werewolf</span>!<br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span> has the role of the <span class="pre">Cupid</span>!<br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span> has the role of the <span class="pre">Lone Wolf</span>!<br />&#129338; - <span class="mention" title="Legolas#2139">@Legolas</span> has the role of the <span class="pre">Tanner</span>!<br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> has the role of the <span class="pre">Warlock</span>!<br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span> has the role of the <span class="pre">Baker</span>!<br />&#128563; - <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span> has the role of the <span class="pre">Werewolf</span>!<br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> has the role of the <span class="pre">Runner</span>!<br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> has the role of the <span class="pre">Huntress</span>!<br />&#127918; - <span class="mention" title="BenTechy66#8809">@BenTechy66</span> has the role of the <span class="pre">Baker</span>!<br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> has the role of the <span class="pre">Executioner</span>!<br />&#128008; - <span class="mention" title="WhyThough - The best username&#174;#6032">@WhyThough - The best username&#174;</span> has the role of the <span class="pre">Innocent</span>!<br />&#128375; - <span class="mention" title="BlendedSpider#914">@BlendedSpider</span> has the role of the <span class="pre">Innocent</span>!<span class="msg-edited" title="03-Dez-17 01:23 ">(edited)</span></div>
+<div class="msg-content">
+&#128005; - <span class="mention" title="Vyryn#4618">@Vyryn</span> has the role of the <span class="pre">Werewolf</span>!<br />&#128376; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> has the role of the <span class="pre">Flute Player</span>!<br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span> has the role of the <span class="pre">Baker</span>! <b>[ENCHANTED]</b><br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span> has the role of the <span class="pre">Royal Knight</span>! <b>[DEMONIZED]</b> <b>[ENCHANTED]</b><br />&#128076; - <span class="mention" title="ed588#6120">@ed588</span> has the role of the <span class="pre">White Werewolf</span>!<br />&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span> has the role of the <span class="pre">Cursed Civilian</span>!<br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span> has the role of the <span class="pre">Cult Leader</span>!<br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span> has the role of the <span class="pre">Runner</span>! <b>[DEMONIZED]</b><br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span> has the role of the <span class="pre">Cult Member</span>!<br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span> has the role of the <span class="pre">Infected Wolf</span>!<br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span> has the role of the <span class="pre">Cult Member</span>!<br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span> has the role of the <span class="pre">Crowd Seeker</span>!<br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span> has the role of the <span class="pre">Baker</span>!<br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span> has the role of the <span class="pre">Curse Caster</span>!<br />&#128019; - <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span> has the role of the <span class="pre">Werewolf</span>! <b>[ENCHANTED]</b><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span> has the role of the <span class="pre">Innocent</span>!<br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span> has the role of the <span class="pre">Baker</span>!<br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span> has the role of the <span class="pre">Innocent</span>!<br />&#127820; - <span class="mention" title="Banana#2546">@Banana</span> has the role of the <span class="pre">Innocent</span>!<br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span> has the role of the <span class="pre">Vampire</span>!<span class="msg-edited" title="03-Dez-17 09:21 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">03-Dez-17 09:43 </span>
+<div class="msg-content">
+<u><b>DAY 3:</b></u><br /><br />@MichaelMouseStar and @Marsim have been suspended because of cheating. @Marsim had given @MichaelMouseStar a list containing all werewolves.<br /><br />The town has decided to eliminate <span class="mention" title="WhyThough - The best username&#174;#6032">@WhyThough - The best username&#174;</span>.<br /><br />The tanner (<span class="mention" title="Legolas#2139">@Legolas</span>) has disguised himself, <span class="mention" title="marhjo#5178">@marhjo</span> and <span class="mention" title="Vyryn#4618">@Vyryn</span> as <span class="pre">innocent</span>.<span class="msg-edited" title="10-Dez-17 11:09 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">04-Dez-17 07:46 </span>
+<div class="msg-content">
+<u><b>NIGHT 3:</b></u><br /><br />The cult has chosen to kill @CommandLord aka illio#8935. This fails, since the vampire (@Lilith#6468) demonized them the same night.<br />The werewolves have decided to eliminate @BlendedSpider#0914. This fails, since  the curse caster (@RafMeister#7090) cursed them the same night.<br /><br />The vampire (@Lilith#6468) has chosen to demonize @Comandlord aka Illio, which immediately makes them undead.<br />The curse caster (@RafMeister#7090) has chosen to curse @BlendedSpider#0914, which immediately makes them undead.<br /><br />The warlock (@DogeFlakes#1016) has chosen to inspect @Freedmoon#1128. They found out that @Freedmoon#1128 was an <span class="pre">Innocent</span>!<br />The crowd seeker (@Robotron#3660) did not respond in time, and thus didn&#39;t inspect anyone.<br /><br /><u><b>Evaluation:</b></u><br />@Commandlord aka Illio is now an <span class="pre">undead</span>!<br />@BlendedSpider is now a <span class="pre">Werewolf</span>!<span class="msg-edited" title="04-Dez-17 12:35 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">04-Dez-17 09:06 </span>
+<div class="msg-content">
+<b><u>DAY 4:</u></b><br /><br />The town chooses to kill <span class="mention" title="Banana#2546">@Banana</span>.<br /><br />The tanner (<span class="mention" title="Legolas#2139">@Legolas</span>) has chosen to disguise himself, <span class="mention" title="Vyryn#4618">@Vyryn</span> and <span class="mention" title="BlendedSpider#914">@BlendedSpider</span> as <span class="pre">innocents</span>.<br /><br /><b><u>Evaluation:</u></b><br /><span class="mention" title="Banana#2546">@Banana</span> is dead. &#128128;<span class="msg-edited" title="04-Dez-17 10:30 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">04-Dez-17 10:17 </span>
+<div class="msg-content">
+<b>GHOSTS!</b><br />It is time to haunt this tavern over <span class="mention">@here</span>! Say the creepiest things a mortal could ever think of, make fun of the <span class="mention">@Mayor</span>, scare the mice out of the chicken... do whatever you want!<br /><i><b>THE NIGHT IS YOURS....</b></i></div>
+<div class="msg-content">
+<u><b>NIGHT 4:</b></u><br /><br />The cult has chosen to kill <span class="mention" title="BlendedSpider#914">@BlendedSpider</span>.<br /><br />The vampire has chosen to demonize <span class="mention" title="souless_2nd#3288">@souless_2nd</span>.<span class="msg-edited" title="10-Dez-17 11:09 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">05-Dez-17 09:01 </span>
+<div class="msg-content">
+<u><b>CURRENT ROLE DISTRIBUTION:</b></u><br />&#129300; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> has the role of the <span class="pre">Undead</span>! <b>[ENCHANTED]</b><br />&#128546; - <span class="mention" title="marhjo#5178">@marhjo</span> has the role of the <span class="pre">Werewolf</span>!<br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span> has the role of the <span class="pre">Cupid</span>!<br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span> has the role of the <span class="pre">Werewolf</span>!<br />&#129338; - <span class="mention" title="Legolas#2139">@Legolas</span> has the role of the <span class="pre">Tanner</span>! <b>[ENCHANTED]</b><br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> has the role of the <span class="pre">Warlock</span>!<br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span> has the role of the <span class="pre">Baker</span>! <b>[ENCHANTED]</b><br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> has the role of the <span class="pre">Runner</span>!<br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> has the role of the <span class="pre">Huntress</span>!<br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> has the role of the <span class="pre">Executioner</span>!<br />&#128375; - <span class="mention" title="BlendedSpider#914">@BlendedSpider</span> has the role of the <span class="pre">Werewolf</span>!<span class="msg-edited" title="06-Dez-17 10:29 ">(edited)</span></div>
+<div class="msg-content">
+&#128005; - <span class="mention" title="Vyryn#4618">@Vyryn</span> has the role of the <span class="pre">Werewolf</span>!<br />&#128376; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> has the role of the <span class="pre">Flute Player</span>!<br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span> has the role of the <span class="pre">Baker</span>! <b>[ENCHANTED]</b><br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span> has the role of the <span class="pre">Royal Knight</span>! <b>[DEMONIZED]</b> <b>[ENCHANTED]</b><br />&#128076; - <span class="mention" title="ed588#6120">@ed588</span> has the role of the <span class="pre">White Werewolf</span>!<br />&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span> has the role of the <span class="pre">Cursed Civilian</span>!<br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span> has the role of the <span class="pre">Cult Leader</span>!<br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span> has the role of the <span class="pre">Runner</span>! <b>[DEMONIZED]</b><br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span> has the role of the <span class="pre">Cult Member</span>!<br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span> has the role of the <span class="pre">Infected Wolf</span>!<br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span> has the role of the <span class="pre">Undead</span>!<br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span> has the role of the <span class="pre">Crowd Seeker</span>!<br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span> has the role of the <span class="pre">Baker</span>!<br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span> has the role of the <span class="pre">Curse Caster</span>!<br />&#128019; - <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span> has the role of the <span class="pre">Werewolf</span>! <b>[ENCHANTED]</b><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span> has the role of the <span class="pre">Innocent</span>!<br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span> has the role of the <span class="pre">Baker</span>! <b>[ENCHANTED]</b><br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span> has the role of the <span class="pre">Innocent</span>! <b>[ENCHANTED]</b><br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span> has the role of the <span class="pre">Vampire</span>!<span class="msg-edited" title="05-Dez-17 09:04 ">(edited)</span></div>
+<div class="msg-content">
+<b><u>NIGHT 5:</u></b><br /><br /><span class="mention" title="marhjo#5178">@marhjo</span> has spent his blood points for an invisibility cloak. They&#39;re invulnerable for the night.<br /><br />The cult chooses to kill <span class="mention" title="BlendedSpider#914">@BlendedSpider</span>.<br />The werewolves choose to kill <span class="mention" title="souless_2nd#3288">@souless_2nd</span>. This is ineffective, for the vampire has demonized them.<br />The white werewolf (<span class="mention" title="ed588#6120">@ed588</span>) has chosen to eat werewolf <span class="mention" title="Vyryn#4618">@Vyryn</span>.<br /><br />The vampire (<span class="mention" title="Lilith#6468">@Lilith</span>) has chosen to demonize <span class="mention" title="souless_2nd#3288">@souless_2nd</span>.<br />The flute player (<span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span>) has chosen to enchant <span class="mention" title="Legolas#2139">@Legolas</span> and <span class="mention" title="alekkat#349">@alekkat</span><br /><br />The crowd seeker (<span class="mention" title="Robotron#3660">@Robotron</span>) has chosen to test <span class="mention" title="Legolas#2139">@Legolas</span> and <span class="mention" title="Vyryn#4618">@Vyryn</span> as innocents, and <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span> as a baker. All three are positive, because the tanner (<span class="mention" title="Legolas#2139">@Legolas</span>) has disguised <span class="mention" title="Vyryn#4618">@Vyryn</span> and <span class="mention" title="Legolas#2139">@Legolas</span> as innocents.<br />The warlock (<span class="mention" title="DogeFlakes#1016">@DogeFlakes</span>) has inspected <span class="mention" title="Predator123s#5633">@Predator123s</span>, where she came to the conclusion that he was a <span class="pre">baker</span>!<br /><br /><u><b>Evaluation:</b></u><br /><span class="mention" title="BlendedSpider#914">@BlendedSpider</span> is dead. &#128128;<br /><span class="mention" title="Vyryn#4618">@Vyryn</span> is dead. &#128128;<br /><span class="mention" title="souless_2nd#3288">@souless_2nd</span> is now an <span class="pre">undead</span>!<span class="msg-edited" title="05-Dez-17 09:18 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">06-Dez-17 10:03 </span>
+<div class="msg-content">
+<b><u>DAY 6:</u></b><br /><br />The town has chosen to kill <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span>.<br /><br /><b><u>Evaluation:</u></b><br /><br /><span class="mention" title="DolphinPride138#3572">@DolphinPride138</span> is dead. &#128128;<span class="msg-edited" title="06-Dez-17 10:14 ">(edited)</span></div>
+<div class="msg-content">
+<b><u>NIGHT 6:</u></b><br /><br />The werewolves did not kill anyone due to a voting tie.<br />The cult has chosen to kill <span class="mention" title="HurricanKai#4953">@HurricanKai</span>. This was ineffective, for the vampire had demonized <span class="mention" title="HurricanKai#4953">@HurricanKai</span>.<br /><br />The vampire has chosen to demonize <span class="mention" title="ed588#6120">@ed588</span>.<br />The flute player has chosen to enchant <span class="mention" title="Robotron#3660">@Robotron</span> and <span class="mention" title="RafMeister#7090">@RafMeister</span>.<br />The curse caster (<span class="mention" title="RafMeister#7090">@RafMeister</span>) has chosen to curse <span class="mention" title="Freedmoon#1128">@Freedmoon</span>. <span class="mention" title="Freedmoon#1128">@Freedmoon</span> is now a <span class="pre">cursed civilian</span>.<br /><br />The warlock (<span class="mention" title="DogeFlakes#1016">@DogeFlakes</span>) has inspected <span class="mention" title="ed588#6120">@ed588</span> and found out they were the <span class="pre">White Werewolf</span>!<br /><br /><b><u>Evaluation:</u></b><br /><br /><span class="mention" title="HurricanKai#4953">@HurricanKai</span> is now an <span class="pre">undead</span>. &#128128;<span class="msg-edited" title="10-Dez-17 11:10 ">(edited)</span></div>
+<div class="msg-content">
+<u><b>CURRENT ROLE DISTRIBUTION:</b></u><br />&#129300; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> has the role of the <span class="pre">Undead</span>! <b>[ENCHANTED]</b><br />&#128546; - <span class="mention" title="marhjo#5178">@marhjo</span> has the role of the <span class="pre">Werewolf</span>!<br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span> has the role of the <span class="pre">Cupid</span>!<br />&#129338; - <span class="mention" title="Legolas#2139">@Legolas</span> has the role of the <span class="pre">Tanner</span>! <b>[ENCHANTED]</b><br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> has the role of the <span class="pre">Warlock</span>!<br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span> has the role of the <span class="pre">Baker</span>! <b>[ENCHANTED]</b><br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> has the role of the <span class="pre">Runner</span>!<br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> has the role of the <span class="pre">Huntress</span>!<br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> has the role of the <span class="pre">Executioner</span>!</div>
+<div class="msg-content">
+&#128376; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> has the role of the <span class="pre">Flute Player</span>!<br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span> has the role of the <span class="pre">Baker</span>! <b>[ENCHANTED]</b><br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span> has the role of the <span class="pre">Royal Knight</span>! <u>[DEMONIZED]</u> <b>[ENCHANTED]</b><br />&#128076; - <span class="mention" title="ed588#6120">@ed588</span> has the role of the <span class="pre">White Werewolf</span>!<br />&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span> has the role of the <span class="pre">Cursed Civilian</span>!<br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span> has the role of the <span class="pre">Cult Leader</span>!<br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span> has the role of the <span class="pre">Runner</span>! <u>[DEMONIZED]</u><br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span> has the role of the <span class="pre">Cult Member</span>!<br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span> has the role of the <span class="pre">Undead</span>!<br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span> has the role of the <span class="pre">Undead</span>!<br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span> has the role of the <span class="pre">Crowd Seeker</span>! <b>[ENCHANTED]</b><br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span> has the role of the <span class="pre">Baker</span>!<br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span> has the role of the <span class="pre">Curse Caster</span>! <b>[ENCHANTED]</b><br />&#128019; - <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span> has the role of the <span class="pre">Werewolf</span>! <b>[ENCHANTED]</b><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span> has the role of the <span class="pre">Cursed Civilian</span>!<br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span> has the role of the <span class="pre">Baker</span>! <b>[ENCHANTED]</b><br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span> has the role of the <span class="pre">Innocent</span>! <b>[ENCHANTED]</b><br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span> has the role of the <span class="pre">Vampire</span>!<span class="msg-edited" title="06-Dez-17 10:44 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">06-Dez-17 09:37 </span>
+<div class="msg-content">
+<u><b>Day 8:</b></u><br /><br />The  town has chosen to kill <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span><span class="msg-edited" title="06-Dez-17 09:37 ">(edited)</span></div>
+<div class="msg-content">
+<u><b>Night 8:</b></u><br /><br />The Vampire has chosen to demonize:<br />The Flue player has enchanted <span class="mention" title="Lilith#6468">@Lilith</span> and <span class="mention" title="Freedmoon#1128">@Freedmoon</span><span class="msg-edited" title="06-Dez-17 09:40 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">07-Dez-17 09:19 </span>
+<div class="msg-content">
+<u><b>CURRENT ROLE DISTRIBUTION:</b></u><br />&#129338; - <span class="mention" title="Legolas#2139">@Legolas</span> has the role of the <span class="pre">Tanner</span>!<br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> has the role of the <span class="pre">Warlock</span>!<br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span> has the role of the <span class="pre">Baker</span>!<br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> has the role of the <span class="pre">Runner</span>!<br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> has the role of the <span class="pre">Huntress</span>!<br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> has the role of the <span class="pre">Executioner</span>! <u>[DEMONIZED]</u><span class="msg-edited" title="07-Dez-17 09:21 ">(edited)</span></div>
+<div class="msg-content">
+&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span> has the role of the <span class="pre">Baker</span>!<br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span> has the role of the <span class="pre">Royal Knight</span>! <u>[DEMONIZED]</u><br />&#128076; - <span class="mention" title="ed588#6120">@ed588</span> has the role of the <span class="pre">White Werewolf</span>!<br />&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span> has the role of the <span class="pre">Cursed Civilian</span>!<br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span> has the role of the <span class="pre">Cult Leader</span>!<br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span> has the role of the <span class="pre">Runner</span>! <u>[DEMONIZED]</u><br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span> has the role of the <span class="pre">Cult Member</span>!<br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span> has the role of the <span class="pre">Undead</span>!<br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span> has the role of the <span class="pre">Undead</span>!<br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span> has the role of the <span class="pre">Crowd Seeker</span>!<br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span> has the role of the <span class="pre">Baker</span>!<br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span> has the role of the <span class="pre">Curse Caster</span>!<br />&#128019; - <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span> has the role of the <span class="pre">Werewolf</span>!<br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span> has the role of the <span class="pre">Cursed Civilian</span>!<br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span> has the role of the <span class="pre">Baker</span>!<br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span> has the role of the <span class="pre">Innocent</span>!<br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span> has the role of the <span class="pre">Vampire</span>!<span class="msg-edited" title="07-Dez-17 09:21 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">08-Dez-17 09:43 </span>
+<div class="msg-content">
+<b><u>DAY 8:</u></b><br /><br />The town decides to kill <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span>.<span class="msg-edited" title="10-Dez-17 11:10 ">(edited)</span></div>
+<div class="msg-content">
+<b><u>NIGHT 8:</u></b><br /><br />The cult has chosen to kill <span class="mention" title="ed588#6120">@ed588</span>.<br />The werewolves have chosen to kill <span class="mention" title="Unbihexium#5073">@Unbihexium</span>. They were are cursed civilian, so they have been turned into a werewolf!<br /><br />The vampire has chosen to demonize <span class="mention" title="Freedmoon#1128">@Freedmoon</span>.<br /><br /><b><u>Evaluation:</u></b><br /><span class="mention" title="ed588#6120">@ed588</span> is dead. &#128128;<br /><span class="mention" title="Unbihexium#5073">@Unbihexium</span> is a werewolf! &#128128;<span class="msg-edited" title="10-Dez-17 11:10 ">(edited)</span></div>
+<div class="msg-content">
+<u><b>CURRENT ROLE DISTRIBUTION:</b></u><br />&#129338; - <span class="mention" title="Legolas#2139">@Legolas</span> has the role of the <span class="pre">Tanner</span>!<br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> has the role of the <span class="pre">Warlock</span>!<br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span> has the role of the <span class="pre">Baker</span>!<br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> has the role of the <span class="pre">Runner</span>!<br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> has the role of the <span class="pre">Huntress</span>!<br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> has the role of the <span class="pre">Executioner</span>! <u>[DEMONIZED]</u></div>
+<div class="msg-content">
+&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span> has the role of the <span class="pre">Baker</span>!<br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span> has the role of the <span class="pre">Royal Knight</span>! <u>[DEMONIZED]</u><br />&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span> has the role of the <span class="pre">Werewolf</span>!<br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span> has the role of the <span class="pre">Cult Leader</span>!<br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span> has the role of the <span class="pre">Runner</span>! <u>[DEMONIZED]</u><br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span> has the role of the <span class="pre">Cult Member</span>!<br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span> has the role of the <span class="pre">Undead</span>!<br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span> has the role of the <span class="pre">Undead</span>!<br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span> has the role of the <span class="pre">Crowd Seeker</span>!<br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span> has the role of the <span class="pre">Baker</span>!<br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span> has the role of the <span class="pre">Curse Caster</span>!<br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span> has the role of the <span class="pre">Cursed Civilian</span>! <u>[DEMONIZED]</u><br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span> has the role of the <span class="pre">Baker</span>!<br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span> has the role of the <span class="pre">Innocent</span>!<br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span> has the role of the <span class="pre">Vampire</span>!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">08-Dez-17 09:31 </span>
+<div class="msg-content">
+<b><u>DAY 9:</u></b><br /><br />The town has decided to kill <span class="mention" title="HurricanKai#4953">@HurricanKai</span>.<br /><br />The tanner has disguised himself as an innocent.<span class="msg-edited" title="10-Dez-17 11:10 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">09-Dez-17 10:34 </span>
+<div class="msg-content">
+<b><u>NIGHT 9:</u></b> <br /><br /> The cult has chosen to kill <span class="mention" title="Legolas#2139">@Legolas</span>.<br />The last werewolf alive did not respond, and thus didn&#39;t choose a victim.<br /><br />The crowd seeker has checked <span class="mention" title="souless_2nd#3288">@souless_2nd</span> for undead, <span class="mention" title="Unbihexium#5073">@Unbihexium</span> for werewolf, which were positive, and <span class="mention" title="Ganymede#2650">@Ganymede</span> for vampire, which was negative.<span class="msg-edited" title="10-Dez-17 11:10 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">09-Dez-17 12:10 </span>
+<div class="msg-content">
+<u><b>CURRENT ROLE DISTRIBUTION:</b></u><br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> has the role of the <span class="pre">Warlock</span>!<br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span> has the role of the <span class="pre">Baker</span>!<br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> has the role of the <span class="pre">Runner</span>!<br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> has the role of the <span class="pre">Huntress</span>!<br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> has the role of the <span class="pre">Executioner</span>! <u>[DEMONIZED]</u></div>
+<div class="msg-content">
+&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span> has the role of the <span class="pre">Baker</span>!<br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span> has the role of the <span class="pre">Royal Knight</span>! <u>[DEMONIZED]</u><br />&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span> has the role of the <span class="pre">Werewolf</span>!<br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span> has the role of the <span class="pre">Cult Leader</span>!<br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span> has the role of the <span class="pre">Runner</span>! <u>[DEMONIZED]</u><br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span> has the role of the <span class="pre">Cult Member</span>!<br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span> has the role of the <span class="pre">Undead</span>!<br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span> has the role of the <span class="pre">Crowd Seeker</span>!<br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span> has the role of the <span class="pre">Baker</span>!<br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span> has the role of the <span class="pre">Curse Caster</span>! <u>[DEMONIZED]</u><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span> has the role of the <span class="pre">Cursed Civilian</span>! <u>[DEMONIZED]</u><br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span> has the role of the <span class="pre">Baker</span>!<br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span> has the role of the <span class="pre">Cursed Civilian</span>!<br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span> has the role of the <span class="pre">Vampire</span>!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">09-Dez-17 11:47 </span>
+<div class="msg-content">
+<b><u>DAY 10:</u></b><br /><br />The town has decided to kill <span class="mention" title="RafMeister#7090">@RafMeister</span>!<span class="msg-edited" title="10-Dez-17 11:11 ">(edited)</span></div>
+<div class="msg-content">
+<b><u>NIGHT 10:</u></b><br /><br />The cult has chosen to kill <span class="mention" title="Unbihexium#5073">@Unbihexium</span>.<br />The werewolf <span class="mention" title="Unbihexium#5073">@Unbihexium</span> has chosen to kill <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span>. This was ineffective, since <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span> is a runner.<br /><br />The crowd seeker (<span class="mention" title="Robotron#3660">@Robotron</span>) has checked <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> and <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span> as vampire, and <span class="mention" title="Freedmoon#1128">@Freedmoon</span> as werewolf, which all turned out negative.<br />The vampire has chosen to demonize <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span>.<br /><br /><b><u>Evaluation:</u></b><br /><span class="mention" title="Unbihexium#5073">@Unbihexium</span> is dead. &#128128; <br /><span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span> is now an <span class="pre">Innocent</span>.<span class="msg-edited" title="10-Dez-17 11:11 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">10-Dez-17 10:55 </span>
+<div class="msg-content">
+<u><b>CURRENT ROLE DISTRIBUTION:</b></u><br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> has the role of the <span class="pre">Warlock</span>! <u>[DEMONIZED]</u><br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span> has the role of the <span class="pre">Baker</span>!<br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> has the role of the <span class="pre">Runner</span>!<br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> has the role of the <span class="pre">Huntress</span>!<br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> has the role of the <span class="pre">Executioner</span>! <u>[DEMONIZED]</u><br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span> has the role of the <span class="pre">Baker</span>!<br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span> has the role of the <span class="pre">Royal Knight</span>! <u>[DEMONIZED]</u><br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span> has the role of the <span class="pre">Cult Leader</span>!<br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span> has the role of the <span class="pre">Innocent</span>! <u>[DEMONIZED]</u><br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span> has the role of the <span class="pre">Cult Member</span>!<br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span> has the role of the <span class="pre">Undead</span>!<br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span> has the role of the <span class="pre">Crowd Seeker</span>!<br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span> has the role of the <span class="pre">Baker</span>!<br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span> has the role of the <span class="pre">Cursed Civilian</span>! <u>[DEMONIZED]</u><br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span> has the role of the <span class="pre">Baker</span>!<br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span> has the role of the <span class="pre">Cursed Civilian</span>!<br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span> has the role of the <span class="pre">Vampire</span>!<span class="msg-edited" title="10-Dez-17 10:57 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">11-Dez-17 09:24 </span>
+<div class="msg-content">
+<b><u>DAY 11:</u></b><br /><span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> was eliminated by the town.<br /><br /><b><u>NIGHT 11:</u></b><br />The cult has killed <span class="mention" title="souless_2nd#3288">@souless_2nd</span>.<br /><br /><b><u>DAY 12:</u></b><br />The town has eliminated <span class="mention" title="Lilith#6468">@Lilith</span>.That&#39;s game!</div>
+<div class="msg-content">
+<u><b>CURRENT ROLE DISTRIBUTION:</b></u><br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span> has the role of the <span class="pre">Baker</span>!<br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> has the role of the <span class="pre">Runner</span>!<br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> has the role of the <span class="pre">Huntress</span>!<br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span> has the role of the <span class="pre">Executioner</span>!<br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span> has the role of the <span class="pre">Baker</span>!<br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span> has the role of the <span class="pre">Royal Knight</span>!<br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span> has the role of the <span class="pre">Cult Leader</span>!<br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span> has the role of the <span class="pre">Innocent</span>!<br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span> has the role of the <span class="pre">Cult Member</span>!<br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span> has the role of the <span class="pre">Crowd Seeker</span>!<br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span> has the role of the <span class="pre">Baker</span>!<br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span> has the role of the <span class="pre">Cursed Civilian</span>!<br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span> has the role of the <span class="pre">Baker</span>!<br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span> has the role of the <span class="pre">Cursed Civilian</span>!</div>
+<div class="msg-content">
+Over <span class="mention">@here</span>, <span class="mention">@everyone</span>! <span class="mention">@here</span> you can see how the game played out.</div>
+</div>
+</div>
+</div>
+</body>
+</html>

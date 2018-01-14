@@ -1,0 +1,865 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Werewolves - s3_story_time</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/375597071094382603/f5d3e0b23688a9edbd1269767354253e.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Werewolves</div>
+<div class="channel-name">s3_story_time</div>
+<div class="misc">68 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">26-Nov-17 10:08 </span>
+<div class="msg-content">
+<b>List of people who have signed up:</b><br />&#129300; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> <br />&#128546; - <span class="mention" title="marhjo#5178">@marhjo</span><br />&#129472; - <span class="mention" title="MichaelMouseStar#4266">@MichaelMouseStar</span><br />&#128736; - <span class="mention" title="McTsts#4705">@McTsts</span><br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span><br />&#129338; - <span class="mention" title="Legolas#2139">@Legolas</span><br />&#127859; - <span class="mention" title="Ds#474">@Ds</span><br />&#127472;&#127477; - <span class="mention" title="Marsim#9859">@Marsim</span><br />&#128373; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span><br />&#128049; - <span class="mention" title="alekkat#349">@alekkat</span><br />&#128563; - <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span><br />&#128062; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span><br />&#129365; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span><br />&#127918; - <span class="mention" title="BenTechy66#8809">@BenTechy66</span><br />&#127829; - <span class="mention" title="Chopper2112#496">@Chopper2112</span><br />&#128160; - <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span><br />&#128008; - <span class="mention" title="WhyThough - The best username&#174;#6032">@WhyThough - The best username&#174;</span><br />&#128058; - <span class="mention" title="Leviticus#4878">@Leviticus</span><br />&#128375; - <span class="mention" title="BlendedSpider#914">@BlendedSpider</span><br />&#128057; - <span class="mention" title="Nigward1#3954">@Nigward1</span><br />&#128005; - <span class="mention" title="Vyryn#4618">@Vyryn</span><br />&#128376; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br />&#129415; - <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span><br />&#127790; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span><br />&#128076; - <span class="mention" title="ed588#6120">@ed588</span><br />&#129351; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span><br />&#127908; - <span class="mention" title="Eminem#5031">@Eminem</span><br />&#128039; - <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span><br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span><br />&#128123; - <span class="mention" title="HurricanKai#4953">@HurricanKai</span><br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span><br />&#129302; - <span class="mention" title="Robotron#3660">@Robotron</span><br />&#128519; - <span class="mention" title="Predator123s#5633">@Predator123s</span><br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span><br />&#128019; - <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span><br />&#129366; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span><br />&#128533; - <span class="mention" title="ProNoob135#1100">@ProNoob135</span><br />&#127814; - <span class="mention" title="Ganymede#2650">@Ganymede</span><br />&#127820; - <span class="mention" title="Banana#2546">@Banana</span><br />&#128124; - <span class="mention" title="Lilith#6468">@Lilith</span><span class="msg-edited" title="01-Dez-17 08:12 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">27-Nov-17 11:37 </span>
+<div class="msg-content">
+Besides <span class="mention" title="Buddy1913#9588">@Buddy1913</span> and me, <span class="mention" title="Randium#6521">@Randium</span>, we now have a new <span class="mention">@Game Master</span>! <span class="mention">@everyone</span>, please welcome <span class="mention" title="Regicide1218#5350">@Regicide1218</span> as your new administrator!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">28-Nov-17 12:28 </span>
+<div class="msg-content">
+if you have questions about your role, the roles and their goals and actions are pinned in <span class="mention">#how_to_play</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">29-Nov-17 01:41 </span>
+<div class="msg-content">
+We&#39;re on 38 players already. Soon we&#39;ll have to open a <b>third</b> voting message! &#128565;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">29-Nov-17 01:44 </span>
+<div class="msg-content">
+Legasp!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">29-Nov-17 01:44 </span>
+<div class="msg-content">
+Maybe we should have a 40 players limit for this game. &#128527; Wouldn&#39;t mind that.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">29-Nov-17 01:45 </span>
+<div class="msg-content">
+Up to you</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">29-Nov-17 01:49 </span>
+<div class="msg-content">
+What does <span class="mention">@everyone</span> think? Should we have a 40 player limit for this game?<br /><b>A 40 player limit means:</b><br />- No giant voting polls<br />- We can start earlier (maybe Thursday, probably Friday)<br />- Higher chance of getting a certain role<br />- Higher chance of winning the game<br /><b>More players means:</b><br />- More (active) players to play with<br />- More (and crazier) roles<br />- You can still invite all your friends to come over<br />- We can start this weekend<br /><br />What do you think? Click &#128078; if you want a 40 player limit, and &#128077; if you want to wait for/invite more friends. Remember, 40 players means that there&#39;s only two slots left!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/239602972797960193/652da25a114ec3dd051a777440895c13.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Banana#2546">Banana</span>
+<span class="msg-date">29-Nov-17 08:20 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">29-Nov-17 08:44 </span>
+<div class="msg-content">
+<span class="mention">@everyone</span>! Take a look over <span class="mention">@here</span>! Once we have 40 players, the distribution will look like this;<br /><b>Angel<br />Baker (5x)<br />Barber<br />Crowd Seeker<br />Cult Leader<br />Cult Member (2x)<br />Cupid<br />Curse Caster<br />Cursed Civilian (2x)<br />Dog<br />Executioner<br />Flute Player<br />Fortune Teller<br />Huntress<br />Infected Werewolf (2x)<br />Innocent (4x)<br />Lone Wolf<br />Priestess<br />Royal Knight<br />Runner (2x)<br />Tanner<br />Vampire<br />Warlock<br />Werewolf (5x)<br />White Werewolf</b><span class="msg-edited" title="29-Nov-17 08:44 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">30-Nov-17 01:06 </span>
+<div class="msg-content">
+<span class="mention">@everyone</span>, the signup has closed! We&#39;ve reached out 40 player limit!<br />The game will start this Friday.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/290889237950103552/29d0bc15948756f8cb7c85506006144c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="jessop1#348">jessop1</span>
+<span class="msg-date">30-Nov-17 04:50 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/302764992787120129/52609db6c7c716a60ec2e0a9556cc9e8.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="trebor97351#2172">trebor97351</span>
+<span class="msg-date">30-Nov-17 04:57 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">30-Nov-17 09:59 </span>
+<div class="msg-content">
+<b>===========================<br />Latest news: New announcement!<br />===========================</b><br />The last two games, we have gained complaints about people being inactive for a long time. The game has been designed in such a manner that <b>it is allowed to not be very active</b>, but it felt dishonest to some active players that they died very quickly, and the inactives got to see the end of the game without doing anything.<br /><br />We have decided not to discourage absence, but instead encourage presence. You can now earn <b>blood points</b> <img class="emoji" title=":blood:" src="https://cdn.discordapp.com/emojis/384414366897930240.png" /> as a player, when you are really active.<br /><br /><b>How do you earn blood points?</b><br />Did you say something funny? Did you just mislead another player in a masterful way? Did you make a great discovery? Did you have a good talk? Were you roleplaying well? Then the <span class="mention">@Game Master</span>s will add the <img class="emoji" title=":blood:" src="https://cdn.discordapp.com/emojis/384414366897930240.png" /> reaction to your message. This means that you have earned a <b>blood point</b>.<br /><br /><b>I&#39;ve got a few blood points. So what?</b><br />When you have reached a certain amount of blood points (we will keep it a secret for now), you will gain a DM of the <span class="mention">@Game Master</span>s, which will tell you that you reached the maximum. With your blood points, you can buy an <i>invisibility cloak</i> that will prevent you from getting killed by <i>any</i> team. <i>(All other effects, like curses, fortune telling, crowd seeking etc. will still work)</i><br /><br /><b>Can I stack my invisibility cloaks?</b><br />No. When you buy an invisibility cloak, you will lose <b>all</b> your earned blood points. Once you used your invisibility cloak, you can start earning blood points again.<br /><br /><b>Can I give my invisibility cloak away?</b><br />Sure! If you think you&#39;re safe, but your ally needs to be protected, you can just give your cloak away to someone in need. They will know they gained a free cloak, but they won&#39;t know who gave it to them. So you&#39;ll get to choose whether you tell them it was you...<span class="msg-edited" title="30-Nov-17 10:00 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">30-Nov-17 10:28 </span>
+<div class="msg-content">
+Oh, another thing; it seems like Discord has a 100 channel limit. This means that we&#39;ll have to start to throw away old season channels! &#128557;</div>
+<div class="msg-content">
+Everything has been set up! <span class="mention">@everyone</span>, we will now start sending DMs and get everyone in their correct channels!</div>
+<div class="msg-content">
+The game will start tomorrow at <span class="pre">09:00</span> GMT. Good luck...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">30-Nov-17 11:39 </span>
+<div class="msg-content">
+<span class="mention">@everyone</span>, we&#39;re still busy getting <span class="mention">@everyone</span> into the game. So <b>NO</b>, you are not the first to ask, and <b>NO</b>, you can&#39;t create any <i>conspiracy channels</i> yet!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">01-Dez-17 10:30 </span>
+<div class="msg-content">
+What, did you like the stories of TumbleTown and Verdict Village? You want to hear another story? Alright, then let&#39;s make it a good one. This one&#39;s about Evil End, a small village near the borders of our neighbouring country, where travelers stopped to sleep for one night. And it seems like one of Daniels children had passed by.<br />&quot;It happens every winter,&quot; <span class="mention" title="Chopper2112#496">@Chopper2112</span> told the others in the <span class="mention">#s3_tavern</span>. &quot;This town is plagued every year by werewolves!&quot; <span class="mention" title="Leviticus#4878">@Leviticus</span>, <span class="mention" title="ProNoob135#1100">@ProNoob135</span> and the <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> were listening, but they didn&#39;t believe him. Sure, the previous winter, <span class="mention" title="MichaelMouseStar#4266">@MichaelMouseStar</span> had found a dead body in an alleyway, with two strange marks in their neck, but that was all. No fur, no murder, no unexpected deaths.<br /><br />But they didn&#39;t know a son of Daniel had visited the town. They had recruited and infected some people, and they were living among the city already. Noone realised that tonight, their town would start to fall.<br /><br />Noone expected a thing. <span class="mention" title="Predator123s#5633">@Predator123s</span> kept on hunting, <span class="mention" title="Unbihexium#5073">@Unbihexium</span> continued to keep bees, <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span> and <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span> were giving sacrifices to the gods, <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span>  and @Ben the Devil continued being weird... yes, everything seemed like the town would have many years to stand.<br /><br />Until <span class="mention" title="Legolas#2139">@Legolas</span> and <span class="mention" title="HurricanKai#4953">@HurricanKai</span> arrived. They had entered the tavern, where they gathered a whole crowd. &quot;Watch out,&quot; they said. <span class="mention" title="marhjo#5178">@marhjo</span>, <span class="mention" title="Vyryn#4618">@Vyryn</span> and <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> tried to listen, while <span class="mention" title="Banana#2546">@Banana</span> and <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span> were focusing on their beverages. &quot;The gods have told us that many curses have fallen upon this town - simultaneously.&quot; <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span> and <span class="mention" title="Ds#474">@Ds</span> didn&#39;t like it, so they proposed to name a <span class="mention">@Mayor</span>; for some reason, they never had one: the town always seemed to be doing fine without it.<span class="msg-edited" title="01-Dez-17 10:45 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">01-Dez-17 04:20 </span>
+<div class="msg-content">
+Sorry, we forgot to announce it; <span class="mention">@everyone</span>, you can make <b>conspiracy channels</b>!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">01-Dez-17 09:42 </span>
+<div class="msg-content">
+And so the town chose their <span class="mention">@Mayor</span>: they almost seemed to be split up, but it was finally <span class="mention" title="BenTechy66#8809">@BenTechy66</span> who managed to become elected!<br /><i>&quot;Thank you, thank you,&quot;</i> he said. <i>&quot;I will protect as many as I can, may there truly be a curse upon <b>Evil&#39;s End</b>.&quot;</i> With those words, the town happily went to sleep.<br /><br />But what they <b>didn&#39;t</b> know, was what giant misery was awaiting them. A handful of people slowly started lowering their voices, growing much more hair, gaining sharper teeth....</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">01-Dez-17 11:13 </span>
+<div class="msg-content">
+<span class="mention">@everyone</span> <br />Due to inactivity, not reacting to demands and having DMs disabled, we are sorry to tell you that <span class="mention" title="Nigward1#3954">@Nigward1</span> has been disqualified from the game.<br />Good news for the innocents; he was a werewolf, so that&#39;s already an enemy less to kill. To the werewolves; I was surprised you hadn&#39;t noticed you were missing one of your ranks.<br /><br />&#128057; - <span class="mention" title="Nigward1#3954">@Nigward1</span> has the role of the <span class="pre">Werewolf</span>!<span class="msg-edited" title="01-Dez-17 11:14 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">02-Dez-17 10:40 </span>
+<div class="msg-content">
+The day started very early with a loud scream, coming from the <span class="mention">#s3_town_square</span>. Many recognized <span class="mention" title="Marsim#9859">@Marsim</span>&#39;s voice, so they decided to ignore it. What they didn&#39;t know, was that it wasn&#39;t one of his screams when attacking a random bystander; this time, it would be his last. For he was brutally murdered!<br />When <span class="mention">@everyone</span> had woken up and found <span class="mention" title="Marsim#9859">@Marsim</span>&#39;s body, they all wondered how this could&#39;ve happened. Or... well, they did know what was going on. The curse that <span class="mention">@everyone</span> had been talking about.... could it be true? Could this mean... that they were <b>DOOMED</b>?<br />If that was not all, it also turned out that their beloved count, noone else than <span class="mention" title="Leviticus#4878">@Leviticus</span>, was dead as well! He was barely recognizable, but the pile of bones with the little hole in its skull, showed that that skull must have belonged to <span class="mention" title="Leviticus#4878">@Leviticus</span>.<br /><br />Two deaths in one night, and both in such a state that they can&#39;t have died because of a mere heart attack! Who would do such a thing? It was time to find out, and avenge the deaths of the beloved ones!<span class="msg-edited" title="02-Dez-17 10:45 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="DylanT998#6899">DylanT998</span>
+<span class="msg-date">02-Dez-17 04:02 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">02-Dez-17 05:39 </span>
+<div class="msg-content">
+<span class="mention">@everyone</span> in Evil&#39;s End seemed to be happy with their new <span class="mention">@Mayor</span>. Everyone, except for the barber. <i>&quot;His name already says it,&quot;</i> he said. <i>&quot;Ben the Devil. A DEVIL. In Evil&#39;s End?! If that doesn&#39;t mean anything...&quot;</i> So as soon as he saw the <span class="mention">@Mayor</span>, he grabbed his knife, and slit his head off. Quickly, before anyone could identify him, he disappeared into the shadows.<br /><br /><b>The Barber has assassinated <span class="mention" title="BenTechy66#8809">@BenTechy66</span>, the town&#39;s <span class="mention">@Mayor</span>. The Barber wants to stay anonymous.<br />That player will now continue to play as the <span class="pre">Innocent</span>.</b><span class="msg-edited" title="02-Dez-17 05:40 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/260241657058951170/5d3a020cbeb0b1bdb066cd4bc9cb311b.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="&#127475;&#127466;&#127476;&#127481;&#127469;&#127466;&#127476;&#127475;&#127466;#9397">&#127475;&#127466;&#127476;&#127481;&#127469;&#127466;&#127476;&#127475;&#127466;</span>
+<span class="msg-date">02-Dez-17 07:30 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/307588378126188546/4deaef3cc67a41477c8d5203a3790545.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Khalador#3135">Khalador</span>
+<span class="msg-date">02-Dez-17 09:27 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">02-Dez-17 09:31 </span>
+<div class="msg-content">
+<i>&quot;I know who killed <span class="mention" title="Marsim#9859">@Marsim</span> and <span class="mention" title="Leviticus#4878">@Leviticus</span>! It was <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span>,&quot;</i> someone shouted. It was <span class="mention" title="marhjo#5178">@marhjo</span>, a man who was respected far and wide. <i>&quot;We know how to deal with werewolves,&quot;</i> <span class="mention" title="Ganymede#2650">@Ganymede</span> said, as he and <span class="mention" title="Legolas#2139">@Legolas</span> dragged him towards the guillotine.<br /><i>&quot;Do you have anything to say,&quot; the <span class="mention">@Mayor</span> asked.<br /></i>&quot;You are making a grave mistake,&quot;<i> <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span> said. </i>&quot;You fools! I was not your doom, but your saviour! I am the fortune teller, and I was just about the mystery of the werewolves!&quot;<i><br /></i>&quot;That&#39;s bullshit!&quot;<i> Someone screamed from the back of the crowd. </i>&quot;<span class="mention" title="Leviticus#4878">@Leviticus</span> was the fortune teller!&quot;<i><br /></i>&quot;<span class="mention" title="Leviticus#4878">@Leviticus</span>? He was a hack. No, it was m...&quot;<i> <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span> gave up when his head was being put through the hole in the guillotine. </i>&quot;Okay, okay, maybe I was a werewolf. But do not worry. For I shall return. I, the eternal werewolf, who will come back again and again. Never will I die. Never will I lose. Neve....&quot;<i> </i><b><u>TCHACK!</u></b><i><br /><br /><span class="mention" title="BhunaBoy#4095">@BhunaBoy</span>&#39;s head rolled over the <span class="mention">#s3_town_square</span>. The town was happy! It seemed like they had found the werewolf! Hurray! I mean, he did </i>say<i> he was a werewolf. In which scenario could that be a bluff?<br /><br />But the townsmen were <b>fools</b>. This wasn&#39;t over, no. All they did, was that <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span>&#39;s head made the werewolves <b>hungry</b>. </i>Heads will roll,<i> one of the werewolves howled. </i>Let&#39;s eat some innocent meat!*<span class="msg-edited" title="02-Dez-17 09:32 ">(edited)</span></div>
+<div class="msg-content">
+<i>Thanks for pointing out, <span class="mention" title="marhjo#5178">@marhjo</span>, there currently isn&#39;t a <span class="mention">@Mayor</span> to ask <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span> for some last words. Alright, then er.... <span class="mention">@everyone</span> asked it simultaneously.</i> &#128523;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">02-Dez-17 10:53 </span>
+<div class="msg-content">
+Tonight, no more conspiracy channels will be created. We&#39;ve reached a hard limit of 49 channels in one category. We will open another category tomorrow.<span class="msg-edited" title="02-Dez-17 10:53 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Naller#2723">Naller</span>
+<span class="msg-date">03-Dez-17 01:28 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/289804111074033664/0b35f1a69397a975830e608f76ecd9be.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Marcel#9399">Marcel</span>
+<span class="msg-date">03-Dez-17 02:40 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">03-Dez-17 11:37 </span>
+<div class="msg-content">
+you are officially reminded that communication with other players outside of the server regarding this game is strictly not permitted. Anyone found trading information outside of this server spesifically about the current game with other players outside of the server may be suspended without warning.<br /><br />Consider this your first and only warning<br /><br />Due to issues with Conspiracy channels we understand there may have been no other way. Because of this if you have engaged in DM contact in place of creating a CC you must now create one and post all chat logs in it. This is in effect for the next 24 hours.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">03-Dez-17 01:14 </span>
+<div class="msg-content">
+The town had woken up late. It was for a reason; it&#39;s almost as if they were being put into a deep sleep. The next morning, the knew why.<br />Three people had been brutally murdered. Nothing was left of <span class="mention" title="MichaelMouseStar#4266">@MichaelMouseStar</span>, <span class="mention" title="Chopper2112#496">@Chopper2112</span> and <span class="mention" title="Ds#474">@Ds</span>, only big piles of bones. Who could&#39;ve done such a brutal thing?<br /><br />It was clear to <span class="mention">@everyone</span>. The curse wasn&#39;t over, and it was time to do stuff. A new <span class="mention">@Mayor</span> <b>definitely</b> needs to be chosen today. Someone will face the guillotine. And let us <i>finally</i> get over with the horrors of <i>Evil&#39;s End</i>!<span class="msg-edited" title="03-Dez-17 01:14 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">03-Dez-17 03:05 </span>
+<div class="msg-content">
+<span class="mention">@everyone</span> , <br />We regret to inform you that events that have transpired over the last 24 hours have resulted in this servers first suspensions of players.<br />The following players have had their right to continue to play in this season and a minimum of one season thereafter revoked;<br /><span class="mention" title="MichaelMouseStar#4266">@MichaelMouseStar</span><br />@Marsim#9859<br /><br />Furthermore the user @Marsim#9859 has voluntarily left the server, he was not kicked by any <span class="mention">@Game Master</span>.<br /><br />We sincerely hope that this is the last message of this kind that we have to write as the vast majority of players have been accepting of our requests and our limitations. <br />Thank you for continuing to play Werewolves!<span class="msg-edited" title="03-Dez-17 03:47 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">03-Dez-17 09:16 </span>
+<div class="msg-content">
+<i>&quot;It was <span class="mention" title="WhyThough - The best username&#174;#6032">@WhyThough - The best username&#174;</span> who killed them all!&quot;</i> <span class="mention" title="BlendedSpider#914">@BlendedSpider</span> stood up from the crowd. <i>&quot;I saw him behaving weirdly this morning, as if he had some sort of itch going on - I&#39;m sure that&#39;s what a werewolf would do!&quot;</i> <i>&quot;Yeah, put him in the guillotine,&quot;</i> <span class="mention" title="RafMeister#7090">@RafMeister</span>.<br /><i>&quot;You... you traitor!&quot;</i> <span class="mention" title="WhyThough - The best username&#174;#6032">@WhyThough - The best username&#174;</span> shouted. <i>&quot;I thought we could trust each other, and now...&quot;</i> <span class="mention" title="RafMeister#7090">@RafMeister</span> didn&#39;t seem to know what <span class="mention" title="WhyThough - The best username&#174;#6032">@WhyThough - The best username&#174;</span> was talking about - or was that a bluff? <i>&quot;If @MichaelMouseStar was here, he would&#39;ve told you... but it&#39;s too late! None can prove my innocence, so I must die... in this doomed town!&quot;</i> <i><b><u>TCHACK!</u></b></i><br /><br /><br />The citizens did not forget his words. Was the town really doomed? They hoped it wasn&#39;t, that there was still hope for them. So many had died already, they hoped it would end soon. <span class="mention">@everyone</span> went to bed, hoping that it would not be them to die tonight.<br />If only they knew, what a horrifying night was awaiting them...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">04-Dez-17 10:13 </span>
+<div class="msg-content">
+The sun rose on the next morning. The people were content that their actions last evening had secured the safety of <span class="mention">@everyone</span>. Oddly it seemed to be true, not a soul perished over the last night. Maybe.... Maybe they had done it? If only the people knew</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/4.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="T&#250;n#2374">T&#250;n</span>
+<span class="msg-date">04-Dez-17 02:29 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/221393150088970242/6a80481bf57abbf3dfbd5dabfbbba93c.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Booly#3088">Booly</span>
+<span class="msg-date">04-Dez-17 07:52 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">04-Dez-17 09:11 </span>
+<div class="msg-content">
+The town was clueless for a long time. <i>Errr.... noone died? Then er.... who must we kill?</i><br />Noone really knew what to do! Did the curse end? No, probably not. But... but...<br /><br />It always happens the same way. Stuff that goes viral is never planned. That&#39;s how randomness works, suddenly a very random guy suddenly gains a lot of attention. And this time, it was <span class="mention" title="Banana#2546">@Banana</span> who became famous. <br /><i>&quot;I&#39;ve heard he was a vampire.&quot; &quot;Who is he, by the way?&quot; &quot;I&#39;ve heard he&#39;s purposely so silent, because he&#39;s the white werewolf those myths have been talking about.&quot;</i> Soon, whole <i>Evil&#39;s End</i> was filled with rumours about <span class="mention" title="Banana#2546">@Banana</span>, and it was clear to <span class="mention">@everyone</span>; the town had finally given themselves an excuse to murder someone! And so they did.<br /><br /><span class="mention" title="Banana#2546">@Banana</span> didn&#39;t say a word until the very end.<span class="msg-edited" title="04-Dez-17 09:11 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/386309707901566976/06d4fe5929cebc9314098e3c7da1d270.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mayonnaise#3058">Mayonnaise</span>
+<span class="msg-date">04-Dez-17 11:33 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">05-Dez-17 09:27 </span>
+<div class="msg-content">
+Even though the <span class="mention">@Mayor</span> wasn&#39;t very popular the last few days, <span class="mention">@everyone</span> was surprised when they found <span class="mention" title="BlendedSpider#914">@BlendedSpider</span>&#39;s body lying on <span class="mention">#s3_town_square</span>. It was a shock to many that their second <span class="mention">@Mayor</span> alread died, after two nights!<br /><i>&quot;Some say he was the barber who killed the other <span class="mention">@Mayor</span>, the old <span class="mention" title="BenTechy66#8809">@BenTechy66</span>...&quot; Others claimed things like </i>&quot;The <span class="mention">@Mayor</span> knew everything, and he had made a powerful enemy last night...&quot;<i> Whatever the reason was, <span class="mention" title="BlendedSpider#914">@BlendedSpider</span> was dead.<br /><br />But not only him, also <span class="mention" title="Vyryn#4618">@Vyryn</span>, a wealthy and popular man in </i>Evil&#39;s End*, was no longer there. Nobody knew exactly why; maybe there was more to him than met the eye...<br /><br />The town was also disappointed; no, the fact that nobody died yesterday, didn&#39;t mean that it was finally over. In contrary, it has only gone worse, and it seemed like it would never stop...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">05-Dez-17 02:35 </span>
+<div class="msg-content">
+Pinned a message.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">06-Dez-17 10:25 </span>
+<div class="msg-content">
+The last 24 hours seemed like a blur to many. Some did not fulfill their tasks, other thought the gods had temporarily left them, others remembered things that did not happen... were they only visions?<br />Whatever it was, <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span> had been killed yesterday, <span class="mention" title="HurricanKai#4953">@HurricanKai</span> had been elected <span class="mention">@Mayor</span>, and after that, nothing has happened. Another night were nobody died!<br /><br />Was it <i>finally</i> over? Or were they just, as they had before, imagining things...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">07-Dez-17 09:26 </span>
+<div class="msg-content">
+This night was a brutal one. <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> had been eliminated yesterday, but <span class="mention">@everyone</span> thought it might be over with that.<br />But no.<br /><br />Oh, the irony was great this night. <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> had been pleaded guilty for something without any logical reasoning, though the outcome wasn&#39;t too bad. Same for <span class="mention" title="marhjo#5178">@marhjo</span>, the town&#39;s <span class="mention">@Reporter</span>! Though he was impossible to find, yet he did not survive the night; he commited suicide, after his dearest lover, <span class="mention" title="McTsts#4705">@McTsts</span>, was found dead on <span class="mention">#s3_town_square</span>.<br />Does it ever stop? The town keeps getting smaller and smaller! This curse has to stop, and it has to stop today!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">07-Dez-17 09:09 </span>
+<div class="msg-content">
+*&quot;It&#39;s <span class="mention" title="BigNinjaChicken#2151">@BigNinjaChicken</span> who killed everyone! We&#39;re sure of it,&quot; someone shouted, but nobody really believed it anymore. Maybe it was him, maybe it wasn&#39;t. Who knows, it already seemed like the town was lost anyway and nobody cared about the common well-being; they only cared about themselves...<br />Good thing they haven&#39;t been killed themselves.<br /><br />On the other hand, new faith had come up, as <span class="mention" title="Lilith#6468">@Lilith</span> had been promoted as the new <span class="mention">@Reporter</span>! She could now investigate the bodies, find out whether their previous <span class="mention">@Reporter</span>, <span class="mention" title="marhjo#5178">@marhjo</span>, had been lying, and who should be trusted (and who shouldn&#39;t). The town hoped they had put this power in the right hands...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">08-Dez-17 09:56 </span>
+<div class="msg-content">
+No, no, no... the town kept getting smaller and smaller, and it was barely half the population that was left. Tonight, <span class="mention" title="ed588#6120">@ed588</span> had been killed!<br /><i>-sigh-</i> The town had lost all their faith in the town, and decided to just save their own lives. Kill everyone who is the slightest bit suspicious! We&#39;ll see what we&#39;re gonna do afterwards.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">08-Dez-17 09:17 </span>
+<div class="msg-content">
+No matter how dark, cruel or horrifying they are, people always seem to keep their traditions. So it was once again happening that the <span class="mention">@Mayor</span> had to be killed. And so it was <span class="mention" title="HurricanKai#4953">@HurricanKai</span>&#39;s head that was rolling across the <span class="mention">#s3_town_square</span>. Some of the few remainders had claimed that <b>he</b> was the cause of everything, and even though everyone believed them, they only hoped that it was true.<br />They were fed up with this. They wanted to leave the town, but they couldn&#39;t. All they could, was waiting for their own death to come during the night.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">09-Dez-17 10:37 </span>
+<div class="msg-content">
+Good news! The curse was finally over! Or, so they said <i>(and hoped)</i>. In reality, all that happened was that nobody died last night. But that&#39;s basically it; the curse wasn&#39;t over, the game wasn&#39;t over, and there was still a long way to go....<span class="msg-edited" title="09-Dez-17 12:07 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">09-Dez-17 12:09 </span>
+<div class="msg-content">
+Or <b>did</b> nobody die? It was almost as if the gods had made a mistake in the town&#39;s fate, as if something spooky called &#128293; <i><b>ADMINISTRATION</b></i> &#128293; had gone wrong. There was actually <i>someone</i> who died... poor, poor <span class="mention" title="Legolas#2139">@Legolas</span>.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">09-Dez-17 11:32 </span>
+<div class="msg-content">
+Yes, it was clear that <span class="mention" title="RafMeister#7090">@RafMeister</span> was the cause of all this! The town seemed to have gained hope, as their votes were unanymous against <span class="mention" title="RafMeister#7090">@RafMeister</span>. It was him all along, and he has to be killed for what he&#39;s done!<br />However, the trust issues weren&#39;t completely gone. The town couldn&#39;t decide on who should become a <span class="mention">@Mayor</span>. It had become so late, that at some point the town agreed to delay the vote and remake a voting on the next day.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">10-Dez-17 10:59 </span>
+<div class="msg-content">
+With over half the population dead, it was not a surprise that another dead body was found. Nevertheless, the body was still shocking to see! Everyone slowly became sure of it; they were all doomed. They killings wouldn&#39;t stop, and all would be devoured before the mist surrounding the town would disappear.<br />Everyone was sad to see <span class="mention" title="Unbihexium#5073">@Unbihexium</span>, their favourite beekeeper go. But more importantly, they were secretly happy to see that they themselves would get to see another day...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">10-Dez-17 09:23 </span>
+<div class="msg-content">
+<span class="mention" title="Eminem#5031">@Eminem</span> had quite a strong claim, how he would be a cult leader, how all werewolves were dead, and that all that was left, was a vampire, looking for preys in the shadows. It seems like people believed him, however! There was an unanymous vote towards <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span>, who was said to be a warlock!<br /><br />And so, <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> was no more. The town slowly regained hope... was <span class="mention" title="Eminem#5031">@Eminem</span> telling the truth? Were they all saved...?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">11-Dez-17 05:29 </span>
+<div class="msg-content">
+No story written? <span class="mention">@here</span>&#39;s a story!<br />The night went on, and <span class="mention" title="souless_2nd#3288">@souless_2nd</span> died. The End! &#128515;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">11-Dez-17 09:33 </span>
+<div class="msg-content">
+And so, <span class="mention" title="Lilith#6468">@Lilith</span> was killed, because she was suspected to be the vampire - which she was.<br />She remained undercover for a long time. She claimed she was a runner, and somehow everybody just assumed that - other &quot;runners&quot; were questioned, like <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span>, <span class="mention" title="Vyryn#4618">@Vyryn</span>, <span class="mention" title="Legolas#2139">@Legolas</span> and others... but <span class="mention" title="Lilith#6468">@Lilith</span>? Naah, she definitely was one. But she wasn&#39;t.<br />Now that the vampire was gone, <i>Evil&#39;s End</i> was finally freed from the curse. <span class="mention" title="Eminem#5031">@Eminem</span>, aka <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span> revealed himself as the cult leader, and brought the town to victory. His loyal help, <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span> had to do some dirty tasks, like killing the third cultist, <span class="mention" title="souless_2nd#3288">@souless_2nd</span>, but, as the cult claimed, it was neccessary.<br /><br /><span class="mention">@everyone</span> was happy that they made it out alive. Never did they have to listen to the weird spooky sounds in <span class="mention">#s3_tavern</span>, never did they have to fear in the night, that someone would come to kill them. The town was finally freed of its curse, and all were to go freely. Everyone lived <s>the clich&#233;</s> happily ever after.</div>
+<div class="msg-content">
+<b><u>If you still have the <span class="mention">@Participant</span> role, that means you have won the game. If you have, click on the <img class="emoji" title=":werewolf:" src="https://cdn.discordapp.com/emojis/380837095633321985.png" /> emoji to claim your victory badge!</u></b></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/198453562622214144/6ad33f076484a666dd7fc40650c779d5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="infinitydrago#8556">infinitydrago</span>
+<span class="msg-date">11-Dez-17 11:32 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/259405976959057922/29dbb1fd6ef7e7b622f4271c3ff2cfc5.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Roseix#7117">Roseix</span>
+<span class="msg-date">11-Dez-17 11:32 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/265303672131551233/c5bbfe0cd11a6d67f914ef5b3d622170.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Mom#2682">Mom</span>
+<span class="msg-date">12-Dez-17 03:43 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">12-Dez-17 05:17 </span>
+<div class="msg-content">
+m.. <span class="mention" title="Mom#2682">@Mom</span>? o_0</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/0.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="RidderTom#2505">RidderTom</span>
+<span class="msg-date">13-Dez-17 11:37 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">13-Dez-17 12:10 </span>
+<div class="msg-content">
+Unfortunately, <span class="mention" title="Ganymede#2650">@Ganymede</span>, <span class="mention" title="MrKukurykpl#1238">@MrKukurykpl</span>, <span class="mention" title="ProNoob135#1100">@ProNoob135</span>, <span class="mention" title="The Last Angel To Fall#7475">@The Last Angel To Fall</span> and <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span> did not respond in time, which means that they won&#39;t receive the victory badge.<br /><span class="mention">@everyone</span> else who won, congratulations!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">13-Dez-17 02:31 </span>
+<div class="msg-content">
+Hello there, <span class="mention">@everyone</span>,<br /><br />Sorry for disturbing you! No, we haven&#39;t opened the signup yet, but that doesn&#39;t mean we&#39;re not doing anything! In contrary, we&#39;re working very hard on our very own <b>Werewolf Discord Bot</b><br />40 players is almost impossible to handle, and our goal of 100 players is nearly impossible. That&#39;s why we have decided to create a bot that does the administration for us.<br />Believe it ot not, but we&#39;re already close to finishing it! All we need is some test runs with some volunteers! Don&#39;t expect any real gameplay (everyone will know everyone&#39;s roles,the game will end abruptly, no rewards to gain), but we need some peeps to test all roles.<br />Please keep it civil, the other server is a bad replica of this one. If you want to help testing it, come over at <a href="https://discord.gg/hbCV6Hw">https://discord.gg/hbCV6Hw</a> !<br /><br />Randium<span class="msg-edited" title="13-Dez-17 03:32 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/216152748658393088/832b0a5cb10d47a79a5164c0ec641f4f.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lamosaurus#4635">Lamosaurus</span>
+<span class="msg-date">13-Dez-17 02:46 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/302764992787120129/52609db6c7c716a60ec2e0a9556cc9e8.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="trebor97351#2172">trebor97351</span>
+<span class="msg-date">13-Dez-17 05:51 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/390602127065481216/e9ca515ea291ad1b88455b127bbca09f.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Herculies#1019">Herculies</span>
+<span class="msg-date">13-Dez-17 09:33 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/393430375797620736/d2a5ae3e0d488089a450c31b4ef3a853.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Resichey#8621">Resichey</span>
+<span class="msg-date">21-Dez-17 05:04 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/embed/avatars/3.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Rian#8838">Rian</span>
+<span class="msg-date">24-Dez-17 06:56 </span>
+<div class="msg-content">
+Joined the server.</div>
+</div>
+</div>
+</div>
+</body>
+</html>
