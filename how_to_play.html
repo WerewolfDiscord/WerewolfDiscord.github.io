@@ -1,0 +1,250 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Werewolves - how_to_play</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/375597071094382603/f5d3e0b23688a9edbd1269767354253e.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Werewolves</div>
+<div class="channel-name">how_to_play</div>
+<div class="misc">10 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">26-Nov-17 10:42 </span>
+<div class="msg-content">
+Hey there, <span class="mention">@everyone</span>! Welcome to <i>werewolves</i>! Some of you may know this game, some may know a similar (forum) game called <i>Mafia</i>, but in this channel, you can read how the game exactly works.<br /><br />The game is simple. You need to stay alive until the game ends. If the game is over and you&#39;re alive, you win. If you&#39;re dead before the game ends, you lose.<br />For more details, please read the other posts over <span class="mention">@here</span>.</div>
+<div class="msg-content">
+<b>These are the most important roles, <span class="mention">@everyone</span></b><br /><br /><div class="pre">INNOCENTS<br /></div><br />All roles in this category share one goal; kill every member that is part of the Werewolf team.<br /><br /><b>Innocents</b><br />This is the basic role of the game. Find out who the werewolves are, and vote for them to kill them off!<br /><br /><b>Bakers</b><br />Bakers know who all the other bakers are. They are all innocent.<br /><br /><b>The runner</b><br />The runner will escape death if the werewolves attempt to eat him. This only works once.<br /><br /><b>Fortune teller</b><br />Each night, the fortune teller can see the role of one player.<br /><br /><b>Huntress</b><br />When the huntress dies, she can choose to kill another player.<br /><br /><b>Cursed Civilian</b><br />If this player gets eaten by the werewolves, he will turn into a werewolf.<br /><br /><div class="pre">WEREWOLVES<br /></div><br /><b>Werewolf</b><br />You are a werewolf! It is your job to kill everyone who is not a werewolf.<br /><br /><b>White Werewolf</b><br />This werewolf wins if they are the only player alive. They will act like a normal werewolf, but will also try to eliminate all werewolves.<br /><br /><b>Warlock</b><br />The warlock is a corrupted fortune teller. The role works the same as the fortune teller, but the warlock wins when the werewolves win.<br /><br />These are the simple roles, <span class="mention">@everyone</span>. There are many more, but you can find them further down.</div>
+<div class="msg-content">
+<span class="pre">What happens during daytime.</span><br />Every day, the town points out to a suspect who they think might be a werewolf. At the end of the day, the person that has the most votes on him on the poll in <span class="mention">#s1_story_time</span>, will get killed in front of the whole town. <br />Remember: if you&#39;re about to get killed, <i>you may bluff, lie, pretend and make up the weirdest stories</i> if that makes you stay alive.<br /><br /><span class="pre">What happens during nighttime.</span><br />While the town is sleeping, several <b>Secret Channels</b> become active. Here, people will do special actions during the night that will have effect on the progress of the game during the day.<br />Usually, the werewolves choose  a prey and eat it.<br /><br />`<span class="pre">Other rules:</span><span class="pre"><br />If you die, you are out of the game and you have lost. There is no way to undo your death, and you will lose permission to talk on this server.<br />Though this is hard to control, please do not talk about the game outside of this server. Since I can&#39;t keep track of it, please do it as a gentlemen&#39;s agreement. When you&#39;re saying something to someone else, everybody else is supposed to hear it. Sending DMs could ruin the game.<br />You are not allowed to vote for yourself during the kill-vote.<br /><br /></span><span class="pre">When is it nighttime, when is it daytime?</span><span class="pre"><br />The days are counted as real-life days, which means that the days are from </span>09:00<span class="pre"> GMT until </span>20:00` GMT.<br /><a href="https://time.is/en/GMT">https://time.is/en/GMT</a><span class="msg-edited" title="27-Nov-17 09:28 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">27-Nov-17 09:30 </span>
+<div class="msg-content">
+⚠ <b><u>WARNING! YOU ARE NOT ALLOWED TO SEND SCREENSHOTS OF YOUR ROLE OR OF ANY CHANNEL. DOING SO WILL RESULT IN AN IMMEDIATE BAN.</u></b> ⚠<br />Having contact with each other where you talk about this game isn&#39;t allowed either <i>(the only exception being real-life conversations)</i>. This is supposed to prevent sending &quot;proof&quot; or spoiling the game.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">29-Nov-17 12:27 </span>
+<div class="msg-content">
+I didn&#39;t know that it wasn&#39;t that commonly known that you could make your own invites. So that&#39;s why I&#39;m posting a link here:<br /><a href="https://discord.gg/f5wzhpT">https://discord.gg/f5wzhpT</a></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">29-Nov-17 01:29 </span>
+<div class="msg-content">
+Are you convinced? Do you want to play the game? <i>Great!</i><br />Do you want to know more about the game? <i>Awesome!</i><br />If you&#39;ve read everything, you already know the basics and the most important roles. But if you wanna know all of them, or wanna look up what that one role did again, you can look it up in this file <span class="mention">@here</span>:</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/384458901615280133/385406879226003456/List_of_roles.pdf">
+Attachment: List_of_roles.pdf (86,3 KB)
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">25-Dez-17 11:57 </span>
+<div class="msg-content">
+As <span class="mention">@everyone</span> may have noticed, we have a new bot around! <span class="mention">@everyone</span>, please welcome <span class="mention" title="Werewolf Bot#7211">@Werewolf Bot</span>!<br />The <b>Werewolf Bot</b> is supposed to make the game easier to manage, and will make sure that administrating will cost way less time! Most importantly, you will no longer have to wait 5 whole minutes for your own secret channel! In contrary, you will gain them almost instantly, now that the bot will do the work for you!<br /><br />Here you can look up the most imporant roles.<br /><b>Commands <span class="mention">@everyone</span> can use outside of sessions:</b><br /><span class="pre">~a request :emoji:</span> - Asks the <span class="mention">@Game Master</span>s to sign up with an emoji as your avatar.<br /><br /><b>Commands <span class="mention">@everyone</span> can use during the game:</b><br /><span class="pre">~c create &lt;name&gt; &lt;user1&gt; &lt;user2&gt; &lt;user3&gt; ...</span> - Creates a conspiracy channel<br /><br />If you created a conspiracy channel, you can also use these commands:<br /><span class="pre">~c add &lt;user&gt;</span> - Adds a user to the conspiracy channel<br /><span class="pre">~c adda &lt;emoji&gt;</span>- Adds the user to the conspiracy channel who has that emoji<br /><span class="pre">~c remove &lt;user&gt;</span> - Removes a user from the conspiracy channel<br /><span class="pre">~c removea &lt;emoji&gt;</span> - Removes the user from the conspiracy channel who has that emoji<br /><br />Don&#39;t worry, you can request conspiracy channels anywhere, even inside other conspiracy channels. Oh, and don&#39;t worry about people reading the command; if you type it correctly, your message will be deleted immediately, and nobody will know you ever created that conspiracy channel.<br />Make sure that the name of the channel is ONE word; if you use multiple words, add <span class="pre">_</span> in-between, else Discord won&#39;t accept it. And that&#39;s the most important; <u>DON&#39;T FORGET TO ADD A NAME TO YOUR CONSPIRACY CHANNEL</u> if you want the bot to accept it.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">26-Dez-17 12:02 </span>
+<div class="msg-content">
+The following isn&#39;t interesting to you, but useful for new <span class="mention">@Game Master</span>s to use as a look-up;<br /><b>Commands only the <span class="mention">@Game Master</span>s can use:</b><br /><span class="pre">~a set &lt;user&gt; &lt;emoji&gt;</span> - Signs a player up with their emoji. Please type this in <span class="mention">#deleted-channel</span>.<br /><span class="pre">~rm set &lt;user&gt; &lt;emoji&gt;</span> - Overwrites a player&#39;s role. Use this with caution.<br /><span class="pre">~p setdemonized &lt;user&gt; &lt;true/false&gt;</span> - (Un)demonizes a player.<br /><span class="pre">~p setenchanted &lt;user&gt; &lt;true/false&gt;</span> - (Dis)enchants a player.<br /><span class="pre">~p setlover &lt;user&gt; &lt;lover&gt;</span> Needs to be done when the cupid falls in love. Note that this command has to be executed twice.<br /><span class="pre">~p disguise &lt;user&gt;</span> - Changes their role that appears to the fortune teller. Used for the tanner.<br /><span class="pre">~p undisguise &lt;user&gt;</span> - Removes the appearing role <i>(done at the end of the night)</i><br /><br /><span class="pre">~c delete</span> - Delete a <b>conspiracy channel</b>. Avoid this command during the game, even if requested!<span class="msg-edited" title="30-Dez-17 08:59 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">28-Dez-17 11:24 </span>
+<div class="msg-content">
+How to sign up:<br /><br /><br /><b>1. Pick your favourite emoji</b><br />Choose any emoji that is <u>from the standard set</u>. The bot hasn&#39;t gone Nitro yet, so we&#39;re limited to the vanilla emojis.<br /><br /><b>2. Go to the channel <span class="mention">#signup</span>.</b><br />Click on it; <u><span class="mention">#signup</span></u>, or find the channel yourself. Not too difficult. &#129303;<br /><br /><b>3. Type your request to join for the bot to read!</b><br />Type <span class="pre">~a request &lt;emoji&gt;</span>. For example, I <i>love</i> the &#128527; emoji, so in my case, I should type <i>~a request &#128527;</i>. Did your message get deleted immediately? <b>Good</b>, because that means the bot has sent a request to the <span class="mention">@Game Master</span>s! Is it still there? Then either the bot is offline (check <span class="mention" title="Werewolf Bot#7211">@Werewolf Bot</span>), or you misspelled something. Then check again.<br /><br />The <span class="mention">@Game Master</span>s would like to help you anytime during your process of signing up.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/246574201283018752/6118662206532077958c45027f4e0b79.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="PenGuIsReAl#7424">PenGuIsReAl</span>
+<span class="msg-date">29-Dez-17 03:40 </span>
+<div class="msg-content">
+Pinned a message.</div>
+</div>
+</div>
+</div>
+</body>
+</html>

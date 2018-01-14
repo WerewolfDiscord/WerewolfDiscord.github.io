@@ -1,0 +1,698 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Werewolves - game_log</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/375597071094382603/f5d3e0b23688a9edbd1269767354253e.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Werewolves</div>
+<div class="channel-name">game_log</div>
+<div class="misc">81 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">24-Dez-17 06:29 </span>
+<div class="msg-content">
+We can make the lists like nicknames over <span class="mention">@here</span>.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">24-Dez-17 06:32 </span>
+<div class="msg-content">
+Souless 2nd shall be known as Fishmonger Frederick</div>
+<div class="msg-content">
+Unbihexium shall be known as Billiam Billford</div>
+<div class="msg-content">
+Raf shall be known as Village Pauper</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/394657057564786698/1b82aab553777702c22a89860e4692e7.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Werewolf Bot#7211">Werewolf Bot</span>
+<span class="msg-date">25-Dez-17 09:13 </span>
+<div class="msg-content">
+Set.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">26-Dez-17 10:45 </span>
+<div class="msg-content">
+This is where the main data will be stored, just like <span class="mention">#s3_game_log</span>, <span class="mention" title="PenGuIsReAl#7424">@PenGuIsReAl</span>.<span class="msg-edited" title="26-Dez-17 10:45 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/246574201283018752/6118662206532077958c45027f4e0b79.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="PenGuIsReAl#7424">PenGuIsReAl</span>
+<span class="msg-date">26-Dez-17 10:45 </span>
+<div class="msg-content">
+ok</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">27-Dez-17 10:55 </span>
+<div class="msg-content">
+&#128049; - <span class="mention" title="WhyThough - The best username&#174;#6032">@WhyThough - The best username&#174;</span> shall be known as <span class="pre">Nameless</span>.<br />&#129300; - <span class="mention" title="Mom#2682">@Mom</span> shall be known as <span class="pre">Martin&#39;s Mate</span>.<br />&#128641; - <span class="mention" title="Chopper2112#496">@Chopper2112</span> shall be known as <span class="pre">Lumberjack Larry</span>.<br />&#128169; - <span class="mention" title="Unbihexium#5073">@Unbihexium</span> shall be known as <span class="pre">Brandon the Witch</span>.<br />&#128377; - <span class="mention" title="Resichey#8621">@Resichey</span> shall be known as <span class="pre">Sir Heych</span>.<br />&#127825; - <span class="mention" title="RidderTom#2505">@RidderTom</span> shall be known as <span class="pre">Knight Tom</span>.<br />&#127801; - <span class="mention" title="Herculies#1019">@Herculies</span> shall be known as <span class="pre">Miss Lies</span>.<br />&#127792; - <span class="mention" title="RafMeister#7090">@RafMeister</span> shall be known as <span class="pre">Ralf Mackenbach</span>.<br />&#127922; - <span class="mention" title="Phil Inc.#5399">@Phil Inc.</span> shall be known as <span class="pre">Nick Phil</span>.<br />&#128375; - <span class="mention" title="BlendedSpider#914">@BlendedSpider</span> shall be known as <span class="pre">Jack of Dust</span>.<br />&#128373; - <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span> shall be known as <span class="pre">John Rough</span>.<br />&#128511; - <span class="mention" title="Legolas#2139">@Legolas</span> shall be known as <span class="pre">Gandalf the Dumb</span>.<br />&#128520; - <span class="mention" title="Khalador#3135">@Khalador</span> shall be known as <span class="pre">Lord Khal</span>.<br />&#128069; - <span class="mention" title="BenTechy66#8809">@BenTechy66</span> shall be known as <span class="pre">Chad Benson</span>.<br />&#128476; - <span class="mention" title="trebor97351#2172">@trebor97351</span> shall be known as <span class="pre">Cap&#39;n Trebber</span>.<br />&#128076; - <span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> shall be known as <span class="pre">God of Corn</span>.<br />&#128034; - <span class="mention" title="souless_2nd#3288">@souless_2nd</span> shall be known as <span class="pre">Sander Prime</span>.<br />&#128570; - <span class="mention" title="alekkat#349">@alekkat</span> shall be known as <span class="pre">T&#39;Kalla</span>.<br />&#127954; - <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span> shall be known as <span class="pre">Phil the Proud</span>.<br />&#127929; - <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> shall be known as <span class="pre">Commander Ilios</span>.<span class="msg-edited" title="28-Dez-17 09:08 ">(edited)</span></div>
+<div class="msg-content">
+&#128374; - <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> shall be known as <span class="pre">Dr. Garold</span>.<br />&#128579; - <span class="mention" title="Lamosaurus#4635">@Lamosaurus</span> shall be known as <span class="pre">George Haiden</span>.<br />&#128561; - <span class="mention" title="Death-Guard#205">@Death-Guard</span> shall be known as <span class="pre">Glen the Cruel</span>.<br />&#128293; - <span class="mention" title="ed588#6120">@ed588</span> shall be known as <span class="pre">Fred&#39;s Buddy</span>.<br />&#128156; - <span class="mention" title="romangraef#1120">@romangraef</span> shall be known as <span class="pre">Roman Count</span>.<br />&#128557; - <span class="mention" title="Freedmoon#1128">@Freedmoon</span> shall be known as <span class="pre">Fred the Slave</span>.<br />&#127932; - <span class="mention" title="Oliverh57#1874">@Oliverh57</span> shall be known as <span class="pre">Olivier Dickens</span>.<br />&#128064; - <span class="mention" title="Argonian#9769">@Argonian</span> shall be known as <span class="pre">Chemist Ron</span>.<br />&#128125; - <span class="mention" title="Maximus#1045">@Maximus</span> shall be known as <span class="pre">Max Mussel</span>.<br />&#128548; - <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span> shall be known as <span class="pre">Bon John</span>.<br />&#129362; - <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> shall be known as <span class="pre">Brewer Rob</span>.<br />&#128175; - <span class="mention" title="D Bear#9499">@D Bear</span> shall be known as <span class="pre">Hairy Dennis</span>.<br />&#127820; - <span class="mention" title="Banana#2546">@Banana</span> shall be known as <span class="pre">Benna Na</span>.<br />&#128065; - <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span> shall be known as <span class="pre">Dough Douglas</span>.<br />&#128131; - <span class="mention" title="Lilith#6468">@Lilith</span> shall be known as <span class="pre">Liliy Smith</span>.<br />&#128005; - <span class="mention" title="Vyryn#4618">@Vyryn</span> shall be known as <span class="pre">Mr. Nyrvv</span>.<br />&#129409; - <span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> shall be known as <span class="pre">Master Typhus</span>.<span class="msg-edited" title="28-Dez-17 09:08 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/394657057564786698/1b82aab553777702c22a89860e4692e7.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Werewolf Bot#7211">Werewolf Bot</span>
+<span class="msg-date">28-Dez-17 12:57 </span>
+<div class="msg-content">
+<span class="mention" title="WhyThough - The best username&#174;#6032">@WhyThough - The best username&#174;</span> (:cat:) :<br />Barber<br /><span class="mention" title="Mom#2682">@Mom</span> (:thinking:) :<br />Runner<br /><span class="mention" title="Chopper2112#496">@Chopper2112</span> (:helicopter:) :<br />Warlock<br /><span class="mention" title="Unbihexium#5073">@Unbihexium</span> (:poop:) :<br />Flute Player<br /><span class="mention" title="Resichey#8621">@Resichey</span> (:joystick:) :<br />Innocent<br /><span class="mention" title="RidderTom#2505">@RidderTom</span> (:peach:) :<br />Werewolf<br /><span class="mention" title="Herculies#1019">@Herculies</span> (:rose:) :<br />Lone Wolf<br /><span class="mention" title="RafMeister#7090">@RafMeister</span> (:chestnut:) :<br />Wolf ’s Cub<br /><span class="mention" title="Phil Inc.#5399">@Phil Inc.</span> (:game<i>die:) :<br />Innocent<br /><span class="mention" title="BlendedSpider#914">@BlendedSpider</span> (:spider:) :<br />White Werewolf<br /><span class="mention" title="JR [FFF]#6781">@JR [FFF]</span> (:spy:) :<br />Runner<br /><span class="mention" title="Legolas#2139">@Legolas</span> (:moyai:) :<br />Macho<br /><span class="mention" title="Khalador#3135">@Khalador</span> (:smiling</i>imp:) :<br />Cult Leader<br /><span class="mention" title="BenTechy66#8809">@BenTechy66</span> (:tongue:) :<br />Werewolf<br /><span class="mention" title="trebor97351#2172">@trebor97351</span> (:compression:) :<br />Fortune Teller<br /><span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> (:ok<i>hand:) :<br />Angel<br /><span class="mention" title="souless_2nd#3288">@souless_2nd</span> (:turtle:) :<br />Cult Member<br /><span class="mention" title="alekkat#349">@alekkat</span> (:smiley</i>cat:) :<br />Baker<br /><span class="mention" title="DolphinPride138#3572">@DolphinPride138</span> (:hockey:) :<br />Crowd Seeker<br /><span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> (:musical<i>keyboard:) :<br />Cupid<br /><span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> (:dark</i>sunglasses:) :<br />Baker<br /><span class="mention" title="Lamosaurus#4635">@Lamosaurus</span> (:upside<i>down:) :<br />Vampire<br /><span class="mention" title="Death-Guard#205">@Death-Guard</span> (:scream:) :<br />Town Elder<br /><span class="mention" title="ed588#6120">@ed588</span> (:fire:) :<br />Werewolf<br /><span class="mention" title="romangraef#1120">@romangraef</span> (:purple</i>heart:) :<br />Priestess<br /><span class="mention" title="Freedmoon#1128">@Freedmoon</span> (:,&#39;() :<br />Raven<br /><span class="mention" title="Oliverh57#1874">@Oliverh57</span> (:musical<i>score:) :<br />Huntress<br /><span class="mention" title="Argonian#9769">@Argonian</span> (:eyes:) :<br />Dog<br /><span class="mention" title="Maximus#1045">@Maximus</span> (:alien:) :<br />Curse Caster<br /><span class="mention" title="BhunaBoy#4095">@BhunaBoy</span> (:triumph:) :<br />Psychopath<br /><span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> (:cucumber:) :<br />Werewolf<br /><span class="mention" title="D Bear#9499">@D Bear</span> (:100:) :<br />Cult Member<br /><span class="mention" title="Banana#2546">@Banana</span> (:banana:) :<br />Innocent<br /><span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span> (:eye:) :<br />Baker<br /><span class="mention" title="Lilith#6468">@Lilith</span> (:dancer:) :<br />Tanner<br /><span class="mention" title="Vyryn#4618">@Vyryn</span> (:tiger2:) :<br />Infected Werewolf<br /><span class="mention" title="&#167;įŕ Ţ&#253;phů&#167;#5185">@&#167;įŕ Ţ&#253;phů&#167;</span> (:lion</i>face:) :<br />Baker</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/394657057564786698/1b82aab553777702c22a89860e4692e7.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Werewolf Bot#7211">Werewolf Bot</span>
+<span class="msg-date">28-Dez-17 01:01 </span>
+<div class="msg-content">
+<div class="pre"><br />====================================<br />Name: BhunaBoy<br />Role: Psychopath<br />TruthTeller role: Psychopath<br />Demonized: False<br />Enchanted: False<br />Lover: False<br />Psychopath Targets: <br /> - Mateo<br /> - Chopper2112<br /> - Unbihexium<br /> - RafMeister<br /> - Legolas<br /> - BenTechy66<br /> - DogeFlakes<br /> - souless_2nd<br /> - CommandLord aka illio<br /> - Lamosaurus<br /> - romangraef<br /> - Oliverh57<br /> - Banana<br /> - Power of the Dark Side<br /> - Lilith<br /> - Vyryn<br /> - Sir Typhus (TFMM)<br /> - ɇd588<br /><br />====================================<br /><br /></div></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/394657057564786698/1b82aab553777702c22a89860e4692e7.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Werewolf Bot#7211">Werewolf Bot</span>
+<span class="msg-date">28-Dez-17 10:43 </span>
+<div class="msg-content">
+Saving All....</div>
+<div class="msg-content">
+Saved Storage!</div>
+<div class="msg-content">
+Saved All.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">28-Dez-17 10:44 </span>
+<div class="msg-content">
+<span class="mention">@everyone</span>, season 4 is going to start... <b>NOW!</b></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">28-Dez-17 12:24 </span>
+<div class="msg-content">
+<div class="pre">~c add @Randium#6521 @Buddy1913#9588 @Regicide1218#5350 @PenGuIsReAl#7424</div></div>
+<div class="msg-content">
+Please type in <span class="mention">#game_log_bot_spam</span>, <span class="mention" title="HurricanKai#4953">@HurricanKai</span>.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">28-Dez-17 02:49 </span>
+<div class="msg-content">
+&#128518; While we&#39;re at it, can you give us a command that allows players to have more cc&#39;s?</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/394541917695639553/395936301620264962/unknown.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/394541917695639553/395936301620264962/unknown.png" />
+</a>
+</div>
+<div class="msg-content">
+Where we can give up an amount, like, oh, they can have 10 more!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">28-Dez-17 03:18 </span>
+<div class="msg-content">
+Ooouh. There are people who have 15+ Channels???<br />Well, there&#39;s no command. I can move them to the configs tomorrow</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">28-Dez-17 10:11 </span>
+<div class="msg-content">
+<div class="pre">DAY 1</div></div>
+<div class="msg-content">
+<span class="mention" title="JR [FFF]#6781">@JR [FFF]</span> gets elected as <span class="mention">@Mayor</span>.</div>
+<div class="msg-content">
+<div class="pre">NIGHT 1</div></div>
+<div class="msg-content">
+The Lone Wolf <span class="mention" title="Herculies#1019">@Herculies</span> has chosen to kill <span class="mention" title="ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;#5306">@ＦＲＯＺＥＮ &#120017;&#120027;&#120016;&#120041;&#120020;</span>.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">29-Dez-17 09:09 </span>
+<div class="msg-content">
+The vampire has chosen to demonize <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span><span class="msg-edited" title="29-Dez-17 07:59 ">(edited)</span></div>
+<div class="msg-content">
+The Dog <span class="mention" title="Argonian#9769">@Argonian</span> has chosen to become a <span class="pre">werewolf</span>!<span class="msg-edited" title="29-Dez-17 08:01 ">(edited)</span></div>
+<div class="msg-content">
+The flute player <span class="mention" title="Unbihexium#5073">@Unbihexium</span> has chosen to enchant <span class="mention" title="trebor97351#2172">@trebor97351</span> and <span class="mention" title="Banana#2546">@Banana</span>.<span class="msg-edited" title="29-Dez-17 08:44 ">(edited)</span></div>
+<div class="msg-content">
+The fortune teller has chosen to foresee <span class="mention" title="BenTechy66#8809">@BenTechy66</span>.<span class="msg-edited" title="29-Dez-17 11:36 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">29-Dez-17 08:36 </span>
+<div class="msg-content">
+The priestess <span class="mention" title="romangraef#1120">@romangraef</span> has chosen to purify <span class="mention" title="Lilith#6468">@Lilith</span>. <span class="mention" title="Lilith#6468">@Lilith</span> was the <span class="pre">tanner</span>, so this was ineffective!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">29-Dez-17 11:32 </span>
+<div class="msg-content">
+The curse caster <span class="mention" title="Maximus#1045">@Maximus</span> has chosen to curse <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span>. <span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> was the <span class="pre">Cupid</span>, so this was ineffective!<span class="msg-edited" title="29-Dez-17 11:32 ">(edited)</span></div>
+<div class="msg-content">
+The werewolves have chosen to kill <span class="mention" title="romangraef#1120">@romangraef</span>.<span class="msg-edited" title="30-Dez-17 10:04 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/246574201283018752/6118662206532077958c45027f4e0b79.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="PenGuIsReAl#7424">PenGuIsReAl</span>
+<span class="msg-date">30-Dez-17 02:37 </span>
+<div class="msg-content">
+The Lone wolf instead want to kill Lilly Smith</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">30-Dez-17 10:04 </span>
+<div class="msg-content">
+<div class="pre">DAY 2</div></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">30-Dez-17 09:43 </span>
+<div class="msg-content">
+The town has voted to lynch <span class="mention" title="Khalador#3135">@Khalador</span>. He was the <span class="pre">Cult Leader</span>, which means that they cult members have lost their powers, and <span class="mention" title="souless_2nd#3288">@souless_2nd</span> and <span class="mention" title="D Bear#9499">@D Bear</span> are now regular <span class="pre">Innocents</span>.</div>
+<div class="msg-content">
+The town has voted to elect <span class="mention" title="RafMeister#7090">@RafMeister</span> as <span class="mention">@Reporter</span>.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">30-Dez-17 09:53 </span>
+<div class="msg-content">
+<div class="pre">Night 2</div><br /><br />The white wolf has elected to consume @ɇd588#6120<span class="msg-edited" title="30-Dez-17 10:00 ">(edited)</span></div>
+<div class="msg-content">
+The raven has elected to threaten <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">30-Dez-17 10:29 </span>
+<div class="msg-content">
+The Vampire <span class="mention" title="Lamosaurus#4635">@Lamosaurus</span> has chosen to demonize <span class="mention" title="RafMeister#7090">@RafMeister</span>!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">30-Dez-17 11:08 </span>
+<div class="msg-content">
+The Warlock <span class="mention" title="Chopper2112#496">@Chopper2112</span> has chosen to inspect <span class="mention" title="Mom#2682">@Mom</span>, who was a <span class="pre">Runner</span>.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">31-Dez-17 02:31 </span>
+<div class="msg-content">
+The lone wolf will consume <span class="mention" title="Freedmoon#1128">@Freedmoon</span> unless changed by morning.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">31-Dez-17 11:12 </span>
+<div class="msg-content">
+The Werewolves have killed <span class="mention" title="souless_2nd#3288">@souless_2nd</span>.</div>
+<div class="msg-content">
+The White Werewolf <span class="mention" title="BlendedSpider#914">@BlendedSpider</span> has chosen to kill <span class="mention" title="ed588#6120">@ed588</span>.</div>
+<div class="msg-content">
+<div class="pre">DAY 3</div></div>
+<div class="msg-content">
+A werewolf died last night, so <span class="mention" title="Herculies#1019">@Herculies</span> is no longer a <span class="pre">Lone Wolf</span>, but a <span class="pre">Werewolf</span> instead.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">01-Jan-18 11:57 </span>
+<div class="msg-content">
+The town has chosen to lynch <span class="mention" title="RafMeister#7090">@RafMeister</span>.</div>
+<div class="msg-content">
+The town has chosen <span class="mention" title="RidderTom#2505">@RidderTom</span> to become the town&#39;s <span class="mention">@Guardian</span>.<span class="msg-edited" title="01-Jan-18 12:03 ">(edited)</span></div>
+<div class="msg-content">
+<div class="pre">NIGHT 3</div></div>
+<div class="msg-content">
+The flute player has chosen to enchant <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span>.</div>
+<div class="msg-content">
+The fortune teller <span class="mention" title="trebor97351#2172">@trebor97351</span> has chosen to inspect <span class="pre">Huntress</span> <span class="mention" title="Oliverh57#1874">@Oliverh57</span>.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">01-Jan-18 12:01 </span>
+<div class="msg-content">
+The Vampire has chosen to demonize <span class="mention" title="BlendedSpider#914">@BlendedSpider</span>.<span class="msg-edited" title="01-Jan-18 12:31 ">(edited)</span></div>
+<div class="msg-content">
+The Werewolves have chosen to eliminate <span class="mention" title="Banana#2546">@Banana</span>.</div>
+<div class="msg-content">
+Since the <span class="pre">Wolf&#39;s Cub</span> (<span class="mention" title="RafMeister#7090">@RafMeister</span>), they also get to kill a second player. This means that they have chosen to eliminate <span class="mention" title="BhunaBoy#4095">@BhunaBoy</span> as well.</div>
+<div class="msg-content">
+&#128584;</div>
+<div class="msg-content">
+Thanks. Fixed it now.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">01-Jan-18 05:35 </span>
+<div class="msg-content">
+<div class="pre">DAY 4</div><br /><br /><span class="mention" title="CommandLord aka illio#8935">@CommandLord aka illio</span> has been eliminated, and <span class="mention" title="Ruebe5w#2877">@Ruebe5w</span> has committed suicide, since he was his lover.<br />@Nameless has been elected as <span class="mention">@Reporter</span>.<span class="msg-edited" title="02-Jan-18 12:59 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/246574201283018752/6118662206532077958c45027f4e0b79.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="PenGuIsReAl#7424">PenGuIsReAl</span>
+<span class="msg-date">02-Jan-18 03:39 </span>
+<div class="msg-content">
+The werewolves have chosen to kill nameless(that is if nothing  go wrong)</div>
+<div class="msg-content">
+The white werewolf has chosen to kill Knight Tom</div>
+<div class="msg-content">
+The warlock has chosen to inspect John Rough</div>
+<div class="msg-content">
+The Infected Wolf has chosen to infect John Rough</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">02-Jan-18 08:45 </span>
+<div class="msg-content">
+The Vampire has chosen to demonize @RidderTom.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">03-Jan-18 11:52 </span>
+<div class="msg-content">
+Sir heych got lynched, <br />lumberjack Larry became reporter<br />The white wolf is now undead after being attacked by his pack in the night<span class="msg-edited" title="03-Jan-18 11:53 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/246574201283018752/6118662206532077958c45027f4e0b79.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="PenGuIsReAl#7424">PenGuIsReAl</span>
+<span class="msg-date">03-Jan-18 01:31 </span>
+<div class="msg-content">
+The vampire decided to demonize Lumberjack Larry</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">03-Jan-18 09:26 </span>
+<div class="msg-content">
+<div class="pre">DAY 5</div><span class="msg-edited" title="03-Jan-18 09:26 ">(edited)</span></div>
+<div class="msg-content">
+The town has chosen to kill <span class="mention" title="Chopper2112#496">@Chopper2112</span>.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/246574201283018752/6118662206532077958c45027f4e0b79.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="PenGuIsReAl#7424">PenGuIsReAl</span>
+<span class="msg-date">04-Jan-18 02:48 </span>
+<div class="msg-content">
+the flute player decided to enchance Dough Douglas and Master Typhus</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">04-Jan-18 09:26 </span>
+<div class="msg-content">
+<div class="pre"> Day 6 </div><br /><br />The people have elected to kill @&#167;įŕ Ţ&#253;phů&#167;#5185 for the killing of Nick<br />@JR was elected reporter<span class="msg-edited" title="05-Jan-18 01:34 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">04-Jan-18 11:23 </span>
+<div class="msg-content">
+<div class="pre"> Night 6 </div><br /><br />The Fortune teller revealed @Lord of Galaxy#9211 (no interferance from flute)<br />The wolves voted to eat @trebor97351#2172<br />The flute player enchanted @Martin&#39;s Mate and @John Rough<span class="msg-edited" title="05-Jan-18 10:23 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">05-Jan-18 10:24 </span>
+<div class="msg-content">
+<div class="pre">Day 7</div></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">05-Jan-18 09:18 </span>
+<div class="msg-content">
+The people of the village elected to kill <span class="mention" title="BlendedSpider#914">@BlendedSpider</span></div>
+<div class="msg-content">
+<div class="pre">Night 7</div></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">06-Jan-18 12:01 </span>
+<div class="msg-content">
+the Curse caster <span class="mention" title="Maximus#1045">@Maximus</span> attempted to enchant <span class="mention" title="Argonian#9769">@Argonian</span> the result was <span class="pre">Negative</span><br />The Crowd seeker <span class="mention" title="DolphinPride138#3572">@DolphinPride138</span> investigated the following with the results;<br /><div class="pre">@Dr. Garold is NOT a Cult Member<br />@Hairy Dennis is NOT a Baker</div></div>
+<div class="msg-content">
+The Flute Player <span class="mention" title="Unbihexium#5073">@Unbihexium</span> enchanted;<br /><span class="mention" title="DogeFlakes#1016">@DogeFlakes</span> and <span class="mention" title="Legolas#2139">@Legolas</span></div>
+<div class="msg-content">
+The wolves voted as follows:<br /><div class="pre">Votes for @Participant whom shall meet their end at your hungry jaws this night?: <br />@George Haiden(:upside_down:) - 2:<br /> - @John Rough<br /> - @Miss Lies<br />@Max Mussel(:alien:) - 2:<br /> - @Chemist Ron<br /> - @Knight Tom<br /></div><br />However @knight tom is Undead so his vote does not count. @george Haiden is dead.</div>
+<div class="msg-content">
+the Vampire <span class="mention" title="Lamosaurus#4635">@Lamosaurus</span> has enchanted <span class="mention" title="Maximus#1045">@Maximus</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">07-Jan-18 10:24 </span>
+<div class="msg-content">
+<div class="pre"> Day 8 </div><span class="msg-edited" title="07-Jan-18 10:26 ">(edited)</span></div>
+<div class="msg-content">
+the town could not reach a decision on whom to lynch.<br /><span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> became <span class="mention">@Reporter</span></div>
+<div class="msg-content">
+<div class="pre"> Night 8 </div></div>
+<div class="msg-content">
+the curse caster <span class="mention" title="Maximus#1045">@Maximus</span> attempted to curse <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> the result was <span class="pre">Negative</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">08-Jan-18 09:29 </span>
+<div class="msg-content">
+The flute player enchanted <span class="mention" title="D Bear#9499">@D Bear</span> and <span class="mention" title="Vyryn#4618">@Vyryn</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">08-Jan-18 11:45 </span>
+<div class="msg-content">
+The wolves have killed <span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span><br /><br /><div class="pre"> Day 9</div><span class="msg-edited" title="08-Jan-18 11:45 ">(edited)</span></div>
+<div class="msg-content">
+The <span class="mention">@Mayor</span> <span class="mention" title="JR [FFF]#6781">@JR [FFF]</span> has resigned his post.</div>
+</div>
+</div>
+</div>
+</body>
+</html>

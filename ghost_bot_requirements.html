@@ -1,0 +1,361 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Werewolves - ghost_bot_requirements</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/375597071094382603/f5d3e0b23688a9edbd1269767354253e.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Werewolves</div>
+<div class="channel-name">ghost_bot_requirements</div>
+<div class="misc">41 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">26-Dez-17 12:21 </span>
+<div class="msg-content">
+First of all, the prefix of this bot should be different from the <span class="mention" title="Werewolf Bot#7211">@Werewolf Bot</span>&#39;s <span class="pre">~</span>. I&#39;d say something like <span class="pre">-</span>, <span class="pre">#</span> or <span class="pre">!</span>, but we&#39;ll see. I&#39;ll use <span class="pre">!</span> for now.<br /><br />When setting up, the bot should have the following steps;<br />1. The <span class="mention">@Game Master</span> role should be found with <span class="pre">!setGM @Game Master</span><br />2. The channel called #tavern should be found with <span class="pre">!setTavern</span><br />3. The channel called #haunted_house should be found with <span class="pre">!setSpookyHouse</span><br /><br />Step 1 can only be done by an administrator, while step 2 and 3 can be done by any <span class="mention">@Game Master</span>s.</div>
+<div class="msg-content">
+In <b>#haunted_house</b>, the bot deletes every message that is being sent, except for its own <i>(of course)</i> and messages sent by <span class="mention">@Game Master</span>s and administrators. Note my grammar, it deletes messages that are <i>being</i> sent; it does not delete any messages from before <span class="pre">!setSpookyHouse</span> was typed, nor does it delete any messages that were sent when the bot was offline.<span class="msg-edited" title="26-Dez-17 12:35 ">(edited)</span></div>
+<div class="msg-content">
+What it also does, is that it has a giant database of words. Every 15 seconds, the bot randomly picks 9 words (strings) out of the giant database (array of strings), and display them like this;<br /><div class="pre"><b>BOO!</b> It&#39;s time for the <b>#tavern</b> to be haunted! Choose a word, and make up sentences! Choose one of the following words!<br />1. &lt;word1&gt;<br />2. &lt;word2&gt;<br />3. &lt;word3&gt;<br />4. &lt;word4&gt;<br />5. &lt;word5&gt;<br />6. &lt;word6&gt;<br />7. &lt;word7&gt;<br />8. &lt;word8&gt;<br />9. &lt;word9&gt;<br />Make a choice by typing the number of your choice in this chat!<br /></div><br />Obviously, typing <span class="pre">5</span> will give you <span class="pre">&lt;word5&gt;</span>, and typing <span class="pre">3</span> will give you <span class="pre">&lt;word3&gt;</span>. Each message will be checked before it gets deleted. If it contains only a number from 1 to 9, then it will pick that word. The message will be deleted, and replaced by<br /><div class="pre">Ah-ha! @&lt;user&gt; has chosen the word <b>&lt;wordN&gt;</b>!<br /></div><br />Then, the bot will check if the last character in the chosen string is a <span class="pre">.</span>, a <span class="pre">!</span> or a <span class="pre">?</span> If not, then the bot will add <span class="pre">&lt;wordN&gt;</span> to its string <i>(which is the sentence)</i>, wait 15 seconds, and repeat this process. If the string <i>does</i> end with either of those characters, then the following will happen;</div>
+<div class="msg-content">
+The string <span class="pre">&lt;wordN&gt;</span> will be added to the long string (the sentence), and the sentence is being displayed in <b>#tavern</b>. Then, all messages sent by the Ghost Bot will be deleted in <b>#haunted_house</b>. The bot will wait 15 seconds, and then start over.</div>
+<div class="msg-content">
+The bot also has a counter for inactivity. If nobody responds to its message after 60 seconds, the bot will delete its message, wait 5 minutes and resend its message with refreshed words.</div>
+<div class="msg-content">
+<span class="mention" title="HurricanKai#4953">@HurricanKai</span>, this what I can think of, so far.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">26-Dez-17 11:32 </span>
+<div class="msg-content">
+By the way, <span class="mention" title="HurricanKai#4953">@HurricanKai</span>, what do you think of the bot?</div>
+<div class="msg-content">
+It should be easier than the <span class="mention" title="Werewolf Bot#7211">@Werewolf Bot</span>, I think. &#128539;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">26-Dez-17 11:34 </span>
+<div class="msg-content">
+its way easyer</div>
+<div class="msg-content">
+thought, i dont yet know how you delete any message</div>
+<div class="msg-content">
+ill have to find a way into the message received event</div>
+<div class="msg-content">
+but thats not your problem ;)</div>
+<div class="msg-content">
+oh, i woud like to add an &quot;Word dictionary&quot; too, so non-english people can look up<br />a) the words on the list and <br />b) the words in text msgs</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">26-Dez-17 11:39 </span>
+<div class="msg-content">
+Whaddaya mean? &#129300;</div>
+<div class="msg-content">
+You mean a dictionary for people who don&#39;t know some words?</div>
+<div class="msg-content">
+I don&#39;t think we need that. If you don&#39;t speak English too well, then I don&#39;t think understanding the bot&#39;s words is your top priority. &#128539;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">26-Dez-17 11:42 </span>
+<div class="msg-content">
+<span class="mention" title="Randium#6521">@Randium</span> nah, i mean mostly for messages in other channels, i can only speak from my perspective (and my english is realy bad), but i had to lookup a lot of words.</div>
+<div class="msg-content">
+but well</div>
+<div class="msg-content">
+we can discuss this when the main stuff is done</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">26-Dez-17 11:43 </span>
+<div class="msg-content">
+Yeah. I think that if you build this scheme, we&#39;re already really far.</div>
+<div class="msg-content">
+Oh, and one more thing;</div>
+<div class="msg-content">
+No, nevermind.</div>
+<div class="msg-content">
+It is relevant, but not for the Ghost Bot.</div>
+<div class="msg-content">
+Although, will it be possible to name the main program <span class="pre">GhostBot.dll</span>? I&#39;d want to have the <span class="mention" title="Werewolf Bot#7211">@Werewolf Bot</span>&#39;s main file to be called <span class="pre">WerewolfBot.dll</span> as well, but that&#39;s concern for later.</div>
+<div class="msg-content">
+That&#39;ll make it easier to differentiate which <span class="pre">cmd</span> is running which bot in the virtual machine. &#128521;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">26-Dez-17 11:47 </span>
+<div class="msg-content">
+yep</div>
+<div class="msg-content">
+i can also just include an bat for starting both :D</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">26-Dez-17 11:51 </span>
+<div class="msg-content">
+Hahah, really?</div>
+<div class="msg-content">
+Althought that&#39;d mean if one is down, then the other will be, too. &#129300;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">26-Dez-17 11:53 </span>
+<div class="msg-content">
+nah</div>
+<div class="msg-content">
+i meant so you can just do <br />script Start Ghost/Main<br />script Stop Ghost/Main</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">26-Dez-17 12:16 </span>
+<div class="msg-content">
+Ohhh. Yeah, that&#39;d be nice, actually.</div>
+<div class="msg-content">
+Oh, that way.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">26-Dez-17 01:49 </span>
+<div class="msg-content">
+I think I&#39;d rather have the Ghost Bot and the <span class="mention" title="Werewolf Bot#7211">@Werewolf Bot</span> run separately. Makes it easier.</div>
+<div class="msg-content">
+And if one crashes, then they don&#39;t crash both.</div>
+<div class="msg-content">
+And it spares you some time, trying to knot the two bots together.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">26-Dez-17 02:00 </span>
+<div class="msg-content">
+Yep</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">02-Jan-18 07:43 </span>
+<div class="msg-content">
+Maybe allow the ghosts to type an emoji fir a character name.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">07-Jan-18 07:08 </span>
+<div class="msg-content">
+The current state ghost bot is unfit to be online</div>
+<div class="msg-content">
+It should not have the roles in its banks of words</div>
+<div class="msg-content">
+It&#39;s stretching the no contact rule to the extreme limit</div>
+</div>
+</div>
+</div>
+</body>
+</html>

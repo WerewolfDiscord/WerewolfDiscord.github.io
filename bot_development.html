@@ -1,0 +1,2224 @@
+﻿<!-- https://github.com/Tyrrrz/DiscordChatExporter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Werewolves - bot_development</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<style>body {
+    background-color: #36393E;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: #0096CF;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+div.pre {
+    background-color: #2F3136;
+    color: rgb(131, 148, 150);
+    font-family: Consolas, Courier New, Courier, Monospace;
+    margin-top: 4px;
+    padding: 8px;
+    white-space: pre-wrap;
+}
+
+span.pre {
+    background-color: #2F3136;
+    font-family: Consolas, Courier New, Courier, Monospace;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: pre-wrap;
+}
+
+div#info {
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-width: 100%;
+}
+
+div#log { max-width: 100%; }
+
+img.guild-icon {
+    max-height: 64px;
+    max-width: 64px;
+}
+
+div.info-right {
+    flex: 1;
+    margin-left: 10px;
+}
+
+div.guild-name {
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+div.channel-name {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+}
+
+div.misc { margin-top: 2px; }
+
+div.msg {
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+div.msg-left {
+    height: 40px;
+    width: 40px;
+}
+
+img.msg-avatar {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+div.msg-right {
+    flex: 1;
+    margin-left: 20px;
+}
+
+span.msg-user {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+span.msg-date {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .75rem;
+    margin-left: 5px;
+}
+
+span.msg-edited {
+    color: rgba(255, 255, 255, 0.2);
+    font-size: .8rem;
+    margin-left: 5px;
+}
+
+div.msg-content {
+    font-size: .9375rem;
+    padding-top: 5px;
+    word-break: break-all;
+}
+
+div.msg-attachment {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+img.msg-attachment {
+    max-height: 500px;
+    max-width: 50%;
+}
+
+img.emoji {
+    height: 24px;
+    width: 24px;
+    vertical-align: -.4em;
+}
+
+span.mention {
+    font-weight: 600;
+}</style>
+</head>
+<body>
+<div id="info">
+<div class="info-left">
+<img class="guild-icon" src="https://cdn.discordapp.com/icons/375597071094382603/f5d3e0b23688a9edbd1269767354253e.png" />
+</div>
+<div class="info-right">
+<div class="guild-name">Werewolves</div>
+<div class="channel-name">bot_development</div>
+<div class="misc">311 messages</div>
+</div>
+</div>
+<div id="log">
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">11-Dez-17 10:19 </span>
+<div class="msg-content">
+<span class="mention">@here</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">11-Dez-17 10:28 </span>
+<div class="msg-content">
+so my guys</div>
+<div class="msg-content">
+what language are we doing the bot in</div>
+<div class="msg-content">
+please anything but c#</div>
+<div class="msg-content">
+I despise that language</div>
+<div class="msg-content">
+I mean I understand it</div>
+<div class="msg-content">
+but it is bad</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">11-Dez-17 10:59 </span>
+<div class="msg-content">
+1. C# is with C++ The most popular language.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">11-Dez-17 11:00 </span>
+<div class="msg-content">
+2. My bot is finished 99% im just working on the Webinterface, and doing an save sys re-write.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">11-Dez-17 11:03 </span>
+<div class="msg-content">
+Python is the second most popular programming language (after Java)</div>
+<div class="msg-content">
+<span class="mention" title="HurricanKai#4953">@HurricanKai</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">11-Dez-17 11:04 </span>
+<div class="msg-content">
+-&gt; Python is a Script language, i wont count it.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">11-Dez-17 11:05 </span>
+<div class="msg-content">
+um</div>
+<div class="msg-content">
+ok</div>
+<div class="msg-content">
+..</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">11-Dez-17 11:06 </span>
+<div class="msg-content">
+Java is the most used/Installed lang. But not the most popular for newer Projects. Thats .Net</div>
+<div class="msg-content">
+With the release of .net core</div>
+<div class="msg-content">
+2.0 it got a huge push</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">12-Dez-17 09:09 </span>
+<div class="msg-content">
+It&#39;s not</div>
+<div class="msg-content">
+Python is preferred</div>
+<div class="msg-content">
+Also <span class="mention" title="Randium#6521">@Randium</span> perhaps we can store the game logs online</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">12-Dez-17 09:13 </span>
+<div class="msg-content">
+That&#39;d be great.</div>
+<div class="msg-content">
+But it shouldn&#39;t be accessible to all, obviously.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">12-Dez-17 09:13 </span>
+<div class="msg-content">
+Well when the game has ended</div>
+<div class="msg-content">
+<span class="mention" title="HurricanKai#4953">@HurricanKai</span> &#39;s bot would just need to make some requests to our server</div>
+<div class="msg-content">
+like</div>
+<div class="msg-content">
+<span class="pre">request(<a href="https://werewolves.mctrees.net/updateStatus?auth=8ac6cf64-0d49-4869-b92b-4a1d0263106a&amp;action=message&amp;content=MessageContent&amp;metatdata={&#39;channel&#39;:&#39;7215423132&#39;}&amp;timestamp=1272517)">https://werewolves.mctrees.net/updateStatus?auth=8ac6cf64-0d49-4869-b92b-4a1d0263106a&amp;action=message&amp;content=MessageContent&amp;metatdata={&#39;channel&#39;:&#39;7215423132&#39;}&amp;timestamp=1272517)</a></span><span class="msg-edited" title="12-Dez-17 09:20 ">(edited)</span></div>
+<div class="msg-content">
+<span class="mention" title="Randium#6521">@Randium</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">12-Dez-17 09:39 </span>
+<div class="msg-content">
+yeah, woud be possible</div>
+<div class="msg-content">
+well, an log is generated after every day/night</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">12-Dez-17 01:21 </span>
+<div class="msg-content">
+With this we could see the game replay in real time</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">12-Dez-17 01:48 </span>
+<div class="msg-content">
+i maz add that later, but for now real-time log is useless, Discords ratelimits are in the waz</div>
+<div class="msg-content">
+way</div>
+<div class="msg-content">
+(maybe ill do with the Styling of the Webinterface) it will also have stats, Bloodpoint tracking, etc#</div>
+<div class="msg-content">
+there.</div>
+<div class="msg-content">
+My new Keyboard is here, Its a LOT bigger then my old, so im constantly Pressing wrong keys lol<span class="msg-edited" title="12-Dez-17 01:51 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">12-Dez-17 04:08 </span>
+<div class="msg-content">
+Lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">12-Dez-17 04:20 </span>
+<div class="msg-content">
+Real-time logging is not what we do anyway.</div>
+<div class="msg-content">
+We literally log events at 0900 and 2000</div>
+<div class="msg-content">
+Because that&#39;s when they get actioned.</div>
+<div class="msg-content">
+The other events like the warlock ect get logged then to</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">12-Dez-17 04:24 </span>
+<div class="msg-content">
+<span class="mention" title="HurricanKai#4953">@HurricanKai</span> I can do web design of you want</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">12-Dez-17 04:25 </span>
+<div class="msg-content">
+if you want, but im using .Net Core 2.0 (ASP.Net) so, you can do the Views and stuff, if you know how to, you can also do the other stuff, but its fairly Complex, and i dont think anyone besides me cares about using ASP.NET</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">12-Dez-17 04:39 </span>
+<div class="msg-content">
+I&#39;ve no real experience in web design, but can help with making the views of you want.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">12-Dez-17 04:42 </span>
+<div class="msg-content">
+im realy bad at CSS/HTML/JS so you can do it (i dont need js anyway, ive got C# lol)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">12-Dez-17 04:46 </span>
+<div class="msg-content">
+Lol, not reallly</div>
+<div class="msg-content">
+C# can be used to add interactivity to webpages?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">12-Dez-17 04:49 </span>
+<div class="msg-content">
+no, only static before-sending data</div>
+<div class="msg-content">
+but thats fine</div>
+<div class="msg-content">
+and you can make Forms (inputs) with it, And you can make them Interactive</div>
+<div class="msg-content">
+so yes</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">12-Dez-17 04:52 </span>
+<div class="msg-content">
+From when did people start making interactive forms?<br />The only interactivity I see in forms is from using CSS</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">12-Dez-17 04:52 </span>
+<div class="msg-content">
+?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">12-Dez-17 04:52 </span>
+<div class="msg-content">
+(the animations that is)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">12-Dez-17 04:53 </span>
+<div class="msg-content">
+what</div>
+<div class="msg-content">
+with forms i meant:<br /><div class="pre">&lt;form&gt;<br />&lt;input type =&quot;xy&quot; .... /&gt;<br />&lt;button submit....&gt;<br />&lt;/form&gt;<br /></div></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">12-Dez-17 04:54 </span>
+<div class="msg-content">
+Well, how is that &quot;interactive&quot;?</div>
+<div class="msg-content">
+If you mean allowing inputs, then yeah, you can do that in C#, but then, you can do that inretth much anything you want</div>
+<div class="msg-content">
+But what you build on C# is still strictly back-end</div>
+<div class="msg-content">
+JS is used for front end.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">12-Dez-17 04:55 </span>
+<div class="msg-content">
+what do you mean with interactive?</div>
+<div class="msg-content">
+C# is not strictly Back-end</div>
+<div class="msg-content">
+WinUniversal, WPF, WinForms, is all Front End</div>
+<div class="msg-content">
+And build on .NET/C#</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">12-Dez-17 04:57 </span>
+<div class="msg-content">
+I don&#39;t think we&#39;re having a useful discussion here, TBH</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">12-Dez-17 04:58 </span>
+<div class="msg-content">
+hmm hmm</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">12-Dez-17 04:58 </span>
+<div class="msg-content">
+Let&#39;s just get back to this later</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">12-Dez-17 04:58 </span>
+<div class="msg-content">
+all i wanted to say before, i can realy use some help with the HTML/CSS</div>
+<div class="msg-content">
+Anyone know that feeling when Win shows an Bluescreen, cause you use Reflection?</div>
+<div class="msg-content">
+Im a bit angry with Win right now</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">12-Dez-17 05:19 </span>
+<div class="msg-content">
+Maybe I&#39;m misunderstanding what you&#39;re talking about, but isn&#39;t it a better idea to focus on the core first, before we start adding fancy user-friendly stuff like a website? &#129300;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">12-Dez-17 05:22 </span>
+<div class="msg-content">
+Idk why you would use c# for backend though</div>
+<div class="msg-content">
+Nodejs or Flask would be better</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">12-Dez-17 05:28 </span>
+<div class="msg-content">
+<span class="mention" title="BenTechy66#8809">@BenTechy66</span> cause i like C#<br /><span class="mention" title="Randium#6521">@Randium</span> we know, but well, discussing is, fun, i guess?</div>
+<div class="msg-content">
+<span class="mention">@Bot Developer</span> is it better to hard-code all the roles into the Bot, or dynamic load assemblys and search for types?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">12-Dez-17 05:45 </span>
+<div class="msg-content">
+dynamic load always better</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">12-Dez-17 05:46 </span>
+<div class="msg-content">
+kk</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">12-Dez-17 05:54 </span>
+<div class="msg-content">
+If you like c# and know how to use it that&#39;s cool</div>
+<div class="msg-content">
+It&#39;s not Java</div>
+<div class="msg-content">
+Which means it&#39;s a decent language</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">12-Dez-17 05:54 </span>
+<div class="msg-content">
+Well</div>
+<div class="msg-content">
+One could say that about &lt;/&#129364;&gt;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">12-Dez-17 05:56 </span>
+<div class="msg-content">
+C# &gt; Java</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">12-Dez-17 05:58 </span>
+<div class="msg-content">
+Yes</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">12-Dez-17 06:22 </span>
+<div class="msg-content">
+Duh</div>
+<div class="msg-content">
+I can understand why people like C++ and Python, by C# I never really understand the reason.</div>
+<div class="msg-content">
+And no, I wouldn&#39;t recommend dynamic load per se</div>
+<div class="msg-content">
+Mostly, it&#39;s just too much work unless you&#39;re-<br />A) Writing the code for someone else<br />B) Won&#39;t be around to add new roles when required</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">12-Dez-17 07:44 </span>
+<div class="msg-content">
+i&#39;d like to point out point B</div>
+<div class="msg-content">
+well actually both points are valid there galaxy.<span class="msg-edited" title="12-Dez-17 07:45 ">(edited)</span></div>
+<div class="msg-content">
+because<br />A)you will be writing for somoene else<br />B) you might not be around when we want to add new roles.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">12-Dez-17 07:46 </span>
+<div class="msg-content">
+It&#39;s fairly easy to implement a DL though</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">12-Dez-17 08:22 </span>
+<div class="msg-content">
+<span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> well, in C# its this Block:<br /><div class="pre">            foreach (var v in Directory.EnumerateFiles(Path.GetFullPath(&quot;./&quot;), &quot;*.dll&quot;, SearchOption.AllDirectories))<br />            {<br />                Assembly tolook = Assembly.LoadFile(v);<br /><br />                var t = tolook.GetTypes();<br />                foreach (var v2 in t)<br />                {<br />                    if (!(v2.IsAbstract || v2.IsInterface || v2.IsEnum))<br />                    {<br />                        if (typeof(Role).IsAssignableFrom(v2))<br />                            roles.Add((Role)Activator.CreateInstance(v2));<br />                    }<br />                }<br />            }<br /></div><br />and this is without LINQ<br />still, thanks for the Opinion :D</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">12-Dez-17 08:24 </span>
+<div class="msg-content">
+Wait, so <b>is it</b> or <b>isn&#39;t it</b> easy to add new roles ourselves with C#? &#39;cause that&#39;s a really important factor to me.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">12-Dez-17 08:25 </span>
+<div class="msg-content">
+well, when youve got decent understanding of C#, it realy is</div>
+<div class="msg-content">
+this:<br /><div class="pre">namespace Roles<br />{<br />    public class Werewolve : Role<br />    {<br />        public override string Name =&gt; &quot;Werewolve&quot;;<br /><br />        public override string Description =&gt; &quot;An Description&quot;;<br />    }<br />}<br /></div><br />is an role, thought theres going to be the Functions and stuff in a few moments</div>
+<div class="msg-content">
+which you wont need all\</div>
+<div class="msg-content">
+only those you need</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">12-Dez-17 08:36 </span>
+<div class="msg-content">
+I get it, but that doesn&#39;t allow me to add any functions or anything, does it? &#129300;</div>
+<div class="msg-content">
+Is it a lot of work to rewrite the bot in a different language? Or would it have to be rewritten all over again?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">12-Dez-17 08:45 </span>
+<div class="msg-content">
+Ye is a lot of with</div>
+<div class="msg-content">
+*work</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">12-Dez-17 08:47 </span>
+<div class="msg-content">
+Ideally, I want the bot to be made in such a way, that it&#39;s easy for me to define new commands and make new roles, if needed.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">12-Dez-17 09:22 </span>
+<div class="msg-content">
+<div class="pre"># IMPORTS THE WORDS FROM THE FILE<br />input<i>story = open(&#39;input.txt&#39;, &#39;r&#39;)<br /><br />spookyTable = []<br /><br />for line in input</i>story:<br />    sentence = line.split(&#39; &#39;)<br /><br />    for word in sentence:<br />        spookyTable.append( word )<br /><br />input<i>story.close()<br /><br /><br /><br /># DEFINES THE FUNCTION THAT PRINTS OUT TEN OPTIONS AND RETURNS THE CHOSEN OPTION<br />import random<br /><br />def chooseWord():<br />    wordChoice = len( spookyTable ) - 1 # Makes sure you can&#39;t choose a higher number than the table&#39;s length.<br />    selectedTable = []<br /><br />    print &#39;Choose your word!&#39;<br /><br />    # Choose ten random words.<br />    for n in range(10):<br /><br />        number = random.randint( 0 , wordChoice )   # This can sometimes choose the same number multiple times, but that&#39;s okay.<br />        word = spookyTable[number]<br />        selectedTable.append( word )<br />        print &#39;%d. %s&#39; % ( n+1, word )<br />    <br />    choiceNumber = int( raw</i>input( &#39;Which number would you like to pick? &#39; ) )<br />    <br />    return selectedTable[choiceNumber - 1]<br /><br /><br /># HERE&#39;S WHERE THE REAL CODE STARTS<br />sentenceUnfinished = True<br />sentence = &#39;&#39;<br /><br />while sentenceUnfinished:<br /><br />    # Choose a word.<br />    chosenWord = chooseWord()<br /><br />    # Adds it to the sentence.<br />    sentence = sentence + &#39; &#39;  + chosenWord<br /><br />    # Checks if the sentence is finished.<br />    if chosenWord[-1] == &#39;.&#39;:<br />        break<br />    if chosenWord[-1] == &#39;!&#39;:<br />        break<br />    if chosenWord[-1] == &#39;?&#39;:<br />        break<br /><br />print &#39;============== FINAL SENTENCE ==============&#39;<br />print sentence<br /></div></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">12-Dez-17 09:23 </span>
+<div class="msg-content">
+Well, later on i can support Lua, maybe Python, any script language realy</div>
+<div class="msg-content">
+<span class="mention" title="Randium#6521">@Randium</span> what language is that? python?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">12-Dez-17 09:23 </span>
+<div class="msg-content">
+Isn&#39;t it more useful to immediately write it in Python in the first place, then? &#129300;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">12-Dez-17 09:23 </span>
+<div class="msg-content">
+yes, but im not good with Python lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">12-Dez-17 09:23 </span>
+<div class="msg-content">
+Yeah. It&#39;s a little code I just wrote that should do the trick of the ghosts in the tavern, <span class="mention">@everyone</span>.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">12-Dez-17 09:24 </span>
+<div class="msg-content">
+And Adding support for Script langs is realy easy, as they can be run in the Open App Domain, which is realy fast and efficent.<span class="msg-edited" title="12-Dez-17 09:25 ">(edited)</span></div>
+<div class="msg-content">
+(Compared to other systems, with the same features)</div>
+<div class="msg-content">
+basicaly, in ex. Python you woud just define functions, which woud be automatically run from C#</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">12-Dez-17 09:27 </span>
+<div class="msg-content">
+I can&#39;t record it, but I can tell ya my code works beautifully! &#128515;</div>
+<div class="msg-content">
+You can just add sentences like these to the file, as long as you don&#39;t do stuff like <span class="pre">&#39;</span>, <span class="pre">&quot;</span>, <span class="pre">/</span>, <span class="pre">#</span>, etc.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">12-Dez-17 09:39 </span>
+<div class="msg-content">
+Umm</div>
+<div class="msg-content">
+Are we going to need a dedicated place to run this thing?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">12-Dez-17 09:44 </span>
+<div class="msg-content">
+<span class="mention" title="Randium#6521">@Randium</span> thats python you realise</div>
+<div class="msg-content">
+well kinda</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">12-Dez-17 09:58 </span>
+<div class="msg-content">
+Kinda?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">12-Dez-17 09:59 </span>
+<div class="msg-content">
+79% python, 13% c#, trace amounts of lisp, haskell, javascript<br />Not suitable for Java allergy sufferers due to manufacturing methods</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">12-Dez-17 10:00 </span>
+<div class="msg-content">
+10 Print&quot;lol&quot;<br />20 goto 10</div>
+<div class="msg-content">
+Run program</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">12-Dez-17 10:04 </span>
+<div class="msg-content">
+<i>hits &lt;break&gt;</i></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">12-Dez-17 10:04 </span>
+<div class="msg-content">
+this is a sinclar spectrum. there is no break button<span class="msg-edited" title="12-Dez-17 10:05 ">(edited)</span></div>
+<div class="msg-content">
+simply becasue i removed it</div>
+<div class="msg-content">
+why do you think i can only write a single print line</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">13-Dez-17 10:17 </span>
+<div class="msg-content">
+Yeah, you need some place to run it, just like an normal Programm :D</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">13-Dez-17 10:31 </span>
+<div class="msg-content">
+Would a windows 7 Pro box be ok?</div>
+<div class="msg-content">
+Also</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/389888800236634118/390435568301113345/vrlkjAF_d.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/389888800236634118/390435568301113345/vrlkjAF_d.jpg" />
+</a>
+</div>
+<div class="msg-content">
+I can put up a debian or Ubuntu box too if that&#39;s prefered<span class="msg-edited" title="13-Dez-17 10:33 ">(edited)</span></div>
+<div class="msg-content">
+I can&#39;t do MacOS though.<span class="msg-edited" title="13-Dez-17 10:33 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">13-Dez-17 10:35 </span>
+<div class="msg-content">
+<span class="mention" title="Buddy1913#9588">@Buddy1913</span> Well, for me, Win is the Best, while linux works (im working with C#, on Linux with Mono)</div>
+<div class="msg-content">
+Sooo</div>
+<div class="msg-content">
+also, is Python Support Wished?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">13-Dez-17 10:37 </span>
+<div class="msg-content">
+I think so? I think randium knows how to code in it. But can you bring me up to speed with how the roles are added  are they like scripts we load in or hard coded?</div>
+<div class="msg-content">
+I&#39;m not the authority on that I&#39;m affraid</div>
+<div class="msg-content">
+And as for the box I can do either. I have a single key left for W7</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">13-Dez-17 10:47 </span>
+<div class="msg-content">
+Can&#39;t we do Linux</div>
+<div class="msg-content">
+It&#39;s better for hosting</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">13-Dez-17 10:50 </span>
+<div class="msg-content">
+Just let me know yea?</div>
+<div class="msg-content">
+Once you come to a choice</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">13-Dez-17 11:50 </span>
+<div class="msg-content">
+K</div>
+<div class="msg-content">
+I already have a Linux server btw</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">13-Dez-17 01:21 </span>
+<div class="msg-content">
+So do I</div>
+<div class="msg-content">
+But that&#39;s probably not necessary</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">13-Dez-17 01:25 </span>
+<div class="msg-content">
+So do i lol</div>
+<div class="msg-content">
+Well an Rasp</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">13-Dez-17 01:31 </span>
+<div class="msg-content">
+That&#39;s not really a server</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">13-Dez-17 02:03 </span>
+<div class="msg-content">
+Well, it is.</div>
+<div class="msg-content">
+It has Debian Stretch 8 installed. and it is an Rasb 3b so it has nice hardware stats</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">13-Dez-17 02:15 </span>
+<div class="msg-content">
+I&#39;m on about a literal server.</div>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/389888800236634118/390492376378114048/photo_1474917862523.jpg">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/389888800236634118/390492376378114048/photo_1474917862523.jpg" />
+</a>
+</div>
+<div class="msg-content">
+Not a repurposed pc.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">13-Dez-17 02:17 </span>
+<div class="msg-content">
+Yeah I have a dedicated server</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">13-Dez-17 02:21 </span>
+<div class="msg-content">
+Cool!<span class="msg-edited" title="13-Dez-17 02:21 ">(edited)</span></div>
+<div class="msg-content">
+What&#39;s the spec? :3</div>
+<div class="msg-content">
+I have two HPE Dl380 G6 2U systems. Each with dual Quad core X5550 Xeons and 144GB of RAM each. Both om Windows Server 2012 Datacentre edition.</div>
+<div class="msg-content">
+And a repurposed desktop that acts as a NAS. Heh.</div>
+<div class="msg-content">
+It&#39;s rare to see someone else with a proper server o3o</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">13-Dez-17 02:30 </span>
+<div class="msg-content">
+We have 2 main servers with redundancy and load balancing each with 32GB ram and 2 xeons <br /><br />Then there are 2 backup servers and one backup backup raspberrypi</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">13-Dez-17 02:30 </span>
+<div class="msg-content">
+Sweet</div>
+<div class="msg-content">
+Yea most of my stuff is virtualised with HyperV cluster management.</div>
+<div class="msg-content">
+Images are stored on the NAS and all are connected with 8gbps fibre channel<br />(not shown. NAS)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">13-Dez-17 03:52 </span>
+<div class="msg-content">
+I have an HP proliant something</div>
+<div class="msg-content">
+With 24gb ram and two xeons</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">13-Dez-17 03:58 </span>
+<div class="msg-content">
+Ooooh</div>
+<div class="msg-content">
+Cool</div>
+<div class="msg-content">
+Yea mine are proliants</div>
+<div class="msg-content">
+DL380 G6</div>
+<div class="msg-content">
+I have an ML110 G4 somewhere too. That has 8GB and a quad core</div>
+<div class="msg-content">
+(8gb is board max and it&#39;s not even meant to be able to use quad cores according to the spec sheet)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">13-Dez-17 04:31 </span>
+<div class="msg-content">
+I&#39;m not actually having much time lately, otherwise I would read all this</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">13-Dez-17 04:35 </span>
+<div class="msg-content">
+Don&#39;t worry. I&#39;ll mention you when important stuff comes up.</div>
+<div class="msg-content">
+Or I&#39;ll pin it.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">15-Dez-17 04:42 </span>
+<div class="msg-content">
+My server cost &#163;7</div>
+<div class="msg-content">
+(not a typo)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">15-Dez-17 04:44 </span>
+<div class="msg-content">
+k</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">15-Dez-17 05:48 </span>
+<div class="msg-content">
+Mine costs  &#163;0?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">15-Dez-17 05:52 </span>
+<div class="msg-content">
+lol</div>
+<div class="msg-content">
+its not taking energz or internet AT ALL</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">15-Dez-17 06:31 </span>
+<div class="msg-content">
+I don&#39;t pay for electricity</div>
+<div class="msg-content">
+And I would have the broadband I do of I had the server or not</div>
+<div class="msg-content">
+But I&#39;d you want a breakdown of what is actually used each unit uses 175w at the wall per machine at 50% load. With electricity costing 14p per kilowatt hour.</div>
+<div class="msg-content">
+So 14/(1000/(175x2)) I belive would be the average power cost per hour.</div>
+<div class="msg-content">
+Or ~5p per hour.</div>
+<div class="msg-content">
+Times 24 Times 30 for Aproximate monthly cost</div>
+<div class="msg-content">
+Or 352.8 pence.</div>
+<div class="msg-content">
+&#163;3.53 per month</div>
+<div class="msg-content">
+Broadband costs &#163;48.69 per but since I would have it regardless of the servers  it doesn&#39;t factor into the cost of them<span class="msg-edited" title="15-Dez-17 06:37 ">(edited)</span></div>
+<div class="msg-content">
+That cost also includes the power draw of ancillary equipment such as the switches, router and modem.</div>
+<div class="msg-content">
+And the 3w idle load of the ups</div>
+<div class="msg-content">
+But since electricity is included in my rent the additional cost is 0.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">15-Dez-17 06:46 </span>
+<div class="msg-content">
+hmm, hmm</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">15-Dez-17 07:03 </span>
+<div class="msg-content">
+See I do know things :p</div>
+<div class="msg-content">
+Do my &#163;0 is not technically incorrect. But misleading</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">15-Dez-17 07:16 </span>
+<div class="msg-content">
+:D</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">16-Dez-17 11:52 </span>
+<div class="msg-content">
+Well I&#39;m not the one paying for electricity or internet</div>
+<div class="msg-content">
+But the actual server itself cost &#163;7 when I bought it</div>
+<div class="msg-content">
+It&#39;s probably worth a bit more than that though</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">16-Dez-17 12:34 </span>
+<div class="msg-content">
+heh</div>
+<div class="msg-content">
+if you include the inital costs then mines more like &#163;400</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">16-Dez-17 01:13 </span>
+<div class="msg-content">
+What os do you have on it</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">16-Dez-17 01:26 </span>
+<div class="msg-content">
+Debian Stretch is best</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">16-Dez-17 01:45 </span>
+<div class="msg-content">
+both boxes have Windows Server 2012 Datacentre.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">16-Dez-17 01:52 </span>
+<div class="msg-content">
+Just:<br /><span class="pre">2798</span> Issues Left. Then i can start the Next test lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">16-Dez-17 04:07 </span>
+<div class="msg-content">
+I use Debian stretch too!</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">17-Dez-17 10:06 </span>
+<div class="msg-content">
+Lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/278599626922131459/715ea5e47b49b8e7fb4677da492d4827.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Legolas#2139">Legolas</span>
+<span class="msg-date">17-Dez-17 01:54 </span>
+<div class="msg-content">
+<span class="mention" title="Randium#6521">@Randium</span> pls remove my bot developer role</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">17-Dez-17 01:55 </span>
+<div class="msg-content">
+You don&#39;t wanna help anymore, <span class="mention" title="Legolas#2139">@Legolas</span>? &#128527;<span class="msg-edited" title="17-Dez-17 01:57 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">17-Dez-17 01:56 </span>
+<div class="msg-content">
+<span class="mention" title="Lord of Galaxy#9211">@Lord of Galaxy</span> do you not like Debian? Or was the lol directed at something else</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">17-Dez-17 03:24 </span>
+<div class="msg-content">
+Probibly the number of bugs</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">17-Dez-17 03:51 </span>
+<div class="msg-content">
+&#128027;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">17-Dez-17 05:12 </span>
+<div class="msg-content">
+<span class="mention" title="ed588#6120">@ed588</span> It was, as Buddy says, directed at the number of bugs</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">17-Dez-17 06:17 </span>
+<div class="msg-content">
+K</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">17-Dez-17 07:28 </span>
+<div class="msg-content">
+Showing  90 changed files  with 22,450 additions and 21,339 deletions.Huh, Todays Github Push xD</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">17-Dez-17 08:05 </span>
+<div class="msg-content">
+Fun</div>
+<div class="msg-content">
+<i>the joys of c#</i></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">17-Dez-17 08:28 </span>
+<div class="msg-content">
+I tried coding once. I will never do it again.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">17-Dez-17 08:48 </span>
+<div class="msg-content">
+What language?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">17-Dez-17 09:15 </span>
+<div class="msg-content">
+C++</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">17-Dez-17 09:31 </span>
+<div class="msg-content">
+ha, stupid kid lol</div>
+<div class="msg-content">
+(Sorry to C++ Lovers)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">17-Dez-17 10:14 </span>
+<div class="msg-content">
+I was inly about 12 at the time</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">17-Dez-17 10:36 </span>
+<div class="msg-content">
+:D</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">17-Dez-17 11:25 </span>
+<div class="msg-content">
+Pff</div>
+<div class="msg-content">
+I was writing a password protected self destruction program in Sinclair Basic then</div>
+<div class="msg-content">
+All it did was say hi</div>
+<div class="msg-content">
+But would self delete if the wrong password was entered three times</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">18-Dez-17 04:12 </span>
+<div class="msg-content">
+I&#39;m awed by you  <span class="mention" title="Buddy1913#9588">@Buddy1913</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">18-Dez-17 04:12 </span>
+<div class="msg-content">
+Lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">18-Dez-17 04:12 </span>
+<div class="msg-content">
+I could never do anything much in Basic (though I have no idea which Basic I was trying)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">18-Dez-17 04:21 </span>
+<div class="msg-content">
+It was only like 25 lines</div>
+<div class="msg-content">
+The basic hello world is literally one line. It&#39;s not even funny</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">18-Dez-17 04:53 </span>
+<div class="msg-content">
+20 goto 10</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">18-Dez-17 10:01 </span>
+<div class="msg-content">
+10 print &quot;hello&quot;</div>
+<div class="msg-content">
+Run</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">25-Dez-17 09:05 </span>
+<div class="msg-content">
+we finaly got to the point where the bot entered the rift :D</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">25-Dez-17 09:05 </span>
+<div class="msg-content">
+Yay! &#128516;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">25-Dez-17 09:06 </span>
+<div class="msg-content">
+(not late <i>at all</i>)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">25-Dez-17 10:06 </span>
+<div class="msg-content">
+<span class="mention" title="HurricanKai#4953">@HurricanKai</span> why can&#39;t the bot use nitro emoji</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">25-Dez-17 10:07 </span>
+<div class="msg-content">
+cause Randium hasnt got nitro.</div>
+<div class="msg-content">
+sooo</div>
+<div class="msg-content">
+(and i havent tested any custom emoji stuff)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">25-Dez-17 10:08 </span>
+<div class="msg-content">
+That&#39;s not how it works</div>
+<div class="msg-content">
+Bots automatically have nitro</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">25-Dez-17 10:08 </span>
+<div class="msg-content">
+you shure?</div>
+<div class="msg-content">
+well</div>
+<div class="msg-content">
+then...</div>
+<div class="msg-content">
+i still havented tested stuff</div>
+<div class="msg-content">
+oh right</div>
+<div class="msg-content">
+i know why i also never did do so.<br />all my save/loading goes with that specific guild, so Emojis and Channels etc. are loaded from the Guild</div>
+<div class="msg-content">
+if its not present =&gt; Bad Request</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">25-Dez-17 10:10 </span>
+<div class="msg-content">
+Oh right</div>
+<div class="msg-content">
+Why do you have to load emoji that&#39;s dumb</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">25-Dez-17 10:10 </span>
+<div class="msg-content">
+cause avatars</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">25-Dez-17 10:10 </span>
+<div class="msg-content">
+By the way, apparently I can&#39;t change a 8.json-file in Notepad, <span class="mention" title="HurricanKai#4953">@HurricanKai</span>. Could you edit the seasonValue to <span class="pre">4</span> for me? &#128556;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">25-Dez-17 10:11 </span>
+<div class="msg-content">
+are stored over session</div>
+<div class="msg-content">
+yep</div>
+<div class="msg-content">
+(btw, once you use ~ss &lt;num&gt; it automaticaly sets that to that value, as you wished)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">25-Dez-17 10:11 </span>
+<div class="msg-content">
+Excellent!</div>
+<div class="msg-content">
+Nevermind, then.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/140424290171486208/9d9432beb3e6e77be13bc8bee3f9aef2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="HurricanKai#4953">HurricanKai</span>
+<span class="msg-date">25-Dez-17 10:12 </span>
+<div class="msg-content">
+ok</div>
+<div class="msg-content">
+(it was Permission Denied anyways)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/329977469350445069/3083a8b4333b2d76e22eeddf3d3651fb.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Lord of Galaxy#9211">Lord of Galaxy</span>
+<span class="msg-date">27-Dez-17 08:34 </span>
+<div class="msg-content">
+Good job.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">27-Dez-17 10:50 </span>
+<div class="msg-content">
+Snazzy</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">28-Dez-17 10:55 </span>
+<div class="msg-content">
+Hey <span class="mention">@Game Master</span> why can&#39;t we talk anywhere</div>
+<div class="msg-content">
+Can we just have a general channel for chilling while it gets set up<span class="msg-edited" title="28-Dez-17 10:55 ">(edited)</span></div>
+<div class="msg-content">
+Up</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">28-Dez-17 10:55 </span>
+<div class="msg-content">
+Because not everyone has their roles yet.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">28-Dez-17 10:55 </span>
+<div class="msg-content">
+Ok</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">28-Dez-17 10:56 </span>
+<div class="msg-content">
+Actually, you&#39;re not supposed to be able to talk. &#128539; You&#39;re lucky that you have this channel. &#128527;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">28-Dez-17 10:56 </span>
+<div class="msg-content">
+Haha lol</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">28-Dez-17 11:13 </span>
+<div class="msg-content">
+Oh also</div>
+<div class="msg-content">
+&quot;Fred&#39;s buddy&quot;?</div>
+<div class="msg-content">
+Really?</div>
+<div class="msg-content">
+Can I have something else please</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">28-Dez-17 11:14 </span>
+<div class="msg-content">
+Heh. &#128527; You know the reference? &#128527;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">28-Dez-17 11:16 </span>
+<div class="msg-content">
+No?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">28-Dez-17 11:17 </span>
+<div class="msg-attachment">
+<a href="https://cdn.discordapp.com/attachments/389888800236634118/395882911146049547/001563446_001_396865_708.png">
+<img class="msg-attachment" src="https://cdn.discordapp.com/attachments/389888800236634118/395882911146049547/001563446_001_396865_708.png" />
+</a>
+</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">28-Dez-17 11:17 </span>
+<div class="msg-content">
+Oh</div>
+<div class="msg-content">
+Um</div>
+<div class="msg-content">
+Sure</div>
+<div class="msg-content">
+What language is that?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">28-Dez-17 11:18 </span>
+<div class="msg-content">
+Dutch &#128514;</div>
+<div class="msg-content">
+<b>Fred<br />&amp; Ed</b><br />Colourfun<br />Muffins<span class="msg-edited" title="28-Dez-17 11:18 ">(edited)</span></div>
+<div class="msg-content">
+Did you think <b>Sheer Edian</b> was better? &#128539; <i>(You DO get THAT reference, right?)</i></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">28-Dez-17 11:20 </span>
+<div class="msg-content">
+I&#39;m not sure which is worst to be honest &#129300;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">28-Dez-17 11:20 </span>
+<div class="msg-content">
+I&#39;m already looking forward to making another one next season. &#128527;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/293066066605768714/8849441db74dd9361a73b5c561a37b4d.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="ed588#6120">ed588</span>
+<span class="msg-date">28-Dez-17 11:20 </span>
+<div class="msg-content">
+(the funny part is that my name isn&#39;t actually ed anyway)</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/247096918923149313/dc16389d6e30176ff827582978ec66dd.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="BenTechy66#8809">BenTechy66</span>
+<span class="msg-date">28-Dez-17 11:22 </span>
+<div class="msg-content">
+Who tf is Chad Benson?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">30-Dez-17 12:24 </span>
+<div class="msg-content">
+<span class="mention" title="HurricanKai#4953">@HurricanKai</span>  and or <span class="mention" title="Randium#6521">@Randium</span> could i get a rundown of bot commands and what they do?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">30-Dez-17 12:50 </span>
+<div class="msg-content">
+<span class="mention">#how_to_play</span></div>
+<div class="msg-content">
+becasue i&#39;m an idiot i missed it <span class="mention" title="Regicide1218#5350">@Regicide1218</span><span class="msg-edited" title="30-Dez-17 12:51 ">(edited)</span></div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">30-Dez-17 12:52 </span>
+<div class="msg-content">
+Danke</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/394657057564786698/1b82aab553777702c22a89860e4692e7.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Werewolf Bot#7211">Werewolf Bot</span>
+<span class="msg-date">30-Dez-17 09:58 </span>
+<div class="msg-content">
+Saving All....</div>
+<div class="msg-content">
+Saved Storage!</div>
+<div class="msg-content">
+Saved All.</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">31-Dez-17 02:18 </span>
+<div class="msg-content">
+Kai!</div>
+<div class="msg-content">
+Kai</div>
+<div class="msg-content">
+Kai</div>
+<div class="msg-content">
+...</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/248158876799729664/fdd1fc382f331558a6bf57fd58883e7e.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Randium#6521">Randium</span>
+<span class="msg-date">01-Jan-18 02:26 </span>
+<div class="msg-content">
+Kai</div>
+<div class="msg-content">
+Kai</div>
+<div class="msg-content">
+Kai</div>
+<div class="msg-content">
+Kai</div>
+<div class="msg-content">
+Kai</div>
+<div class="msg-content">
+Kai</div>
+<div class="msg-content">
+That&#39;s what a howling dog says &#128539;</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/352867028719370252/e5bb78f85fb979dcdd7d4454f83d8738.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Regicide1218#5350">Regicide1218</span>
+<span class="msg-date">10-Jan-18 10:24 </span>
+<div class="msg-content">
+What&#39;s the command for checking someone&#39;s role, <span class="mention" title="HurricanKai#4953">@HurricanKai</span>?</div>
+</div>
+</div>
+<div class="msg">
+<div class="msg-left">
+<img class="msg-avatar" src="https://cdn.discordapp.com/avatars/209126872783519745/a64b897b5ebe58c7050a7f02bfd93da2.png" />
+</div>
+<div class="msg-right">
+<span class="msg-user" title="Buddy1913#9588">Buddy1913</span>
+<span class="msg-date">11-Jan-18 12:40 </span>
+<div class="msg-content">
+~p getinfo &lt;player&gt;</div>
+</div>
+</div>
+</div>
+</body>
+</html>
